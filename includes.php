@@ -44,7 +44,7 @@ function entete($titre)
                 <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                <li><a href="#">Profil</a></li>
+                <li><a href="./profil.php">Profil</a></li>
                 <li class="divider"></li>
                 <li><a href="#">Se déconnecter</a></li>
                 </ul>
