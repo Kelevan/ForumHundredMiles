@@ -4,7 +4,7 @@
 <!--------------------------------HEAD------------------------------------->    
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Hundred miles</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -53,7 +53,7 @@
               
                 <div class="tabbable">
                 <ul class="nav nav-pills">
-                <li><a href="#">Home</a></li>
+                <li><a href="./index.php">Home</a></li>
                 <ul class="nav nav-pills">
                 <li class="dropdown">
                 <a class="dropdown-toggle"
@@ -86,47 +86,15 @@
         
 
     <div class="container">
-      <div class="row"> 
-         <!-- La sideBar de coté -------   
-        <div class="span2">
-            <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+      <div class="row">          
+        <div class="span12">
+          <div class="hero-unit">
+            <h3>Gestion des catégories</h3><br/>
+            <ul>
+                <li><a class="btn btn-primary" href="./addCategorie.php">Ajouter une catégorie</a></li><br/>
+                <li><a class="btn btn-primary" href="./editCategorie.php">Modifier une catégorie</a></li><br/>
+                <li><a class="btn btn-primary" href="./supprCategorie">Supprimer une catégorie</a></li><br/>
             </ul>
-          </div>
-          </div>
-         -->
-         
-        <div class="span6">
-          <div class="hero-unit">
-            <h3>Derniers topics</h3>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-          </div>
-        </div>  
-        <div class="span6">    
-          <div class="hero-unit">
-            <h3>Derniers fichiers</h3>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-          </div>
-        </div>     
-      </div>
     </div>
       
 
@@ -145,4 +113,4 @@
  
 
   </body>
-</html>       
+</html>

@@ -70,6 +70,8 @@
                                 </ul>
                             </li>
                         </ul>
+                                    <ul class="nav nav-pills">
+                <li><a href="./panelAdmin.php">Panel Administrateur</a></li>
                     </ul>
                 </div>
           </div>
