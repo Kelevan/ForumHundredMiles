@@ -106,7 +106,7 @@
       
       
       
-      
+      <div class="container">
       <div class="tabbable">
         <ul class="nav nav-tabs">
           <li class="active"><a href="#tab1" data-toggle="tab">Information</a></li>
@@ -242,9 +242,8 @@
             </div>
         </div>
       </div>
-  </div>
+  
 
-    <div class="container">
         <button type="submit" class="btn btn-primary">Enregistrer</button>
         <a class="btn btn-inverse" href="./modifmdp.php">Réinitialiser</a>
     </div>
