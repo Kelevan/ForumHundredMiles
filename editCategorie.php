@@ -11,6 +11,7 @@
 
     <!-- Le styles -->
     <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./view.css" media="all">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -85,15 +86,41 @@
       <div class="row">          
         <div class="span12">
           <div class="hero-unit">
-            <h3>Gestion des catégories</h3><br/>
-            <ul>
-                <li><a class="btn btn-primary" href="./addCategorie.php">Ajouter une catégorie</a></li><br/>
-                <li><a class="btn btn-primary" href="./editCategorie.php">Modifier une catégorie</a></li><br/>
-                <li><a class="btn btn-primary" href="./supprCategorie.php">Supprimer une catégorie</a></li><br/>
-            </ul>
-    </div>
+            <h3>Modifier une catégorie</h3><br/>
+            <div id="form_container">
+		<form id="formulaire" class="appnitro"  method="post" action=".php">					
+			<ul >
+                            <li id="li_1">
+                            <div class="left">
+                            <label class="description" for="element_1">Numéro de la catégorie </label>
+                            <select name="Num_Adh">
+                            </select>
+                            <br/>
+                            </div><p class="guidelines" id="guide_2"><small>Obligatoire</small></p>
+                            </li>
+                            <li id="li_1" >                               
+                                <span>
+                                    <input id="Nom_Adh" name= "Nom_Adh" class="element text" maxlength="255" size="8" value=""/>
+                                    <label>Nom de la catégorie</label>
+                                    </span>
+                                <span>
+                                    <input id="Prenom_Adh" name= "Prenom_Adh" class="element text" maxlength="255" size="30" value=""/>
+                                    <label>Description de la catégorie</label>
+                                </span><p class="guidelines" id="guide_1"><small>Obligatoire</small></p> 
+                            </li>   	
+                            <li class="buttons">
+                                <input type="hidden" name="form_id" value="146883" />
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Envoyer" />
+				<input id="resetForm" class="button_text" type="reset" name="reset" value="Effacer"/>
+                            </li>
+			</ul>
 
-<!--------------------------------FOOTER------------------------------------->            
+		</form>	
+		
+	</div>
+            </div>
+ 
+<!--------------------------------FOOTER------------------------------------->
 
     <div class="navbar navbar-fixed-bottom">
       <footer class="footer-fixed-bottom">

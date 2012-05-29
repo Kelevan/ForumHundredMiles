@@ -11,6 +11,7 @@
 
     <!-- Le styles -->
     <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./view.css" media="all">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -78,22 +79,30 @@
     </div>
     
 
-      
-        
+            <div id="form_container">
+                <div class="container">
+                <div class="row">          
+                    <div class="span12">
+                    <div class="hero-unit">
+                        <h3>Supprimer une catégorie</h3><br/>
+                        <div id="form_container">
+                            <form method="post" action="transfert_supprimer_inscription.php">
+                            Numéro de la catégorie : 
+                            <select name="Num_Adh">
+                            </select>
+                            <br/><br/>
+                            <input type="submit" value="Supprimer Mon Inscription" name="Supprimer"> <br/><br/><br/><br/><br/>
 
-    <div class="container">
-      <div class="row">          
-        <div class="span12">
-          <div class="hero-unit">
-            <h3>Gestion des catégories</h3><br/>
-            <ul>
-                <li><a class="btn btn-primary" href="./addCategorie.php">Ajouter une catégorie</a></li><br/>
-                <li><a class="btn btn-primary" href="./editCategorie.php">Modifier une catégorie</a></li><br/>
-                <li><a class="btn btn-primary" href="./supprCategorie.php">Supprimer une catégorie</a></li><br/>
-            </ul>
-    </div>
+                            </form>	
 
-<!--------------------------------FOOTER------------------------------------->            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>	
+            </div>
+ 
+<!--------------------------------FOOTER------------------------------------->
 
     <div class="navbar navbar-fixed-bottom">
       <footer class="footer-fixed-bottom">

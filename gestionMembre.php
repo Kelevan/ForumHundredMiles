@@ -49,33 +49,29 @@
             </ul>
           </div>
           <div class="nav-collapse">
-            <ul class="nav">
-              
+            <ul class="nav">             
                 <div class="tabbable">
-                <ul class="nav nav-pills">
-                <li><a href="./index.php">Home</a></li>
-                <ul class="nav nav-pills">
-                <li class="dropdown">
-                <a class="dropdown-toggle"
-                data-toggle="dropdown"
-                href="#">
-                Catégories
-                <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#tab2">Organisation</a></li>
-                    <li><a href="./categorie.php">Musiques</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Concerts</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Equipe</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Groupes</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Support</a></li>
-                </ul>
-                </li>
-                </ul>
-                <ul class="nav nav-pills">
-                <li><a href="./panelAdmin.php">Panel Administrateur</a></li>
-                </ul>
+                    <ul class="nav nav-pills">
+                        <li><a href="./index.php">Home</a></li>
+                        <ul class="nav nav-pills">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#tab1">Organisation</a></li>
+                                    <li><a href="./categorie.php">Musiques</a></li>
+                                    <li><a href="#tab2">Concerts</a></li>
+                                    <li><a href="#tab2">Equipe</a></li>
+                                    <li><a href="#tab2">Groupes</a></li>
+                                    <li><a href="#tab2">Support</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-pills">
+                            <li><a href="./panelAdmin.php">Panel Administrateur</a></li>
+                        </ul>
+                    </ul>
                 </div>
+            </ul>
           </div>
         </div>
       </div>
@@ -97,7 +93,8 @@
             </ul>
     </div>
       
-
+<!--------------------------------FOOTER------------------------------------->
+            
     <div class="navbar navbar-fixed-bottom">
       <footer class="footer-fixed-bottom">
         <p class="pull-right"><a href="#">Back to top</a></p>
