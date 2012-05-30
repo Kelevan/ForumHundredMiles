@@ -3,11 +3,9 @@
     entete("Administration");
 ?> 
   
-<!--------------------------------BODY------------------------------------->  
-    <body>
-        <div class="container">
+    <div class="container">
         <div class="tabbable">
-            <ul class="sub nav-tabs">
+            <ul class="nav nav-tabs">
             <li class="active"><a href="#tab1" data-toggle="tab">Information</a></li>
             <li><a href="#tab2" data-toggle="tab">Avatar</a></li>
             </ul>
