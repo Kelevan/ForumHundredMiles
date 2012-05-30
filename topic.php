@@ -12,7 +12,7 @@
     </div>      
                              <!-- TABLEAU -->
     <div class="container">   
-      <table class="table table-bordered table-condensed">
+      <table class="table table-bordered ta">
         <thead>
              <tr>
                 <div class="btn">Nouveau
