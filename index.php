@@ -3,21 +3,34 @@
     entete("Administration");
 ?> 
     <div class="container">
-      <div class="row">         
+      <div class="row">  
+<!----------- Tab FICHIERS ----------->         
         <div class="span6">
-          <div class="hero-unit">
-            <h3>Derniers topics</h3>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-          </div>
-        </div>  
-        <div class="span6">    
-          <div class="hero-unit">
-            <h3>Derniers fichiers</h3>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-          </div>
-        </div>     
+            <table class="table table-bordered table-condensed">
+                    <thead>
+                    <tr>
+                        <th>>&nbsp;Derniers&nbsp;Fichiers</th>
+                    </tr>
+                    <tr class="row">
+                        <th colspan="1">Nom</th>
+                        <th colspan="1">Topic</th>
+                        <th colspan="3">Type</th>
+                    </tr>
+                </thead>
+                
+            </table>
+        </div>
+
+<!----------- Tab Topics/Messages ----------->
+          <div class="span6">
+            <table class="table table-bordered table-condensed">
+                    <thead>
+                    <tr>
+                        <th>>&nbsp;Derniers&nbsp;Fichiers</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
       </div>
 <?php
     pied();

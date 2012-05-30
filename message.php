@@ -68,7 +68,7 @@
     <li><a href="#">4</a></li>
     <li><a href="#">Next</a></li>
     </ul>
-    </div>    
+    </div>   
     </div>    
   </div>
 <?php
