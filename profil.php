@@ -56,7 +56,6 @@
         </div>
         <button type="submit" class="btn btn-primary">Enregistrer</button>
         <a class="btn btn-inverse" href="./modifmdp.php">Réinitialiser</a>
-
-        <?php
-            pied();
-        ?> 
+<?php
+    pied();
+?> 
