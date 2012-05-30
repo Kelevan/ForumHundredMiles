@@ -23,6 +23,7 @@
                             <label class="control-label"><b>Adresse&nbsp;e-mail&nbsp;:*</b></label>
                             <div class="controls">
                                 <input type="text" class="input-xlarge" id="inputmail" value="adresse@mail.com" type="text">
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
                             </div>
                             <label class="control-label"><b>Changer&nbsp;de&nbsp;mot&nbsp;de&nbsp;passe&nbsp;:*</b></label>
                             <a class="btn btn-primary" href="./modifmdp.php">Modifier</a>
@@ -31,9 +32,10 @@
                 </div>
     <!-----------------------------------ONGLET AVATAR------------------------------------>
                 <div class="tab-pane" id="tab2">
+                    <h2>Avatar</h2>
                     <div class="form-actions">
                         <div>
-                            <h2>Image actuelle</h2>
+                            <h3>Image actuelle</h3>
                             <ul class="thumbnails">
                                 <li class="span3">
                                 <a href="#" class="thumbnail">
@@ -46,14 +48,14 @@
                             <label class="control-label" for="Upluader une image">Upluader un Fichier</label>
                             <div class="controls">
                                 <input class="input-file" id="fileInputimage" type="file">
-                            </div> 
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enregistrer</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Enregistrer</button>
-        <a class="btn btn-inverse" href="./modifmdp.php">Réinitialiser</a>
+
 <?php
     pied();
 ?> 
