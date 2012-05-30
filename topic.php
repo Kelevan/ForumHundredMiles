@@ -2,8 +2,6 @@
     include_once("./includes.php");
     entete("Administration");
 ?> 
-<html lang="en">
-
     <div class="container">
         <ul class="breadcrumb">
             <li><a href="./index.php">Home</a> <span class="divider">/</span></li>
@@ -11,9 +9,7 @@
             <li><a href="./forum.php">Lyrics</a> <span class="divider">/</span></li>
             <li><a href="./topic.php">Lyrics</a> </li>
         </ul>
-    </div> 
-
-      
+    </div>      
                              <!-- TABLEAU -->
     <div class="container">   
       <table class="table table-bordered table-condensed">
