@@ -6,13 +6,43 @@
     <div class="container">
         <div class="tabbable">
             <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab1" data-toggle="tab">Information</a></li>
-            <li><a href="#tab2" data-toggle="tab">Avatar</a></li>
+                <li class="active"><a href="#tab1" data-toggle="tab">Information</a></li>
+                <li><a href="#tab2" data-toggle="tab">Avatar</a></li>
             </ul>
             <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid rgb(221, 221, 221);">
-    <!-----------------------------------ONGLET INFORMATION------------------------------------>
                 <div class="tab-pane active" id="tab1">
-                    <!----ENREGISTREMENT---->
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="control-group">
+                                <label class="control-label" for="input01"><b>Pseudo</b></label>
+                                <div class="controls">
+                                    <span class="input-xlarge uneditable-input">Tom</span>
+                                </div> 
+                                
+                                <label class="control-label" for="fileInput"><b>Adresse&nbsp;e-mail</b></label>
+                                <div class="controls">
+                                    <input type="text" class="input-xlarge" id="inputmail" value="adresse@mail.com" type="text">
+                                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                </div>
+                                
+                                <label class="control-label"><b>Changer&nbsp;de&nbsp;mot&nbsp;de&nbsp;passe&nbsp;:*</b></label>
+                                <a class="btn btn-primary" href="./modifmdp.php">Modifier</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="tab-pane" id="tab2">
+
+                </div>
+            </div>
+            
+            
+            
+            
+          <!-- <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid rgb(221, 221, 221);">
+    ONGLET INFORMATION
+                <div class="tab-pane active" id="tab1">
+                    ENREGISTREMENT
                     <h2>Enregistrement</h2>
                     <div class="form-actions" > 
                         <div class="control-group">
@@ -30,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-    <!-----------------------------------ONGLET AVATAR------------------------------------>
+    ONGLET AVATAR
                 <div class="tab-pane" id="tab2">
                     <h2>Avatar</h2>
                     <div class="form-actions">
@@ -53,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
 <?php
