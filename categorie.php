@@ -46,8 +46,5 @@
     </table>
 <?php
     pied();
-?>          
-  </div>
-  </body>
-</html>       
+?>               
   

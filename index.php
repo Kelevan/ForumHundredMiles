@@ -21,7 +21,4 @@
       </div>
 <?php
     pied();
-?>        
-    </div>
-  </body>
-</html>       
+?>              

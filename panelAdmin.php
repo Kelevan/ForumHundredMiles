@@ -36,6 +36,3 @@
 <?php
     pied();
 ?>        
-    </div>
-  </body>
-</html>           

@@ -67,5 +67,3 @@
     pied();
 ?>              
      </fieldset>
-  </body>
-</html>       
