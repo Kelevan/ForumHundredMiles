@@ -53,7 +53,6 @@ function entete($titre)
                 <ul class="nav">             
                     <div class="tabbable">
                         <ul class="nav nav-pills">
-                            <li><a href="./index.php">Home</a></li>
                             <ul class="nav nav-pills">
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
