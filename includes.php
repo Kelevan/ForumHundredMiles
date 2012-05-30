@@ -67,7 +67,14 @@ function entete($titre)
                                 </li>
                             </ul>
                             <ul class="nav nav-pills">
-                                <li><a href="./panelAdmin.php">Panel Administration</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
+                                        <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
+                                        <li><a href="./listeForums">Gestion des forums</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </ul>
                     </div>
@@ -91,7 +98,7 @@ function pied()
     <script src="./js/bootstrap.min.js"></script>
     </div>
     </body>
-    </html>';
+    </html> ';
 }
 
 ?>
