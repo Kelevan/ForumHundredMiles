@@ -6,6 +6,7 @@ session_start();
 function entete($titre)
 {
     echo'
+        <!DOCTYPE html>
         <html>
         <head>
         <meta charset="utf-8">
@@ -15,8 +16,6 @@ function entete($titre)
         <meta name="author" content="">
 
         <!-- Le styles -->
-        <link href="./css/bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./view.css" media="all">
         <style type="text/css">
         body {
             padding-top: 60px;
@@ -26,6 +25,7 @@ function entete($titre)
             padding: 9px 0;
         }
         </style>
+        <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
         <link href="./css/bootstrap-responsive.css" rel="stylesheet">
         </head>
         <body>
