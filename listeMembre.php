@@ -11,6 +11,35 @@
         <li><a href="./addMembre.php">Ajouter un membre</a></li>
         <li><a href="./editMembre.php">Modifier un membre</a></li>
         </ul>
+        <div class="container">
+      <table class="table table-bordered table-condensed">
+        <thead>
+            <tr class="row">               
+                <th><a href="#">Gestion des utilisateurs</a></th>
+            </tr>
+            <tr class="row">
+                <th colspan="2"><center>ID </center></th>
+                <th colspan="4">Pseudo</th>
+                <th colspan="4">E-mail</th>
+                <th colspan="2">Modifications</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row">
+                <td colspan="2">1</td>
+                <td colspan="4">KirbyFR</td>
+                <td colspan="4">Kirby@live.fr</td>
+                <td colspan="2">boutons</td>
+            </tr>
+            <tr class="row">
+                <td colspan="2">2</td>
+                <td colspan="4">Kelevan</td>
+                <td colspan="4">Kelevan@live.fr</td>
+                <td colspan="2">boutons</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
         <h3>Panel Administration</h3><br/><br/>
         <h5>Gestion des membres</h5><br/>
             <ul>

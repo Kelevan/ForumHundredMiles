@@ -5,6 +5,11 @@
     <div class="container">
       <div class="row">          
         <div class="span12">
+        <ul class="nav nav-tabs">
+        <li><a href="./listeCategorie.php">Listes</a></li>
+        <li><a href="./addCategorie.php">Ajouter une catégorie</a></li>
+        <li><a href="./editCategorie.php">Modifier une categorie</a></li>
+        </ul>  
           <div class="hero-unit">
             <h3>Modifier une catégorie</h3><br/>
             <div id="form_container">

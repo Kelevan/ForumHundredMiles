@@ -72,7 +72,7 @@ function entete($titre)
                                     <ul class="dropdown-menu">
                                         <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
                                         <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
-                                        <li><a href="./listeForums">Gestion des forums</a></li>
+                                        <li><a href="./listeForum.php">Gestion des forums</a></li>
                                     </ul>
                                 </li>
                             </ul>
