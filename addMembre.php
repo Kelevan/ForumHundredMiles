@@ -3,6 +3,11 @@
     entete("Administration");
 ?> 
     <div class="container">
+        <ul class="nav nav-tabs">
+        <li><a href="./listeMembre.php">Listes</a></li>
+        <li><a href="./addMembre.php">Ajouter un membre</a></li>
+        <li><a href="./editMembre.php">Modifier un membre</a></li>
+        </ul>    
       <div class="row">          
         <div class="span12">
           <div class="hero-unit">

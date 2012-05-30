@@ -7,7 +7,7 @@
     <div class="span12">
     
         <ul class="nav nav-tabs">
-        <li><a href="./listeMembre">Listes</a></li>
+        <li><a href="./listeMembre.php">Listes</a></li>
         <li><a href="./addMembre.php">Ajouter un membre</a></li>
         <li><a href="./editMembre.php">Modifier un membre</a></li>
         </ul>
