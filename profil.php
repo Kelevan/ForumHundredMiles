@@ -4,68 +4,10 @@
 ?> 
   
 <!--------------------------------BODY------------------------------------->  
-  
-
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
+    <body>
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="./index.php">Hundred Miles</a>
-          <div class="btn-group pull-right">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-              <i class="icon-user"></i> Username
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="./profil.php">Profil</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Se déconnecter</a></li>
-            </ul>
-          </div>
-          <div class="nav-collapse">
-            <ul class="nav">
-              
-                <div class="tabbable">
-                <ul class="nav nav-pills">
-                <li><a href="#">Home</a></li>
-                <ul class="nav nav-pills">
-                <li class="dropdown">
-                <a class="dropdown-toggle"
-                data-toggle="dropdown"
-                href="#">
-                Catégories
-                <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#tab2">Organisation</a></li>
-                    <li><a href="./categorie.php">Musiques</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Concerts</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Equipe</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Groupes</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Support</a></li>
-                </ul>
-                </li>
-                </ul>
-                <ul class="nav nav-pills">
-                <li><a href="./panelAdmin.php">Panel Administrateur</a></li>
-                </ul>
-                </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      
-      
-      
-      <div class="container">
         <div class="tabbable">
-            <ul class="nav nav-tabs">
+            <ul class="sub nav-tabs">
             <li class="active"><a href="#tab1" data-toggle="tab">Information</a></li>
             <li><a href="#tab2" data-toggle="tab">Avatar</a></li>
             </ul>
@@ -114,7 +56,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Enregistrer</button>
         <a class="btn btn-inverse" href="./modifmdp.php">Réinitialiser</a>
-        
-    <?php
-        pied();
-    ?>
+
+        <?php
+            pied();
+        ?> 
