@@ -28,7 +28,7 @@ function entete($titre)
         </style>
         <link href="./css/bootstrap-responsive.css" rel="stylesheet">
         </head>
-        
+        <body>
         <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
@@ -82,7 +82,6 @@ function entete($titre)
 function pied()
 {
     echo'
-    <html>
     <div class="navbar navbar-bottom">
     <footer class="footer-bottom">
     <p class="pull-right"><a href="#">Back to top</a></p>
@@ -91,7 +90,7 @@ function pied()
     </div>
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    </html>';
+    ';
 }
 
 ?>

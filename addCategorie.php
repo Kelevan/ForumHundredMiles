@@ -2,8 +2,6 @@
     include_once("./includes.php");
     entete("Administration");
 ?> 
-<html lang="en">
-    <body>
     <div class="container">
       <div class="row">          
         <div class="span12">
@@ -32,10 +30,11 @@
             </div>
         </div>
         </div>
-      </div>  
+      </div> 
+  
 <?php
     pied();
 ?>
-    </div>          
+      </div>          
   </body>
 </html>

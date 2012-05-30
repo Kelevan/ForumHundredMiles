@@ -2,8 +2,6 @@
     include_once("./includes.php");
     entete("Administration");
 ?>    
-<html lang="en">
-  <body>
     <div class="container">
         <ul class="breadcrumb">
         <li>
