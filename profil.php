@@ -107,143 +107,95 @@
       
       
       <div class="container">
-      <div class="tabbable">
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#tab1" data-toggle="tab">Information</a></li>
-          <li><a href="#tab2" data-toggle="tab">Préférences</a></li>
-          <li><a href="#tab3" data-toggle="tab">Signature</a></li>
-          <li><a href="#tab4" data-toggle="tab">Avatar</a></li>
-          <li><a href="#tab5" data-toggle="tab">Sujets surveillés</a></li>
-        </ul>
-        <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid rgb(221, 221, 221);">
-<!-----------------------------------ONGLET INFORMATION------------------------------------>
-            <div class="tab-pane active" id="tab1">
-                <!----ENREGISTREMENT---->
-                <h2>Enregistrement</h2>
-                <div class="form-actions" > 
-                    <div class="control-group">
-                        <label class="control-label"><b>Nom&nbsp;d'utilisateur&nbsp;:*</b></label>
-                        <div class="controls">
-                                <span class="input-xlarge uneditable-input">Tom</span>
+        <div class="tabbable">
+            <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Information</a></li>
+            <li><a href="#tab2" data-toggle="tab">Avatar</a></li>
+            </ul>
+            <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid rgb(221, 221, 221);">
+    <!-----------------------------------ONGLET INFORMATION------------------------------------>
+                <div class="tab-pane active" id="tab1">
+                    <!----ENREGISTREMENT---->
+                    <h2>Enregistrement</h2>
+                    <div class="form-actions" > 
+                        <div class="control-group">
+                            <label class="control-label"><b>Nom&nbsp;d'utilisateur&nbsp;:*</b></label>
+                            <div class="controls">
+                                    <span class="input-xlarge uneditable-input">Tom</span>
+                            </div>
+                            <label class="control-label"><b>Adresse&nbsp;e-mail&nbsp;:*</b></label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge" id="input01" value="adresse@mail.com" type="text">
+                            </div>
+                            <label class="control-label"><b>Changer&nbsp;de&nbsp;mot&nbsp;de&nbsp;passe&nbsp;:*</b></label>
+                            <a class="btn btn-primary" href="./modifmdp.php">Modifier</a>
                         </div>
-                        <label class="control-label"><b>Adresse&nbsp;e-mail&nbsp;:*</b></label>
-                        <div class="controls">
-                            <input type="text" class="input-xlarge" id="input01" value="adresse@mail.com" type="text">
-                        </div>
-                        <label class="control-label"><b>Changer&nbsp;de&nbsp;mot&nbsp;de&nbsp;passe&nbsp;:*</b></label>
-                        <a class="btn btn-primary" href="./modifmdp.php">Modifier</a>
                     </div>
-                </div>
-                
-                <!----PROFIL PERSO---->
-                <h2>Profil personalisé</h2>
-                <div class="form-actions">
-                    <div class="control-group">
-                        <label class="control-label" for="inlineChekboxes"><b>Sexe</b></label>
-                        <div class="checkbox inline">
-                            <label class="checkbox inline">
-                                <input id="checkbox inline" value="option1" type="checkbox"> Homme
-                            </label>
-                            <label class="checkbox inline">
-                                <input id="checkbox inline" value="option2" type="checkbox"> Femme
-                            </label>
-                            
-                            <div class="control-group">
-                                <label class="control-label"><b>Date&nbsp;de&nbsp;naissance&nbsp;:</b></label>
+
+                    <!----PROFIL PERSO---->
+                    <h2>Profil personalisé</h2>
+                    <div class="form-actions">
+                        <div class="control-group">
+                            <label class="control-label" for="inlineChekboxes"><b>Sexe</b></label>
+                            <div class="checkbox inline">
+                                <label class="checkbox inline">
+                                    <input id="checkbox inline" value="option1" type="checkbox"> Homme
+                                </label>
+                                <label class="checkbox inline">
+                                    <input id="checkbox inline" value="option2" type="checkbox"> Femme
+                                </label>
+
                                 <div class="control-group">
-                                    <label class="control-label"></label>
-                                    <div class="controls docs-input-sizes">
-                                        <div>
-                                            <p> Date: <input class="hasDatepicker" id="datepicker" type="text"></p>   
-                                        </div> 
-                                        <label class="control-label"><b>Localisation</b></label>
-                                            <div class="controls">
-                                                <input type="text" class="input-xlarge" id="input01" value="Sarant" type="text">
-                                            </div>
+                                    <label class="control-label"><b>Date&nbsp;de&nbsp;naissance&nbsp;:</b></label>
+                                    <div class="control-group">
+                                        <label class="control-label"></label>
+                                        <div class="controls docs-input-sizes">
+                                            <div>
+                                                <p> Date: <input class="hasDatepicker" id="datepicker" type="text"></p>   
+                                            </div> 
+                                            <label class="control-label"><b>Localisation</b></label>
+                                                <div class="controls">
+                                                    <input type="text" class="input-xlarge" id="input01" value="Sarant" type="text">
+                                                </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-            
-            <!----PROFIL PERSO---->
-                <h2>Contacter</h2>
-                <div class="form-actions" > 
-                    <div class="control-group">
-                        <label class="control-label"><b>N°téléphone&nbsp;fixe</b></label>
-                        <div class="controls">
-                            <input type="text" class="input-xlarge" id="inputtelfixe" value="02 XX XX XX XX" type="text">
-                        </div>
-                        
-                        <label class="control-label"><b>N°téléphone&nbsp;portable</b></label>
-                        <div class="controls">
-                            <input type="text" class="input-xlarge" id="inputtelport" value="06 XX XX XX XX" type="text">
-                        </div>
-                        
-                        <label class="control-label"><b>Skype</b></label>
-                        <div class="controls">
-                            <input type="text" class="input-xlarge" value="Tom"> 
-                        </div>
+
+    <!-----------------------------------ONGLET PRÉFÉRENCES------------------------------------>           
+                <div class="tab-pane" id="tab2">
+                    <div class="form-actions">
+                        <p>Howdy, I'm in Section 2.</p>
                     </div>
                 </div>
-            </div>
 
-<!-----------------------------------ONGLET PRÉFÉRENCES------------------------------------>           
-            <div class="tab-pane" id="tab2">
-                <div class="form-actions">
-                    <p>Howdy, I'm in Section 2.</p>
-                </div>
-            </div>
-
-<!-----------------------------------ONGLET SIGNATURE------------------------------------>
-            <div class="tab-pane" id="tab3">
-                <div class="form-actions">
-                    <h2>Éditer&nbsp;la&nbsp;signature</h2>
-                    <fieldset class="container">
-                    <div>
-                        <form method="post" action="somepage">
-                                <textarea name="content" style="width:50%"></textarea>
-                        </form>
-                        <div>         
-                        </div>  
-                    </div>
-                 </fieldset>
-               </div>
-            </div>
-
-<!-----------------------------------ONGLET AVATAR------------------------------------>
-            <div class="tab-pane" id="tab4">
-                <div class="form-actions">
-                    <div>
-                        <h2>Image actuelle</h2>
-                            <ul class="thumbnails">
-                                <li class="span3">
-                                <a href="#" class="thumbnail">
-                                    <img src="http://placehold.it/260x180" alt="">
-                                </a>
-                                </li>   
-                            </ul>
-                    </div>
-                    <div class="control-group">
-                                <label class="control-label" for="Upluader une image">Upluader un Fichier</label>
-                                <div class="controls">
-                                    <input class="input-file" id="fileInputimage" type="file">
-                                </div> 
+    <!-----------------------------------ONGLET AVATAR------------------------------------>
+                <div class="tab-pane" id="tab4">
+                    <div class="form-actions">
+                        <div>
+                            <h2>Image actuelle</h2>
+                                <ul class="thumbnails">
+                                    <li class="span3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="http://placehold.it/260x180" alt="">
+                                    </a>
+                                    </li>   
+                                </ul>
                         </div>
-                </div>
-            </div>
-
-<!-----------------------------------ONGLET SUJET SURVEILLÉS------------------------------------>
-            <div class="tab-pane" id="tab5">
-                <div class="form-actions">
-                    <p>What up girl, this is Section 5.</p>
+                        <div class="control-group">
+                                    <label class="control-label" for="Upluader une image">Upluader un Fichier</label>
+                                    <div class="controls">
+                                        <input class="input-file" id="fileInputimage" type="file">
+                                    </div> 
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
-  
-
         <button type="submit" class="btn btn-primary">Enregistrer</button>
         <a class="btn btn-inverse" href="./modifmdp.php">Réinitialiser</a>
     </div>
