@@ -18,7 +18,7 @@
                             <div class="control-group">
                                 <label class="control-label" for="input01"><b>Pseudo</b></label>
                                 <div class="controls">
-                                    <input type="text" class="input-medium" id="input01" value="Tom">  
+                                    <input type="text" class="input-medium" id="input01" value="Tom"disabled>  
                                 </div>
                             </div>
                             <div class="control-group">
