@@ -80,12 +80,12 @@ function entete($titre)
                     </div>
                 </ul>
             </div>
-            <div class="nav-collapse">
-                <ul class="nav">
-                <input type="text" class="input-small" placeholder="Pseudo">
-                <input type="password" class="input-small" placeholder="Password">
-                <input type="checkbox"> Remember me
-                <button type="submit" class="btn">Sign in</button>
+            <div>
+                <ul>
+                    <input type="text" class="input-small" placeholder="Pseudo">
+                    <input type="password" class="input-small" placeholder="Password">
+                    <input type="checkbox"> Remember me
+                    <button type="submit" class="btn">Sign in</button>
                 </ul>    
             </div>
         </div>
