@@ -3,6 +3,8 @@
     entete("Administration");
 ?>       
 <div class="container">
+    <legend><a href="./categorie.php">>&nbsp;You&nbsp;see</a></legend>
+    </tr>
     <div class="row">
     <div class="span3">
     <div class="well sidebar-nav">
@@ -17,18 +19,9 @@
         <li><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="nav-header">Sidebar</li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
     </ul>
     </div>
     </div>
-    <thead>
-        <legend><a href="./categorie.php">>&nbsp;You&nbsp;see</a></legend>
-    </tr>
     </thead>    
     <div class="span9">        
     <ul class="breadcrumb">
