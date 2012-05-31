@@ -18,18 +18,18 @@
                 <th><b>Liste des utilisateurs</b></th>
             </tr>
             <tr class="row">
-                <th colspan="2"><center>ID </center></th>
-                <th colspan="4">Pseudo</th>
-                <th colspan="4">E-mail</th>
-                <th colspan="2">Modifications</th>
+                <th><center>ID </center></th>
+                <th>Pseudo</th>
+                <th>E-mail</th>
+                <th>Modifications</th>
             </tr>
         </thead>
         <tbody>
             <tr class="row">
-                <td colspan="2">1</td>
-                <td colspan="4">KirbyFR</td>
-                <td colspan="4">Kirby@live.fr</td>
-                <td colspan="2">
+                <td>1</td>
+                <td>KirbyFR</td>
+                <td>Kirby@live.fr</td>
+                <td>
                     <a class="btn" href="./editMembre.php">
                         <i class="icon-pencil"></i>
                     </a>
@@ -39,10 +39,10 @@
                 </td>
             </tr>
             <tr class="row">
-                <td colspan="2">2</td>
-                <td colspan="4">Kelevan</td>
-                <td colspan="4">Kelevan@live.fr</td>
-                <td colspan="2">
+                <td>2</td>
+                <td>Kelevan</td>
+                <td>Kelevan@live.fr</td>
+                <td>
                     <a class="btn" href="./editMembre.php">
                         <i class="icon-pencil"></i>
                     </a>
