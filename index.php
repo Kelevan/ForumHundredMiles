@@ -10,10 +10,10 @@
             <table class="table table-bordered table-condensed">
                 <thead>
                     <tr class="row">
-                        <th colspan="4"><h3>Nom&nbsp;du&nbsp;fichier</h3></th>
-                        <th colspan="4"><h3>Topic</h3></th>
-                        <th colspan="2"><h3>Propriétaire</h3></th>
-                        <th colspan="2"><h3>Types</h3></th>
+                        <th colspan="4"><h4>Nom&nbsp;du&nbsp;fichier</h4></th>
+                        <th colspan="4"><h4>Topic</h4></th>
+                        <th colspan="2"><h4>Propriétaire</h4></th>
+                        <th colspan="2"><h4>Types</h4></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,10 +33,10 @@
             <table class="table table-bordered table-condensed">
                 <thead>
                     <tr class="row">
-                        <th colspan="4"><h3>Nom&nbsp;du&nbsp;fichier</h3></th>
-                        <th colspan="4"><h3>Topic</h3></th>
-                        <th colspan="2"><h3>Propriétaire</h3></th>
-                        <th colspan="2"><h3>Types</h3></th>
+                        <th colspan="4"><h4>Nom&nbsp;du&nbsp;fichier</h4></th>
+                        <th colspan="4"><h4>Topic</h4></th>
+                        <th colspan="2"><h4>Propriétaire</h4></th>
+                        <th colspan="2"><h4>Types</h4></th>
                     </tr>
                 </thead>
                 <tbody>
