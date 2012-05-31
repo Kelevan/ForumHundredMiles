@@ -26,6 +26,10 @@
     </ul>
     </div>
     </div>
+    <thead>
+        <legend><a href="./categorie.php">>&nbsp;You&nbsp;see</a></legend>
+    </tr>
+    </thead>    
     <div class="span9">        
     <ul class="breadcrumb">
         <li><a href="./index.php">Home</a> <span class="divider">/</span></li>
@@ -35,26 +39,20 @@
         <li><a href="./message.php">You See</a></li>
     </ul>     
       <table class="table table-bordered table-condensed">
-        <thead>
-               
-            <tr class="row">
-                <th><a href="./categorie.php">>&nbsp;You&nbsp;see</a></th>
-            </tr>
-        </thead>
         <tbody>
             <tr class="row">
-                <td colspan="2">Valou <br/> image </td>
-                <td colspan="10"><a href="./message.php">Salut les pd ! fvrezjikrvojreoi  gjh iogr hhjnoi gjhi  j kogrp gtjio grr htr gri jgtrio grtz gjio gpb tr jibgop b hgtr,io p  nhtip hjgjtog bniogtp   jp   gtnjiohtjkhtrjioohrjikop   jhuhntglm b njiobh  bhntjnio  hy,,jiko hty  </a></td>
+                <td>Valou <br/> image </td>
+                <td><a href="./message.php">Salut les pd ! fvrezjikrvojreoi  gjh iogr hhjnoi gjhi  j kogrp gtjio grr htr gri jgtrio grtz gjio gpb tr jibgop b hgtr,io p  nhtip hjgjtog bniogtp   jp   gtnjiohtjkhtrjioohrjikop   jhuhntglm b njiobh  bhntjnio  hy,,jiko hty  </a></td>
             </tr>
             <tr class="row">
-                <td colspan="2">Thom <br/> image </td>
-                <td colspan="10"><a href="./message.php">HEUREUSEMENT QUE THOMAS EST PLUS BRINGGGGGGGGGGGGGGGGGGGGGGG MEEEEEEEEEEEEEEEEEEEEEEEEEEE QUE PINKIE BILLY SINON ON SERAIT PAS DANS LE CACA </a></td>
-            </tr>
-            <tr class="row">
-                <td colspan="12"> <center><a href="#">Marquer tout comme lus</a></center></td>
+                <td>Thom <br/> image </td>
+                <td><a href="./message.php">HEUREUSEMENT QUE THOMAS EST PLUS BRINGGGGGGGGGGGGGGGGGGGGGGG MEEEEEEEEEEEEEEEEEEEEEEEEEEE QUE PINKIE BILLY SINON ON SERAIT PAS DANS LE CACA </a></td>
             </tr>
         </tbody>
     </table>
+    <tr class="row">
+    <td> <center><a href="#">Marquer tout comme lus</a></center></td>
+    </tr>    
     <div class="btn">Répondre
     </div>    
     <div class="pagination">
