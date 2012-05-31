@@ -38,7 +38,7 @@
                                 <div class="controls">
                                     <input type="text" class="input-xlarge" id="inputtnouveau1" value="" type="text">
                                 </div>                                                        
-                                <label class="control-label"><b>Confirmation:*</b></label>
+                                <label class="control-label"><b>Confirmation&nbsp;:*</b></label>
                                 <div class="controls">
                                     <input type="text" class="input-xlarge" id="inputtnouveau2" value="" type="text">
                                 </div>
