@@ -37,7 +37,9 @@
                                 <label class="control-label"><b>Nouveau&nbsp;mot&nbsp;passe&nbsp;:*</b></label>
                                 <div class="controls">
                                     <input type="text" class="input-xlarge" id="inputtnouveau1" value="" type="text">
-                                </div>                                                        
+                                </div>
+                            </div>
+                            <div class="control-group">
                                 <label class="control-label"><b>Confirmation&nbsp;:*</b></label>
                                 <div class="controls">
                                     <input type="text" class="input-xlarge" id="inputtnouveau2" value="" type="text">
