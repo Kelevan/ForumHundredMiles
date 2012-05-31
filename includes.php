@@ -90,14 +90,14 @@ function pied()
 {
     echo'
     <div class="navbar navbar-bottom">
-    <footer class="footer-bottom">
-    <p class="pull-right"><a href="#">Back to top</a></p>
-    <p class="pull-left"><h3>By Kelevan & Kirby</h3></p>
-    </footer>
+        <footer class="footer-bottom">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p class="pull-left"><h3>By Kelevan & Kirby</h3></p>
+        </footer>
     </div>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/swfobject/js></script>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/dewplayer/swfobject.js></script>
     </div>
     </body>
     </html> ';

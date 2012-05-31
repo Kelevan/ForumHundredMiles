@@ -8,7 +8,7 @@
         <div class="span6">
             <legend>Derniers&nbsp;Fichiers</legend>
             
-            <object type="application/x-shockwave-flash" data="dewplayer-playlist.swf" width="200" height="20" id="dewplayer" name="dewplayer">
+            <object type="application/x-shockwave-flash" data="./dewplayer/dewplayer-playlist.swf" width="200" height="20" id="dewplayer" name="dewplayer-playlist">
                 <param name="movie" value="dewplayer.swf" />
                 <param name="flashvars" value="mp3=./audio/SleepAway.mp3" />
                 <param name="wmode" value="transparent" />
