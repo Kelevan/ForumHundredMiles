@@ -6,10 +6,12 @@
     <div class="container">
         <div class="tabbable"> 
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-                <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+                <li class="active"><a href="#tab1" data-toggle="tab">Information</a></li>
+                <li><a href="#tab2" data-toggle="tab">Avatar</a></li>
             </ul>
+            
             <div class="tab-content">
+                <!---- INFORMATION ----->
                 <div class="tab-pane active" id="tab1">
                     <form class="well form-horizontal">
                         <fieldset>
@@ -42,49 +44,18 @@
                                 </div>
                             </div>
                             <div class="form-actions">
-                                <button type="submit" class="btn btn-primary">Save changes</button>
-                                <button class="btn">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
                             </div>
                         </fieldset>
                     </form>
                 </div>
-                <div class="tab-pane" id="tab2">
-                    <p>Howdy, I'm in Section 2.</p>
-                </div>
-            </div>
-        </div>
-        <!--<div class="tabbable">
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab1" data-toggle="tab">Information</a></li>
-                <li><a href="#tab2" data-toggle="tab">Avatar</a></li>
-            </ul>
-            <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid rgb(221, 221, 221);">
                 
-                 INFORMATION 
-                <div class="tab-pane active" id="tab1">
-                    
-                        <fieldset>
-                            <div class="control-group">
-                                <label class="control-label" for="input01"><b>Pseudo</label>
-                                <div class="controls">
-                                <input type="text" class="input-medium" id="input01">
-                                </div>
-                            </div>
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary">Save changes</button>
-                                <button class="btn">Cancel</button>
-                            </div>
-                        </fieldset>
-                    
-                </div>
-            
-                
-                 AVATAR 
+                <!---- AVATAR ----->
                 <div class="tab-pane" id="tab2">
                     <form class="well form-horizontal">
                         <fieldset>
                             <div class="control-group">
-                                <label class="control-label"><b>Image actuelle</b></label>
+                                <label class="control-label"><b>Image&nbsp;actuelle</b></label>
                                 <div class="controls">
                                     <ul class="thumbnails">
                                         <li class="span3">
@@ -94,20 +65,22 @@
                                         </li>   
                                     </ul>
                                 </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="Upluaderimg"><b>Upluader&nbsp;un&nbsp;Fichier</b></label>
                                 <div class="controls">
-                                    <label class="control-label" for="Upluader une image">Upluader un Fichier</label>
-                                    <div class="controls">
-                                        <input class="input-file" id="fileInputimage" type="file">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                        <input class="input-file" id="fileInputimage" type="file">                                    
                                 </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
                             </div>
                         </fieldset>
                     </form>
                 </div>
             </div>
-        </div> -->
-
+        </div>
+        
 <?php
     pied();
 ?> 
