@@ -28,6 +28,16 @@
                         </div>
                     </div> 
                     <div class="control-group">
+                        <label class="control-label" for="select01"><b>Changer son droit</b></label>
+                        <div class="controls">
+                        <select id="select01">
+                            <option>Utilisateur</option>
+                            <option>Modérateur</option>
+                            <option>Administrateur</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
                         <label class="control-label"><b>Mot&nbsp;de&nbsp;passe&nbsp;:*</b></label>   
                         <div class="controls">
                             <input type="text" class="input-xlarge" id="inputtactuel" value="" type="text">
