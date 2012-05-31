@@ -2,29 +2,38 @@
     include_once("./includes.php");
     entete("Administration");
 ?> 
+
+   
+  
+
     <div class="container">
       <div class="row">  
 <!----------- Tab FICHIERS ----------->         
-        <div class="span3">
+        <div class="span6">
             <legend>Derniers&nbsp;Fichiers</legend>
+            
+            
+           
+            
+            
         </div>
 
 <!----------- Tab Topics/Messages ----------->
-          <div class="span9">
+          <div class="span6">
             <legend>Dernières&nbsp;news</legend>
             <table class="table table-bordered table-condensed">
                 <thead>
-                    <tr class="row">
-                        <th colspan="6"><h4>Topic</h4></th>
-                        <th colspan="3"><h4>Auteur</h4></th>
-                        <th colspan="3"><h4>Date</h4></th>
+                    <tr>
+                        <th><h4>Topic</h4></th>
+                        <th><h4>Auteur</h4></th>
+                        <th><h4>Date</h4></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="row">
-                        <td colspan="6"><a href="./message.php">Lyrics</a></td>
-                        <td colspan="3">Val</td>
-                        <td colspan="3">31/05/12</td>
+                    <tr>
+                        <td><a href="./message.php">Lyrics</a></td>
+                        <td>Val</td>
+                        <td>31/05/12</td>
                     </tr>
                 </tbody>
             </table>

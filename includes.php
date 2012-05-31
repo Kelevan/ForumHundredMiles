@@ -9,24 +9,24 @@ function entete($titre)
         <!DOCTYPE html>
         <html>
         <head>
-        <meta charset="utf-8">
-        <title>Hundred Miles :: '.$titre.'</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+            <meta charset="utf-8">
+            <title>Hundred Miles :: '.$titre.'</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="">
+            <meta name="author" content="">
 
-        <!-- Le styles -->
-        <style type="text/css">
-        body {
-            padding-top: 60px;
-            padding-bottom: 40px;
-        }
-        .sidebar-nav {
-            padding: 9px 0;
-        }
-        </style>        
-        <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
-        <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+            <!-- Le styles -->
+            <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+            </style>        
+            <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
+            <link href="./css/bootstrap-responsive.css" rel="stylesheet">
         </head>
         <body>
         <div class="navbar navbar-fixed-top">
@@ -96,6 +96,9 @@ function pied()
     </div>
         <script src="./js/jquery.js"></script>
         <script src="./js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.jplayer.min.js"></script>
+        <script type="text/javascript" src="./js/jplayer.playlist.min.js"></script>
+        
     </div>
     </body>
     </html> ';
