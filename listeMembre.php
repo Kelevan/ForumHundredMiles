@@ -33,13 +33,23 @@
                     <a class="btn" href="./editMembre.php">
                         <i class="icon-pencil"></i>
                     </a>
+                    <a class="btn btn-danger" href="">
+                        <i class="icon-remove"></i>
+                    </a>
                 </td>
             </tr>
             <tr class="row">
                 <td colspan="2">2</td>
                 <td colspan="4">Kelevan</td>
                 <td colspan="4">Kelevan@live.fr</td>
-                <td colspan="2">boutons</td>
+                <td colspan="2">
+                    <a class="btn" href="./editMembre.php">
+                        <i class="icon-pencil"></i>
+                    </a>
+                    <a class="btn btn-danger" href="">
+                        <i class="icon-remove"></i>
+                    </a>
+                </td>
             </tr>
         </tbody>
     </table>
