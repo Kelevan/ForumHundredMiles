@@ -15,7 +15,7 @@
       <table class="table table-bordered table-condensed">
         <thead>
             <tr class="row">               
-                <th><a href="#">Gestion des utilisateurs</a></th>
+                <th><b>Liste des catégories</b></th>
             </tr>
             <tr class="row">
                 <th colspan="2"><center>ID </center></th>
@@ -27,7 +27,14 @@
             <tr class="row">
                 <td colspan="2">1</td>
                 <td colspan="4">Organisation</td>
-                <td colspan="4">boutons</td>
+                <td colspan="4">
+                    <a class="btn" href="./editCategorie.php">
+                        <i class="icon-pencil"></i>
+                    </a>
+                    <a class="btn btn-danger" href="">
+                        <i class="icon-remove"></i>
+                    </a>
+                </td>
             </tr>
         </tbody>
     </table>

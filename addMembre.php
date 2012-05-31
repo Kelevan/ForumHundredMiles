@@ -28,7 +28,7 @@
                         </div>
                     </div> 
                     <div class="control-group">
-                        <label class="control-label" for="select01"><b>Changer son droit</b></label>
+                        <label class="control-label" for="select01"><b>Ajouter un rôle</b></label>
                         <div class="controls">
                         <select id="select01">
                             <option>Utilisateur</option>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary">Ajouter</button>
-                        <boutton type="reset" class="btn btn-warning">Annuler</boutton>
+                        <button type="reset" class="btn btn-warning">Annuler</button>
                     </div>
                 </fieldset>
             </form>

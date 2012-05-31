@@ -63,7 +63,7 @@
                         </div>
                         <div class="form-actions">
                             <button type="submit" class="btn btn-primary">Modifier</button>
-                            <boutton type="reset" class="btn btn-warning">Annuler</boutton>
+                            <button type="reset" class="btn btn-warning">Annuler</button>
                         </div>
                     </fieldset>
                 </form>
