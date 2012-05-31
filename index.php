@@ -18,7 +18,7 @@
                 </thead>
                 <tbody>
                     <tr class="row">
-                        <td colspan="4">2 see</td>
+                        <td colspan="4"><a href="./audio/SleepAway.mp3">2 see</a></td>
                         <td colspan="4">Lyrics</td>
                         <td colspan="2">Val</td>
                         <td colspan="2">Audio</td>
@@ -33,18 +33,16 @@
             <table class="table table-bordered table-condensed">
                 <thead>
                     <tr class="row">
-                        <th colspan="4"><h4>Nom&nbsp;du&nbsp;fichier</h4></th>
-                        <th colspan="4"><h4>Topic</h4></th>
-                        <th colspan="2"><h4>Propriétaire</h4></th>
-                        <th colspan="2"><h4>Types</h4></th>
+                        <th colspan="6"><h4>Topic</h4></th>
+                        <th colspan="3"><h4>Auteur</h4></th>
+                        <th colspan="3"><h4>Date</h4></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="row">
-                        <td colspan="4">2 see</td>
-                        <td colspan="4">Lyrics</td>
-                        <td colspan="2">Val</td>
-                        <td colspan="2">Audio</td>
+                        <td colspan="6"><a href="./message.php">Lyrics</a></td>
+                        <td colspan="3">Val</td>
+                        <td colspan="3">31/05/12</td>
                     </tr>
                 </tbody>
             </table>
