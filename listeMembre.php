@@ -15,7 +15,7 @@
       <table class="table table-bordered table-condensed">
         <thead>
             <tr class="row">               
-                <th><a href="#">Gestion des utilisateurs</a></th>
+                <th><b>Liste des utilisateurs</b></th>
             </tr>
             <tr class="row">
                 <th colspan="2"><center>ID </center></th>
