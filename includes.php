@@ -24,10 +24,10 @@ function entete($titre)
         .sidebar-nav {
             padding: 9px 0;
         }
-        </style>
+        </style>        
         <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
         <link href="./css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="./css/style.css"
+        <link href="./css/styles.css">
         </head>
         <body>
         <div class="navbar navbar-fixed-top">

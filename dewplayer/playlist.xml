@@ -14,6 +14,13 @@
           <duration>32000</duration>
           <info></info>
         </track>
-
+        <track>
+          <location>./audio/kalimba.mp3</location>
+          <creator>Val</creator>
+          <title>Kalimba</title>
+          <annotation>Pwet</annotation>
+          <duration>54800</duration>
+          <info></info>
+        </track>
     </trackList>
 </playlist>
