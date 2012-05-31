@@ -7,7 +7,14 @@
 <!----------- Tab FICHIERS ----------->         
         <div class="span6">
             <legend>Derniers&nbsp;Fichiers</legend>
-            <table class="table table-bordered table-condensed">
+            
+            <object type="application/x-shockwave-flash" data="dewplayer-playlist.swf" width="200" height="20" id="dewplayer" name="dewplayer">
+                <param name="movie" value="dewplayer.swf" />
+                <param name="flashvars" value="mp3=./audio/SleepAway.mp3" />
+                <param name="wmode" value="transparent" />
+            </object>
+            
+            <!--<table class="table table-bordered table-condensed">
                 <thead>
                     <tr class="row">
                         <th colspan="4"><h4>Nom&nbsp;du&nbsp;fichier</h4></th>
@@ -24,7 +31,7 @@
                         <td colspan="2">Audio</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
         </div>
 
 <!----------- Tab Topics/Messages ----------->
