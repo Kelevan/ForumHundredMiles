@@ -7,12 +7,6 @@
 <!----------- Tab FICHIERS ----------->         
         <div class="span3">
             <legend>Derniers&nbsp;Fichiers</legend>
-            
-            <object type="application/x-shockwave-flash" data="./dewplayer/dewplayer-playlist.swf" width="240" height="200" id="dewplayerls" name="dewplayerls">
-              
-                <param name="movie" value="./dewplayer/dewplayer-playlist.swf" />
-                <param name="flashvars" value="showtime=true&autoreplay=true&xml=./dewplayer/playlist.xml" />                
-            </object>
         </div>
 
 <!----------- Tab Topics/Messages ----------->
