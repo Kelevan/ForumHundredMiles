@@ -10,7 +10,6 @@
     </ul>    
     <div class="row">          
     <div class="span12">
-    <div class="hero-unit">
     <h3>Ajouter un membre</h3><br/>
     <div id="form_container">
         <div class="tab-pane active" id="tab1">
@@ -42,15 +41,14 @@
                     </div>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary">Ajouter</button>
-                        <input id="resetForm" class="btn btn-warning" type="reset" name="reset" value="Annuler"/>
+                        <boutton type="reset" class="btn btn-warning">Annuler</boutton>
                     </div>
                 </fieldset>
             </form>
         </div>
     </div>
-</div>
-</div>
-</div>  
+    </div>
+    </div>  
 <?php
     pied();
 ?>
