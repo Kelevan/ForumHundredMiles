@@ -36,18 +36,19 @@
                     <div id="myModal" class="modal hide fade">
                         <div class="modal-header">
                         <button class="close" data-dismiss="modal">&times;</button>
-                        <h3>Voulez-vous vraiment supprimer KirbyFr ?</h3>
+                        <h3>Suppression d'un utilisateur</h3>
                         </div>
                         <div class="modal-body">
+                        <h5>Etes-vous sur de vouloir supprimer l'utilisateur KirbyFr ?</h5>    
+                        </div>
                         <div class="modal-footer">
                         <a href="#" class="btn btn-primary">Oui</a>
-                        <a href="#" class="btn btn-warning" data-dismiss="modal" >Non</a>
-                        </div>
+                        <a href="#" class="btn btn-warning" data-dismiss="modal">Non</a>
                         </div>
                     </div>    
                     <a data-toggle="modal" href="#myModal" class="btn btn-danger">
                         <i class="icon-remove"></i>
-                    </a> 
+                    </a>  
                 </td>
             </tr>
             <tr class="row">
@@ -61,25 +62,25 @@
                     <div id="myModal" class="modal hide fade">
                         <div class="modal-header">
                         <button class="close" data-dismiss="modal">&times;</button>
-                        <h3>Voulez-vous vraiment supprimer Kelevan ?</h3>
+                        <h3>Suppression d'un utilisateur</h3>
                         </div>
                         <div class="modal-body">
+                        <h5>Etes-vous sur de vouloir supprimer l'utilisateur Kelevan ?</h5>    
+                        </div>
                         <div class="modal-footer">
                         <a href="#" class="btn btn-primary">Oui</a>
-                        <a href="#" class="btn btn-warning" data-dismiss="modal" >Non</a>
-                        </div>
+                        <a href="#" class="btn btn-warning" data-dismiss="modal">Non</a>
                         </div>
                     </div>    
                     <a data-toggle="modal" href="#myModal" class="btn btn-danger">
                         <i class="icon-remove"></i>
                     </a>  
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
-    </div>
-    </div>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
 <?php
     pied();
 ?>        
