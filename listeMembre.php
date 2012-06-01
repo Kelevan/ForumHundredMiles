@@ -30,7 +30,7 @@
                 <td>KirbyFR</td>
                 <td>Kirby@live.fr</td>
                 <td>
-                  <a class="btn" href="./editCatégorie.php">
+                  <a class="btn" href="./editMembre.php">
                         <i class="icon-pencil"></i>
                     </a>
                     <div id="myModal" class="modal hide fade">
@@ -56,7 +56,7 @@
                 <td>Kelevan</td>
                 <td>Kelevan@live.fr</td>
                 <td>
-                    <a class="btn" href="./editCatégorie.php">
+                    <a class="btn" href="./editMembre.php">
                         <i class="icon-pencil"></i>
                     </a>
                     <div id="myModal" class="modal hide fade">

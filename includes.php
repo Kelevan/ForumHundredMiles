@@ -49,7 +49,7 @@ function entete($titre)
                     <li class="divider"></li>
                     <li><a href="#">Se déconnecter</a></li>
                     </ul>
-                </div>
+                </div>      
                 <div class="nav-collapse">
                     <ul class="nav">             
                         <div class="tabbable">
@@ -76,11 +76,37 @@ function entete($titre)
                                             <li><a href="./listeForum.php">Gestion des forums</a></li>
                                         </ul>
                                     </li>
-                                </ul>
+                                </ul>        
+                                </ul class="nav">
+                                <ul class="nav nav-pills">
+                                <li class="">
+                                    <div id="myModal" class="modal hide fade">
+                                        <div class="modal-header">
+                                        <button class="close" data-dismiss="modal">&times;</button>
+                                        <h3>Se connecter</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="well form-inline">
+                                                <input type="text" class="input-small" placeholder="Email">
+                                                <input type="password" class="input-small" placeholder="Password">
+                                                <label class="checkbox">
+                                                <input type="checkbox"> Remember me
+                                                </label>
+                                                <button type="submit" class="btn">Sign in</button>
+                                            </form>    
+                                        </div>
+                                        <div class="modal-footer">
+                                        <a href="#" class="btn btn-primary">Se connecter</a>
+                                        <a href="#" class="btn btn-warning" data-dismiss="modal">Annuler</a>
+                                        </div>
+                                    </div>    
+                                    <a data-toggle="modal" href="#myModal" class="btn btn-danger">
+                                    <i class="icon-remove"></i>
+                                    </a> 
+                                </li>
+                                </ul>   
                             </ul>
-                        </div>
-                    </ul>
-                </div>
+                        </div> 
                 </div>
             </div>
             </div>';
