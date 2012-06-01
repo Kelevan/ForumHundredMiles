@@ -30,24 +30,24 @@
                         </div>
                     </div> 
                     <div class="control-group">
-                        <label class="control-label" for="select01"><b>ID catégorie</b></label>
+                        <label class="control-label" for="select01"><b>Nom catégorie</b></label>
                         <div class="controls">
                         <select id="select01">
-                            <option>1</option>
+                            <option>Organisation</option>
                         </select>
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="select01"><b>ID forum père</b></label>
+                        <label class="control-label" for="select01"><b>Nom du forum père</b></label>
                         <div class="controls">
                         <select id="select01">
-                            <option>0</option>
-                            <option>1</option>
+                            <option></option>
+                            <option>Lyrics</option>
                         </select>
                         </div>
                     </div>
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Ajouter</button>
+                        <button type="submit" class="btn btn-primary">Modifier</button>
                         <button type="reset" class="btn btn-warning">Annuler</button>
                     </div>
                 </fieldset>

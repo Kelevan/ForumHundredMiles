@@ -36,7 +36,7 @@
                         </div>
                     </div> 
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Ajouter</button>
+                        <button type="submit" class="btn btn-primary">modifier</button>
                         <button type="reset" class="btn btn-warning">Annuler</button>
                     </div>
                 </fieldset>

@@ -23,10 +23,12 @@
                 Page <a href="#">1</a> sur <a href="#">2</a> [<a href="#">11</a>sujets]
             </tr>
             <tr class="row">
+                
+                <th></th>
                 <th><center>Topics </center></th>
-                <th>Réponses</th>
-                <th>Vues</th>
-                <th>Dernier Messages</th>
+                <th><center>Réponses</center></th>
+                <th><center>Vues</center></th>
+                <th><center>Dernier Messages</center></th>
             </tr>
         </thead>
         <tbody>
