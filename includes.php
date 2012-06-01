@@ -101,7 +101,7 @@ function entete($titre)
                                         </div>
                                     </div>    
                                     <a data-toggle="modal" href="#myModal" class="btn btn-danger">
-                                    <i class="icon-remove"></i>
+                                    <i>Se connecter</i>
                                     </a> 
                                 </li>
                                 </ul>   
