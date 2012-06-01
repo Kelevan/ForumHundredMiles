@@ -27,79 +27,77 @@ function entete($titre)
             </style>        
             <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
             <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+
         </head>
         <body>
-        <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="./index.php">Hundred Miles</a>
-            <div class="btn-group pull-right">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                <i class="icon-user"></i> Username
-                <span class="caret"></span>
+            <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </a>
-                <ul class="dropdown-menu">
-                <li><a href="./profil.php">Profil</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Se déconnecter</a></li>
-                </ul>
-            </div>
-            <div class="nav-collapse">
-                <ul class="nav">             
-                    <div class="tabbable">
-                        <ul class="nav nav-pills">
+                <a class="brand" href="./index.php">Hundred Miles</a>
+                <div class="btn-group pull-right">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-user"></i> Username
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="./profil.php">Profil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Se déconnecter</a></li>
+                    </ul>
+                </div>
+                <div class="nav-collapse">
+                    <ul class="nav">             
+                        <div class="tabbable">
                             <ul class="nav nav-pills">
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#tab1">Organisation</a></li>
-                                        <li><a href="./categorie.php">Musiques</a></li>
-                                        <li><a href="#tab2">Concerts</a></li>
-                                        <li><a href="#tab2">Equipe</a></li>
-                                        <li><a href="#tab2">Groupes</a></li>
-                                        <li><a href="#tab2">Support</a></li>
-                                    </ul>
-                                </li>
+                                <ul class="nav nav-pills">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#tab1">Organisation</a></li>
+                                            <li><a href="./categorie.php">Musiques</a></li>
+                                            <li><a href="#tab2">Concerts</a></li>
+                                            <li><a href="#tab2">Equipe</a></li>
+                                            <li><a href="#tab2">Groupes</a></li>
+                                            <li><a href="#tab2">Support</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-pills">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
+                                            <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
+                                            <li><a href="./listeForum.php">Gestion des forums</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </ul>
-                            <ul class="nav nav-pills">
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
-                                        <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
-                                        <li><a href="./listeForum.php">Gestion des forums</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </ul>
-                    </div>
-                </ul>
+                        </div>
+                    </ul>
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
-        </div>';
-}
+            </div>';
+    }
 
-function pied()
-{
-    echo'
-    <div class="navbar navbar-bottom">
-        <footer class="footer-bottom">
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p class="pull-left"><h3>By Kelevan & Kirby</h3></p>
-        </footer>
-    </div>
+    function pied()
+    {
+        echo'
+        <div class="navbar navbar-bottom">
+            <footer class="footer-bottom">
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p class="pull-left"><h3>By Kelevan & Kirby</h3></p>
+            </footer>
+        </div>
         <script src="./js/jquery.js"></script>
         <script src="./js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="./js/jquery.jplayer.min.js"></script>
-        <script type="text/javascript" src="./js/jplayer.playlist.min.js"></script>
-        
-    </div>
+        </div>
     </body>
     </html> ';
 }
