@@ -4,25 +4,23 @@
 ?>       
 <div class="container">
     <legend><a href="./categorie.php">>&nbsp;You&nbsp;see</a></legend>
-    </tr>
     <div class="row">
-    <div class="span3">
-    <div class="well sidebar-nav">
-    <ul class="nav nav-list">
-        <li class="nav-header">Dernier fichier upload</li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="nav-header">Sidebar</li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-    </ul>
-    </div>
-    </div>
-    </thead>    
+        <div class="span3">
+        <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+            <li class="nav-header">Dernier fichier upload</li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="nav-header">Sidebar</li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+        </div>
+        </div>
     <div class="span9">        
     <ul class="breadcrumb">
         <li><a href="./index.php">Home</a> <span class="divider">/</span></li>
