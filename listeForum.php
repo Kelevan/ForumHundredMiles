@@ -34,13 +34,14 @@
                     <div id="myModal" class="modal hide fade">
                         <div class="modal-header">
                         <button class="close" data-dismiss="modal">&times;</button>
-                        <h3>Voulez-vous vraiment supprimer Lyrics ?</h3>
+                        <h3>Suppression d'un forum</h3>
                         </div>
                         <div class="modal-body">
+                        <h5>Etes-vous sur de vouloir supprimer le forum Lyrics ?</h5>    
+                        </div>
                         <div class="modal-footer">
                         <a href="#" class="btn btn-primary">Oui</a>
                         <a href="#" class="btn btn-warning" data-dismiss="modal">Non</a>
-                        </div>
                         </div>
                     </div>    
                     <a data-toggle="modal" href="#myModal" class="btn btn-danger">
