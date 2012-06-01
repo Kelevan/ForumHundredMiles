@@ -78,37 +78,33 @@ function entete($titre)
                                     </li>
                                 </ul>        
                                 </ul class="nav">
-                                <ul class="nav nav-pills">
-                                <li class="">
-                                    <div id="myModal" class="modal hide fade">
-                                        <div class="modal-header">
-                                        <button class="close" data-dismiss="modal">&times;</button>
-                                        <h3>Se connecter</h3>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form class="well form-inline">
-                                                <input type="text" class="input-small" placeholder="Email">
-                                                <input type="password" class="input-small" placeholder="Password">
-                                                <label class="checkbox">
-                                                <input type="checkbox"> Remember me
-                                                </label>
-                                                <button type="submit" class="btn">Sign in</button>
-                                            </form>    
-                                        </div>
-                                        <div class="modal-footer">
-                                        <a href="#" class="btn btn-primary">Se connecter</a>
-                                        <a href="#" class="btn btn-warning" data-dismiss="modal">Annuler</a>
-                                        </div>
-                                    </div>    
-                                    <a data-toggle="modal" href="#myModal" class="btn btn-danger">
-                                    <i>Se connecter</i>
-                                    </a> 
-                                </li>
-                                </ul>   
-                            </ul>
+                                    <ul class="nav nav-pills">
+                                        <a data-toggle="modal" href="#myModal" class="btn btn-danger"><i>Se connecter</i></a> 
+                                    </ul>   
+                                </ul>
                         </div> 
                 </div>
             </div>
+            </div>
+            <div id="myModal" class="modal hide fade">
+                <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h3>Se connecter</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="well form-inline">
+                        <input type="text" class="input-small" placeholder="Email">
+                        <input type="password" class="input-small" placeholder="Password">
+                        <label class="checkbox">
+                        <input type="checkbox"> Remember me
+                        </label>
+                        <button type="submit" class="btn">Sign in</button>
+                    </form>    
+                </div>
+                <div class="modal-footer">
+                <a href="#" class="btn btn-primary">Se connecter</a>
+                <a href="#" class="btn btn-warning" data-dismiss="modal">Annuler</a>
+                </div>
             </div>';
     }
 
