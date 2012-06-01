@@ -28,7 +28,7 @@
                 <td>1</td>
                 <td>Organisation</td>
                 <td>
-                    <a class="btn" href="./editCatégorie.php">
+                    <a class="btn" href="./editCategorie.php">
                         <i class="icon-pencil"></i>
                     </a>
                     <div id="myModal" class="modal hide fade">
