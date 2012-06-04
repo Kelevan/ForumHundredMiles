@@ -119,7 +119,6 @@ function entete($titre)
                 <div class="modal-body">
                     <div class="tab-pane active" id="tab1">
                     <form class="well form-horizontal">
-                        <fieldset>
                             <div class="control-group">
                                 <label class="control-label" for="input01"><b>E-mail</b></label>
                                 <div class="controls">
@@ -131,15 +130,14 @@ function entete($titre)
                                 <div class="controls">
                                     <input type="text" class="input-medium" id="input01" value="********">  
                                 </div>
-                            </div> 
+                            </div>
+                </div>             
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary">Se connecter</button>
                                 <button type="reset" class="btn btn-warning">Annuler</button>
                             </div>
-                        </fieldset>
                     </form>
-                    </div>    
-                </div>
+                    </div>                   
             </div>';
     }
 
