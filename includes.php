@@ -40,16 +40,16 @@ function entete($titre)
                 </a>
                 <a class="brand" href="./index.php">Hundred Miles</a>
                 <div class="btn-group pull-right">
-                    <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a>
-                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="icon-user"></i> Username
-                    <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a href="./profil.php">Profil</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Se déconnecter</a></li>
-                    </ul>
+                        <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="icon-user"></i> Username
+                        <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./profil.php">Profil</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Se déconnecter</a></li>
+                        </ul>
                 </div>      
                 <div class="nav-collapse">
                     <ul class="nav">             
