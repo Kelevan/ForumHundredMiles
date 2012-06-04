@@ -10,17 +10,18 @@
             <div class="controls">
                 <input type="text" class="input-medium" id="input01">  
             </div>
+            <div class="controls">
+                <label class="control-label" for="input02"></label>
+                <textarea name="content" style="width:50%" id="input02"></textarea>  
+            </div>
         </div>
-        <div class="control-group">
-        <label class="control-label" for="input02">
-        <textarea name="content" style="width:50%" id="input02"></textarea>  
-        </label>
-        </div>      
+
+    </form>        
         <div class="form-actions">
             <button type="submit" class="btn btn-success">Envoyer</button>
             <button type="reset" class="btn btn-warning">Annuler</button>                   
         </div>
-    </form>
+
 
 <?php
     pied();;
