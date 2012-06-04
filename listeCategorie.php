@@ -31,7 +31,7 @@
                     <a class="btn" href="./editCategorie.php">
                         <i class="icon-pencil"></i>
                     </a>
-                    <div id="myModal" class="modal hide fade">
+                    <div id="SuppresionCategorie" class="modal hide fade">
                         <div class="modal-header">
                         <button class="close" data-dismiss="modal">&times;</button>
                         <h3>Suppression d'une catégorie</h3>
@@ -44,7 +44,7 @@
                         <a href="#" class="btn btn-warning" data-dismiss="modal">Non</a>
                         </div>
                     </div>    
-                    <a data-toggle="modal" href="#myModal" class="btn btn-danger">
+                    <a data-toggle="modal" href="#SuppresionCategorie" class="btn btn-danger">
                         <i class="icon-remove"></i>
                     </a>   
                 </td>

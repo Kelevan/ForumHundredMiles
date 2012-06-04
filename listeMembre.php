@@ -33,7 +33,7 @@
                             <a class="btn" href="./editMembre.php">
                                     <i class="icon-pencil"></i>
                                 </a>
-                                <div id="myModal" class="modal hide fade">
+                                <div id="SuppressionMembre" class="modal hide fade">
                                     <div class="modal-header">
                                     <button class="close" data-dismiss="modal">&times;</button>
                                     <h3>Suppression d'un utilisateur</h3>
@@ -46,7 +46,7 @@
                                     <a href="#" class="btn btn-warning" data-dismiss="modal">Non</a>
                                     </div>
                                 </div>    
-                                <a data-toggle="modal" href="#myModal" class="btn btn-danger">
+                                <a data-toggle="modal" href="#SuppressionMembre" class="btn btn-danger">
                                     <i class="icon-remove"></i>
                                 </a>  
                             </td>
@@ -59,7 +59,7 @@
                                 <a class="btn" href="./editMembre.php">
                                     <i class="icon-pencil"></i>
                                 </a>
-                                <div id="myModal" class="modal hide fade">
+                                <div id="SuppressionMembre1" class="modal hide fade">
                                     <div class="modal-header">
                                     <button class="close" data-dismiss="modal">&times;</button>
                                     <h3>Suppression d'un utilisateur</h3>
@@ -72,7 +72,7 @@
                                     <a href="#" class="btn btn-warning" data-dismiss="modal">Non</a>
                                     </div>
                                 </div>    
-                                <a data-toggle="modal" href="#myModal" class="btn btn-danger">
+                                <a data-toggle="modal" href="#SuppressionMembre1" class="btn btn-danger">
                                     <i class="icon-remove"></i>
                                 </a>  
                             </tr>

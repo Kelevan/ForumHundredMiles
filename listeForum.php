@@ -30,7 +30,7 @@
                     <a class="btn" href="./editForum.php">
                         <i class="icon-pencil"></i>
                     </a>
-                    <div id="myModal" class="modal hide fade">
+                    <div id="SuppresionForum" class="modal hide fade">
                         <div class="modal-header">
                         <button class="close" data-dismiss="modal">&times;</button>
                         <h3>Suppression d'un forum</h3>
@@ -43,7 +43,7 @@
                         <a href="#" class="btn btn-warning" data-dismiss="modal">Non</a>
                         </div>
                     </div>    
-                    <a data-toggle="modal" href="#myModal" class="btn btn-danger">
+                    <a data-toggle="modal" href="#SuppresionForum" class="btn btn-danger">
                         <i class="icon-remove"></i>
                     </a>                   
                 </td>
