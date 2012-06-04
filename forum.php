@@ -51,7 +51,7 @@
      </form>
      
 <!------------------ TOPICS ------------------>
-    <div class="row">     
+    <!--- <div class="row">     
         <div class="span3">
             <div class="well sidebar-nav">
             <ul class="nav nav-list">
@@ -59,9 +59,9 @@
                 <li><a href="./audio/SleepAway.mp3">2 see</a></li>
             </ul>
             </div>
-        </div>
+        </div> 
         
-        <div class="span9">
+        <div class="span9">-->
         <form class="well">   
             <table class="table table-bordered table-condensed">
             <legend><a href="#">> Lyrics</a></legend>
@@ -87,10 +87,8 @@
             </tbody>
             </table>
         </form>
-        </div>
-
-        
-    </div>
+        </div>        
+    <!-- </div> -->
      
 <?php
     pied();

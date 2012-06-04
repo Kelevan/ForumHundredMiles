@@ -44,16 +44,18 @@
                 <table class="table table-bordered table-condensed">
                     <thead>
                         <tr>
+                            <th><h4>Forum</h4></th>
                             <th><h4>Topic</h4></th>
-                            <th><h4>Auteur</h4></th>
-                            <th><h4>Date</h4></th>
+                            <th><h4>Sujets</h4></th>
+                            <th><h4>Dernier Messages</h4></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="./message.php">Lyrics</a></td>
-                            <td>Val</td>
-                            <td>31/05/12</td>
+                            <td><a href="./forum.php">Lyrics</a></td>
+                            <td><a href="./topic.php">Lyrics</a></td>
+                            <td><a href="./message.php">2 see</a></td>
+                            <td>Mer mar 14, 2012 3:05pm<br/>Tom</td>
                         </tr>
                     </tbody>
                 </table>
