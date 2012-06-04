@@ -37,33 +37,27 @@
         <li><a href="./topic.php">Lyrics</a><span class="divider">/</span></li>
         <li><a href="./message.php">You&nbsp;See</a></span></li>
         </ul>
-    </div>
       
       
       
       <!------------MESSAGE---------------->  
-      <fieldset class="container">
-          <div>
-            <form method="post" action="somepage">
-                <textarea name="content" style="width:50%"></textarea>
-            </form>
-              <div class="control-group">
+      
+      <form method="post" action="somepage" class="well">
+            <textarea name="content" style="width:50%"></textarea>            
+            <div class="control-group">
                 <label class="control-label" for="Upluader un Fichier">Uploader&nbsp;un&nbsp;Fichier</label>
                 <div class="controls">
                     <input class="input-file" id="fileInput" type="file">
                 </div> 
-              </div>
-            <div>     
-                <div class="form-actions">
-                    <div class="row">
-                        <div class="span1"> <button type="submit" class="btn btn-success">Répondre</button></div>
-                        <div class="span1"> <button class="btn btn-info">Aperçu</button></div>
-                        <div class="span1"> <button class="btn btn-warning">Annuler</button></div>                    
-                    </div>
-                </div>     
-            </div>  
-         </div>
+            </div>            
+      </form>
+      
+            <div class="form-actions">
+                <div class="row">
+                    <div class="span1"> <button type="submit" class="btn btn-success">Répondre</button></div>
+                    <div class="span1"> <button class="btn btn-warning">Annuler</button></div>                    
+                </div>
+            </div>
 <?php
     pied();
-?>              
-     </fieldset>
+?>            
