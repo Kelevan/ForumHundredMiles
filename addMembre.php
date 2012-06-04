@@ -9,7 +9,7 @@
         <li><a href="./editMembre.php">Modifier un membre</a></li>
     </ul>    
     <div class="row">          
-    <div class="span12">
+    <div>
     <h3>Ajouter un membre</h3><br/>
     <div id="form_container">
         <div class="tab-pane active" id="tab1">

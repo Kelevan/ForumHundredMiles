@@ -9,7 +9,7 @@
         <li><a href="./editForum.php">Modifier un forum</a></li>
     </ul>    
     <div class="row">          
-    <div class="span12">
+    <div>
     <h3>Ajouter un forum</h3><br/>
     <div id="form_container">
         <div class="tab-pane active" id="tab1">

@@ -19,28 +19,28 @@
 
             </tr>
             <tr calss="row">
-                <th colspan="7"><center>Forums </center></th>
-                <th colspan="1">Sujets</th>
-                <th colspan="1">Messages</th>
-                <th colspan="3">Dernier message</th>
+                <th><center>Forums </center></th>
+                <th>Sujets</th>
+                <th>Messages</th>
+                <th>Dernier message</th>
             </tr>
         </thead>
         <tbody>
             <tr calss="row">
-                <td colspan="1">logo_new</td>
-                <td colspan="1">img_micro</td>
-                <td colspan="5"><a href="./forum.php">Lyrics</a><br/>Avancées des lyrics, idées, bout de texte, lyrics complète...</td>
-                <td colspan="1">23</td>
-                <td colspan="1">21</td>
-                <td colspan="3">Jeu Mai 24,2012 8:50pm <br/>Tom</td>
+                <td>logo_new</td>
+                <td>img_micro</td>
+                <td><a href="./forum.php">Lyrics</a><br/>Avancées des lyrics, idées, bout de texte, lyrics complète...</td>
+                <td>23</td>
+                <td>21</td>
+                <td>Jeu Mai 24,2012 8:50pm <br/>Tom</td>
             </tr>
             <tr>
-                <td colspan="1">logo_new</td>
-                <td colspan="1">img_ampoule</td>
-                <td colspan="5"><a href="#">Riffs & idées</a><br/> Tous nos riffs et idées pour les futurs tracks</td>
-                <td colspan="1">11</td>
-                <td colspan="1">81</td>
-                <td colspan="3">Jeu Mai 24,2012 10:50pm <br/>Kev</td>
+                <td>logo_new</td>
+                <td>img_ampoule</td>
+                <td><a href="#">Riffs & idées</a><br/> Tous nos riffs et idées pour les futurs tracks</td>
+                <td>11</td>
+                <td>81</td>
+                <td>Jeu Mai 24,2012 10:50pm <br/>Kev</td>
             </tr>
         </tbody>
     </table>
