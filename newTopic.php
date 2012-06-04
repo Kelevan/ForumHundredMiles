@@ -11,9 +11,8 @@
                 <input type="text" class="input-medium" id="input01">  
             </div>
             <div class="controls">
-                <label class="control-label" for="input02">
+                <label class="control-label" for="input02"></label>
                 <textarea name="content" style="width:50%" id="input02"></textarea>  
-                </label>
             </div>
         </div>
 
