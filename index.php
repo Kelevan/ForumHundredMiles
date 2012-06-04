@@ -4,7 +4,6 @@
 ?> 
 
 
-
     <div class="container">
       <div class="row">  
 <!----------- Tab FICHIERS ----------->         
@@ -39,7 +38,7 @@
         </div>
 
 <!----------- Tab Topics/Messages ----------->
-          <div class="span6">             
+        <div class="span6">             
             <legend>Dernières&nbsp;news</legend>
             <form class="form-actions">
                 <table class="table table-bordered table-condensed">
