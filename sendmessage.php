@@ -1,32 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Topic");
-?>   
-    <!--------- Editeur de text -------->
-    <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
-    <script type="text/javascript">
-    tinyMCE.init({
-        // General options
-        mode : "textareas",
-        theme : "advanced",
-        plugins : "autolink,lists,spellchecker,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template",
-
-        // Theme options
-        theme_advanced_buttons1 : "bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,styleselect,formatselect,fontselect,fontsizeselect",
-        theme_advanced_buttons2 : "bullist,numlist,|,blockquote,|,undo,redo,|,link,unlink,anchor,image,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",
-        theme_advanced_buttons3 : "sub,sup,|,emotions,iespell,media,|,insertfile,insertimage",
-        theme_advanced_toolbar_location : "top",
-        theme_advanced_toolbar_align : "left",   
-        theme_advanced_resizing : true,
-
-        // Skin options
-        skin : "o2k7",
-        skin_variant : "silver"
-
-
-    });
-    </script>
-  </head>
+?>  
   
 <!--------------------------------BODY------------------------------------->  
     <div class="container">
