@@ -58,7 +58,7 @@
                     <div class="row">
                         <div class="span1"> <button type="submit" class="btn btn-success">Répondre</button></div>
                         <div class="span1"> <button class="btn btn-info">Aperçu</button></div>
-                        <div class="span1"> <button class="btn btn-inverse">Annuler</button></div>                    
+                        <div class="span1"> <button class="btn btn-warning">Annuler</button></div>                    
                     </div>
                 </div>     
             </div>  
