@@ -19,9 +19,11 @@
 
             </tr>
             <tr calss="row">
+                <th></th>
                 <th><center>Forums </center></th>
                 <th>Sujets</th>
                 <th>Messages</th>
+                <th>Vues</th>
                 <th>Dernier message</th>
             </tr>
         </thead>
