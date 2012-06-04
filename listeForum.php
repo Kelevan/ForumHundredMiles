@@ -3,8 +3,7 @@
     entete("Administration");
 ?> 
     <div class="container">
-    <div class="row">          
-    <div class="span12">
+    
     
         <ul class="nav nav-tabs">
         <li><a href="./listeForum.php">Listes</a></li>
@@ -50,10 +49,9 @@
                 </td>
             </tr>
         </tbody>
-    </table>
+     </table>
     </div>
-    </div>
-    </div>
+    
 <?php
     pied();
 ?>    
