@@ -41,22 +41,23 @@
             </tr>
         </tbody>
     </table>
+        
     <tr class="row">
     <td> <center><a href="#">Marquer tout comme lus</a></center></td>
     </tr>    
     <div class="btn">Répondre
     </div>    
     <div class="pagination">
-    <ul>
-    <li><a href="#">Prev</a></li>
-    <li class="active">
-    <a href="#">1</a>
-    </li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">Next</a></li>
-    </ul>
+        <ul>
+            <li><a href="#">Prev</a></li>
+            <li class="active">
+                <a href="#">1</a>
+            </li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
     </div>   
     </div>    
   </div>
