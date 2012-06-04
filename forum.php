@@ -2,8 +2,7 @@
     include_once("./includes.php");
     entete("Forum");
 ?> 
- <div class="container">
-     
+ <div class="container">     
     <ul class="breadcrumb">
         <li>
             <a href="./index.php">Home</a> <span class="divider">/</span>
@@ -11,7 +10,8 @@
             <a href="./Forum.php">Lyrics</a></span>
         </li>
     </ul>
-
+     
+<!------------------ SOUS-FORUMS ------------------>
      <form class="well">
          <legend><a href="#">> Sous-Forum</a></legend>
          <table class="table table-bordered table-condensed">            
@@ -49,8 +49,20 @@
         </table>
      </form>
      
-     <form class="well">
-        <table class="table table-bordered table-condensed">
+<!------------------ TOPICS ------------------>
+    <div class="row">     
+        <div class="span3">
+            <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+                <li class="nav-header">Dernier fichier upload</li>
+                <li><a href="./audio/SleepAway.mp3">2 see</a></li>
+            </ul>
+            </div>
+        </div>
+        
+        <div class="span9">
+        <form class="well">   
+            <table class="table table-bordered table-condensed">
             <legend><a href="#">> Lyrics</a></legend>
             <thead>
                 <tr>
@@ -72,8 +84,12 @@
                     <td>Mer nov 23,2011 9:38pm <br/> Dav</td>
                 </tr>
             </tbody>
-        </table>
-     </form>
+            </table>
+        </form>
+        </div>
+
+        
+    </div>
      
 <?php
     pied();

@@ -1,6 +1,6 @@
 <?php
     include_once("./includes.php");
-    entete("Catégorie");
+    entete("Musique");
 ?>    
     <div class="container">
         <ul class="breadcrumb">
