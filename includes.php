@@ -48,8 +48,6 @@ function entete($titre)
                     // Skin options
                     skin : "o2k7",
                     skin_variant : "silver"
-
-
                 });
                 </script>
         </head>
