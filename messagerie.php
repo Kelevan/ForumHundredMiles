@@ -44,8 +44,7 @@
             <div class="pull-right"> 
                 <button type="submit" class="btn btn-success">Supprimer</button>
             </div>
-        </div>
-    </div>
+        </div>    
         
 <?php
     pied();

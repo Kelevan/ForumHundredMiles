@@ -34,7 +34,7 @@
                 <tbody>
                     <tr class="row">
                         <td>Valou <br/> image </td>
-                        <td><a href="./message.php">Salut les pd ! fvrezjikrvojreoi  gjh iogr hhjnoi gjhi  j kogrp gtjio grr htr gri jgtrio grtz gjio gpb tr jibgop b hgtr,io p  nhtip hjgjtog bniogtp   jp   gtnjiohtjkhtrjioohrjikop   jhuhntglm b njiobh  bhntjnio  hy,,jiko hty  </a></td>
+                        <td><a href="./message.php">Salut les PGM !</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -50,8 +50,7 @@
                     </div>
                 </div>     
             </div>
-        </div>
-    </div>
+        </div>    
         
 <?php
     pied();
