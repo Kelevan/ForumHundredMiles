@@ -34,7 +34,7 @@
                 <tbody>
                     <tr class="row">
                         <td>Valou <br/> image </td>
-                        <td><a href="./message.php">Salut les PGM !</a></td>
+                        <td>Yop, Thomas !! D'autres modification pour les MPs ????</td>
                     </tr>
                 </tbody>
             </table>
