@@ -16,11 +16,20 @@
         <thead>
             <legend><a href="./categorie.php">> Lyrics</a></Legend>
              <tr>
-                <div class="btn">Nouveau
+                 <div class="pagination">
+                    <ul>
+                        <div class="btn">Nouveau</div>
+                        <li><a href="#">Prev</a></li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Next</a></li>
+                        
+                    </ul>                     
                 </div>
-            </tr>
-            <tr>
-                Page <a href="#">1</a> sur <a href="#">2</a> [<a href="#">11</a>sujets]
             </tr>
             <tr class="row">
                 
@@ -55,11 +64,20 @@
             </tr>
         </tbody>
     </table>
-    <td> <center><a href="#">Marquer tout comme lus</a></center></td>
-    </tr>
-    <tr class="row">
-        <td> <div class="btn">Nouveau</div> Page <a href="#">1</a> sur <a href="#">2</a> [<a href="#">11</a>sujets]</td>
-    </tr>    
+   <center><a href="#">Marquer tout comme lus</a></center>
+    <div class="pagination">
+        <ul>
+            <div class="btn">Nouveau</div>
+            <li><a href="#">Prev</a></li>
+            <li class="active">
+                <a href="#">1</a>
+            </li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>                     
+    </div>
 <?php
     pied();
 ?>        
