@@ -1,6 +1,6 @@
 <?php
     include_once("./includes.php");
-    entete("Administration");
+    entete("Topic");
 ?> 
     <div class="container">
             <ul class="breadcrumb">
@@ -11,8 +11,9 @@
             </ul>
          
                              <!-- TABLEAU -->
-    <legend><a href="./categorie.php">> Lyrics</a></Legend>
-    <form class="well">  
+    
+    <form class="well">
+        <legend><a href="./categorie.php">> Lyrics</a></Legend>
         <table class="table table-bordered">      
             <thead>                         
                 <tr class="row">                
