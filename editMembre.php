@@ -1,6 +1,6 @@
 <?php
     include_once("./includes.php");
-    entete("Administration");
+    entete("Modifier un membre");
 ?> 
     <div class="container">
         <ul class="nav nav-tabs">

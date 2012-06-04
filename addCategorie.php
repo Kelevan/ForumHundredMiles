@@ -1,6 +1,6 @@
 <?php
     include_once("./includes.php");
-    entete("Administration");
+    entete("Ajouter une Catégorie");
 ?> 
 <div class="container">
 <div class="row">          
