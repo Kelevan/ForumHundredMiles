@@ -42,10 +42,11 @@
                 </tbody>
             </table>
         </form>
-                    <div class="form-actions"> 
-                        <button type="submit" class="btn btn-success">Supprimer</button>
-                    </div>
-
+        <div class="form-actions"> 
+            <div class="pull-right">
+            <button type="submit" class="btn btn-success">Supprimer</button>
+            </div>
+        </div>
               
         
 <?php

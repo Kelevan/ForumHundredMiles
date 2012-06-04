@@ -6,7 +6,7 @@
     <div class="container">
         <ul class="pager">
             <li class="previous">
-                <a href="./messagerie.php">&larr; Messagerie</a>
+                <a href="./messagerie.php"><i class="icon-envelope"></i> Messagerie</a>
             </li>
         </ul>
         <form class="well">    
@@ -21,7 +21,7 @@
                 <textarea name="content" style="width:50%"></textarea>            
         </form>
 
-        <div class="form-actions"> 
+        <div class="form-actions">
             <button type="submit" class="btn btn-success">Répondre</button>
         </div>
         
