@@ -62,7 +62,7 @@
         </ul>    
     </div>
     <div class="btn-group form-actions">
-        <button class="btn btn-success" ><a href="./newTopic.php">Nouveau</button>
+        <a href="./newTopic.php" class="btn btn-success">Nouveau</a>
     </div>
                                  
 <?php
