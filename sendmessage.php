@@ -1,6 +1,6 @@
 <?php
     include_once("./includes.php");
-    entete("Administration");
+    entete("Topic");
 ?>   
     <!--------- Editeur de text -------->
     <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>

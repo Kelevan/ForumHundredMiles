@@ -1,6 +1,6 @@
 <?php
     include_once("./includes.php");
-    entete("Administration");
+    entete("Panel Membre");
 ?> 
     <div class="container">
         <div class="row">          

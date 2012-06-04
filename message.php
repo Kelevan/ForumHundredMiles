@@ -1,6 +1,6 @@
 <?php
     include_once("./includes.php");
-    entete("Administration");
+    entete("Message privé");
 ?>       
 <div class="container">
     <legend><a href="./categorie.php">>&nbsp;You&nbsp;see</a></legend>
