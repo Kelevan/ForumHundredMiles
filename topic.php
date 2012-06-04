@@ -3,21 +3,20 @@
     entete("Administration");
 ?> 
     <div class="container">
-        <ul class="breadcrumb">
-            <li><a href="./index.php">Home</a> <span class="divider">/</span></li>
-            <li><a href="./categorie.php">Musique</a> <span class="divider">/</span></li>
-            <li><a href="./forum.php">Lyrics</a> <span class="divider">/</span></li>
-            <li><a href="./topic.php">Lyrics</a> </li>
-        </ul>
-    </div>      
+            <ul class="breadcrumb">
+                <li><a href="./index.php">Home</a> <span class="divider">/</span></li>
+                <li><a href="./categorie.php">Musique</a> <span class="divider">/</span></li>
+                <li><a href="./forum.php">Lyrics</a> <span class="divider">/</span></li>
+                <li><a href="./topic.php">Lyrics</a> </li>
+            </ul>
+         
                              <!-- TABLEAU -->
-    <div class="container">   
       <table class="table table-bordered ta">
         <thead>
             <legend><a href="./categorie.php">> Lyrics</a></Legend>
              <tr>
                  <div class="pagination">
-                    <ul>
+                     <ul>
                         <div class="btn">Nouveau</div>
                         <li><a href="#">Prev</a></li>
                         <li class="active">
@@ -26,8 +25,7 @@
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                         <li><a href="#">4</a></li>
-                        <li><a href="#">Next</a></li>
-                        
+                        <li><a href="#">Next</a></li>                        
                     </ul>                     
                 </div>
             </tr>
@@ -64,7 +62,6 @@
             </tr>
         </tbody>
     </table>
-   <center><a href="#">Marquer tout comme lus</a></center>
     <div class="pagination">
         <ul>
             <div class="btn">Nouveau</div>
@@ -78,6 +75,7 @@
             <li><a href="#">Next</a></li>
         </ul>                     
     </div>
+                                 
 <?php
     pied();
 ?>        
