@@ -2,9 +2,9 @@
     include_once("./includes.php");
     entete("Messagerie");
 ?> 
-
+   
     <div class="container">
-        <div class="form-actions">
+        <form class="well">            
             <table class="table table-bordered table-condensed">
                 <thead>
                     <tr>
@@ -41,10 +41,12 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="pull-right"> 
-                <button type="submit" class="btn btn-success">Supprimer</button>
-            </div>
-        </div>    
+        </form>
+                    <div class="form-actions"> 
+                        <button type="submit" class="btn btn-success">Supprimer</button>
+                    </div>
+
+              
         
 <?php
     pied();
