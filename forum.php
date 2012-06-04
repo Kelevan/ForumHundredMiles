@@ -30,7 +30,7 @@
                     <td><a href="./topic.php">Lyrics <br/></a>Lyrics terminée et opérationnelles.</td>
                     <td>11</td>
                     <td>24</td>
-                    <td>Mer mar 14, 2012 3:05pm<br/>Tom</td>
+                    <td><a href="./message.php">You&nbsp;See</a><br/>Mer mar 14, 2012 3:05pm<br/>Tom</td>
                 </tr>
                 <tr>              
                     <td>logo_new</td>

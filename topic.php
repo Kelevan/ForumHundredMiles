@@ -30,7 +30,7 @@
                     <td><a href="./message.php">You See</a></td>
                     <td>0</td>
                     <td>30</td>
-                    <td>Tom</td>
+                    <td>Mer mar 14, 2012 3:05pm<br/>Tom</td>
                 </tr>
                 <tr class="row">
                     <td>logo_new</td>
