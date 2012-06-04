@@ -1,6 +1,6 @@
 <?php
     include_once("./includes.php");
-    entete("Administration");
+    entete("Catégorie");
 ?>    
     <div class="container">
         <ul class="breadcrumb">
