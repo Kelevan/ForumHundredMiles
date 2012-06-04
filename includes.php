@@ -113,22 +113,32 @@ function entete($titre)
             </div>
             <div id="myModal" class="modal hide fade">
                 <div class="modal-header">
-                <button class="close" data-dismiss="modal">&times;</button>
-                <h3>Se connecter</h3>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h3>Connexion</h3>
                 </div>
                 <div class="modal-body">
-                    <form class="well form-inline">
-                        <input type="text" class="input-small" placeholder="Email">
-                        <input type="password" class="input-small" placeholder="Password">
-                        <label class="checkbox">
-                        <input type="checkbox"> Remember me
-                        </label>
-                        <button type="submit" class="btn">Sign in</button>
-                    </form>    
-                </div>
-                <div class="modal-footer">
-                <a href="#" class="btn btn-primary">Se connecter</a>
-                <a href="#" class="btn btn-warning" data-dismiss="modal">Annuler</a>
+                    <div class="tab-pane active" id="tab1">
+                    <form class="well form-horizontal">
+                        <fieldset>
+                            <div class="control-group">
+                                <label class="control-label" for="input01"><b>E-mail</b></label>
+                                <div class="controls">
+                                    <input type="text" class="input-medium" id="input01" value="aaa@exemple.com ">  
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="input01"><b>mot de passe</b></label>
+                                <div class="controls">
+                                    <input type="text" class="input-medium" id="input01" value="********">  
+                                </div>
+                            </div> 
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Se connecter</button>
+                                <button type="reset" class="btn btn-warning">Annuler</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    </div>    
                 </div>
             </div>';
     }
