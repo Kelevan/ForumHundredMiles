@@ -7,9 +7,9 @@
     <div class="container">
       <div class="row">  
 <!----------- Tab FICHIERS ----------->         
-        <div class="span6">             
-            <legend>Derniers&nbsp;Ajouts</legend>
+        <div class="span6">
             <form class="form-actions">
+                <legend>Derniers&nbsp;Ajouts</legend>
                 <table class="table table-bordered table-condensed">
                     <thead>
                         <tr>
@@ -39,8 +39,8 @@
 
 <!----------- Tab Topics/Messages ----------->
         <div class="span6">             
-            <legend>Dernières&nbsp;news</legend>
             <form class="form-actions">
+                <legend>Dernières&nbsp;news</legend>
                 <table class="table table-bordered table-condensed">
                     <thead>
                         <tr>
