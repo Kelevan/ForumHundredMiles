@@ -17,6 +17,7 @@
          <table class="table table-bordered table-condensed">            
             <thead>               
                 <tr>
+                    <th></th>
                     <th><center>Forums </center></th>
                     <th>Sujets</th>
                     <th>Messages</th>

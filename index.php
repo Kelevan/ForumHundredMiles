@@ -5,8 +5,8 @@
 
 
     <div class="container">
-      <div class="row">  
-<!----------- Tab FICHIERS ----------->         
+<!----------- Tab FICHIERS ----------->
+      <div class="row"> 
         <div class="span6">
             <form class="form-actions">
                 <legend>Derniers&nbsp;Ajouts</legend>
