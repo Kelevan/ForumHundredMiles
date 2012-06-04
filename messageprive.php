@@ -5,7 +5,12 @@
 
     <div class="container">
         <form>
-            <div class="form-actions">
+             <ul class="breadcrumb">
+                <li>
+                    <a href="./messagerie.php">Messagerie</a>
+                </li>
+            </ul>
+            <div class="form-actions">               
                 <table class="table table-bordered table-condensed">
                     <tbody>
                         <tr class="row">
@@ -19,8 +24,7 @@
                 <div>     
                     <div class="form-actions">
                         <div class="row">
-                            <div class="span1"> <button type="submit" class="btn btn-success">Répondre</button></div>
-                            <div class="span1"> <button type="button" class="btn btn-warning">Annuler</button></div>                    
+                            <div class="span1"> <button type="submit" class="btn btn-success">Répondre</button></div>                
                         </div>
                     </div>     
                 </div>
