@@ -15,7 +15,6 @@
                 <textarea name="content" style="width:50%" id="input02"></textarea>  
             </div>
         </div>
-
     </form>        
         <div class="form-actions">
             <button type="submit" class="btn btn-success">Envoyer</button>

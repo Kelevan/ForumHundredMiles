@@ -2,26 +2,24 @@
     include_once("./includes.php");
     entete("Panel Forum");
 ?> 
-    <div class="container">
-    
-    
+    <div class="container">   
         <ul class="nav nav-tabs">
-        <li><a href="./listeForum.php">Listes</a></li>
-        <li><a href="./addForum.php">Ajouter un forum</a></li>
-        <li><a href="./editForum.php">Modifier un forum</a></li>
+            <li><a href="./listeForum.php">Listes</a></li>
+            <li><a href="./addForum.php">Ajouter un forum</a></li>
+            <li><a href="./editForum.php">Modifier un forum</a></li>
         </ul>
         <div class="container">
-      <table class="table table-bordered table-condensed">
-        <thead>
-            <tr class="row">               
-                <th><b>Liste des forums</b></th>
-            </tr>
-            <tr class="row">
-                <th><center>ID </center></th>
-                <th>Nom du forum</th>
-                <th>Modifications</th>
-            </tr>
-        </thead>
+        <table class="table table-bordered table-condensed">
+            <thead>
+                <tr class="row">               
+                    <th><b>Liste des forums</b></th>
+                </tr>
+                <tr class="row">
+                    <th><center>ID </center></th>
+                    <th>Nom du forum</th>
+                    <th>Modifications</th>
+                </tr>
+            </thead>
         <tbody>
             <tr class="row">
                 <td>1</td>

@@ -6,11 +6,13 @@
 <!--------------------------------BODY------------------------------------->  
     <div class="container">
         <ul class="breadcrumb">
-        <li><a href="./index.php">Home</a> <span class="divider">/</span></li>
-        <li><a href="./categorie.php">Musique</a><span class="divider">/</span></li>
-        <li><a href="./forum.php">Lycris</a><span class="divider">/</span></li>
-        <li><a href="./topic.php">Lyrics</a><span class="divider">/</span></li>
-        <li><a href="./message.php">You&nbsp;See</a></span></li>
+            <li>
+                <a href="./index.php">Home</a> <span class="divider">/</span>
+                <a href="./categorie.php">Musique</a><span class="divider">/</span>
+                <a href="./forum.php">Lycris</a><span class="divider">/</span>
+                <a href="./topic.php">Lyrics</a><span class="divider">/</span>
+                <a href="./message.php">You&nbsp;See</a></span>
+            </li>
         </ul>
       
       
