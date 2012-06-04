@@ -36,10 +36,6 @@
                         <td>Valou <br/> image </td>
                         <td><a href="./message.php">Salut les pd ! fvrezjikrvojreoi  gjh iogr hhjnoi gjhi  j kogrp gtjio grr htr gri jgtrio grtz gjio gpb tr jibgop b hgtr,io p  nhtip hjgjtog bniogtp   jp   gtnjiohtjkhtrjioohrjikop   jhuhntglm b njiobh  bhntjnio  hy,,jiko hty  </a></td>
                     </tr>
-                    <tr class="row">
-                        <td>Thom <br/> image </td>
-                        <td><a href="./message.php">HEUREUSEMENT QUE THOMAS EST PLUS BRINGGGGGGGGGGGGGGGGGGGGGGG MEEEEEEEEEEEEEEEEEEEEEEEEEEE QUE PINKIE BILLY SINON ON SERAIT PAS DANS LE CACA </a></td>
-                    </tr>
                 </tbody>
             </table>
         </div>

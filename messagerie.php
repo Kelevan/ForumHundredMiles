@@ -15,7 +15,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="./messageprive">NewParôle</a></td>
+                        <td><a href="./messageprive.php">NewParôle</a></td>
                         <td><a href="#">Val</a></td>
                         <td><label class="checkbox"><input type="checkbox"></label></td>
                     </tr>
