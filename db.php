@@ -1,8 +1,8 @@
 <?php
-	// Infos de connexion � la base
+	// Infos de connexion a la base
 	$sql_user="root";
 	$sql_pass="";
-	$sql_db = "hundred_miles";
+	$sql_db="hundred_miles";
 	$sql_serv="localhost";
 	$sql_link = NULL;
 

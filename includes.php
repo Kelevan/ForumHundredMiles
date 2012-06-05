@@ -120,17 +120,17 @@ function entete($titre)
                 </div>
                 <div class="modal-body">
                     <div class="tab-pane active" id="connexion">
-                    <form class="well form-horizontal">
+                    <form class="well form-horizontal" method="post" action="./connect.php?action=login">
                             <div class="control-group">
                                 <label class="control-label" for="input01"><b>E-mail</b></label>
                                 <div class="controls">
-                                    <input type="text" class="input-medium" id="input01" value="aaa@exemple.com " name="mail">  
+                                    <input type="text" class="input-medium" id="mail" name="mail">  
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="input01"><b>mot de passe</b></label>
                                 <div class="controls">
-                                    <input type="text" class="input-medium" id="input01" value="********" name="password">  
+                                    <input type="password" class="input-medium" id="pass" name="pass">  
                                 </div>
                             </div>
                 </div>             
