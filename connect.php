@@ -31,9 +31,7 @@
 					echo "Mot de passe incorrect";
 					die('<meta http-equiv="refresh" content="2;URL=./index.php">');
 				}	
-				//$_SESSION['idUtil']=$connexion['idUtil'];
-				//$_SESSION['TypeAdh']=$connexion['TypeAdh'];
-				//$_SESSION['NomCompletAdh']=$connexion['PrenomAdh']." ".$connexion['NomAdh'];
+				$_SESSION['pseudo']=$connexion['pseudo'];
 				echo "Connexion reussie... Renvoi vers l'accueil.";
 				pied();
 				die('<meta http-equiv="refresh" content="2;URL=./index.php">');

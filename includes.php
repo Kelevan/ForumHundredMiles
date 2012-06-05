@@ -65,18 +65,24 @@ function entete($titre)
                     <span class="icon-bar"></span>
                 </a>
                 <a class="brand" href="./index.php">Hundred Miles</a>
-                <div class="btn-group pull-right">
-                        <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
-                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="icon-user"></i> Username
-                        <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./profil.php">Profil</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Se déconnecter</a></li>
-                        </ul>
-                </div>      
+';                
+               if(isset($_SESSION['pseudo']))
+                    {
+                        echo '<div class="btn-group pull-right">
+                            <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="icon-user"></i> ';
+                        echo $_SESSION['pseudo'];
+                        echo    '<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./profil.php">Profil</a></li>
+                                <li class="divider"></li>
+                                <li><a href="./connect.php?action=logout">Se déconnecter</a></li>
+                            </ul>
+                    </div>';  
+                    }   
+echo'
                 <div class="nav-collapse">
                     <ul class="nav">             
                         <div class="tabbable">
