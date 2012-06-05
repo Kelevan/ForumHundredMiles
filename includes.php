@@ -3,8 +3,8 @@
 // Démarrage de la session
 session_start();
 
- //Verification du script DB.PHP
-//include_once("./db.php");
+// Verification du script DB.PHP
+include_once("./db.php");
 
 //page de fonctions
 function entete($titre)
@@ -134,10 +134,10 @@ function entete($titre)
                                 </div>
                             </div>
                 </div>             
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">Se connecter</button>
-                                <button type="reset" class="btn btn-warning">Annuler</button>
-                            </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Se connecter</button>
+                    <button type="reset" class="btn btn-warning">Annuler</button>
+                </div>
                     </form>
                     </div>                   
             </div>';
