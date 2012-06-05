@@ -3,8 +3,8 @@
 // Démarrage de la session
 session_start();
 
-// Verification du script DB.PHP
-include_once("./db.php");
+ //Verification du script DB.PHP
+//include_once("./db.php");
 
 //page de fonctions
 function entete($titre)
