@@ -17,8 +17,10 @@
         <div class="span3">
             <div class="well sidebar-nav">
                 <ul class="nav nav-list">
-                    <li class="nav-header">Dernier fichier upload</li>
+                    <li class="nav-header">Dernier&nbsp;fichier&nbsp;upload</li>
                     <li><a href="./audio/SleepAway.mp3">2 see</a></li>
+                    <li class="nav-header">Uploader&nbsp;un&nbsp;Fichier</li>
+                    <li><input class="input-file" id="fileInput" type="file"></li>
                 </ul>
             </div>
         </div>
