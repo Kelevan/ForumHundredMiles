@@ -3,6 +3,10 @@
 // Démarrage de la session
 session_start();
 
+// Verification du script DB.PHP
+include_once("./db.php");
+
+//page de fonctions
 function entete($titre)
 {
     echo'
@@ -115,18 +119,18 @@ function entete($titre)
                     <h3>Connexion</h3>
                 </div>
                 <div class="modal-body">
-                    <div class="tab-pane active" id="tab1">
+                    <div class="tab-pane active" id="connexion">
                     <form class="well form-horizontal">
                             <div class="control-group">
                                 <label class="control-label" for="input01"><b>E-mail</b></label>
                                 <div class="controls">
-                                    <input type="text" class="input-medium" id="input01" value="aaa@exemple.com ">  
+                                    <input type="text" class="input-medium" id="input01" value="aaa@exemple.com " name="mail">  
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="input01"><b>mot de passe</b></label>
                                 <div class="controls">
-                                    <input type="text" class="input-medium" id="input01" value="********">  
+                                    <input type="text" class="input-medium" id="input01" value="********" name="password">  
                                 </div>
                             </div>
                 </div>             
