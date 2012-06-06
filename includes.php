@@ -65,8 +65,13 @@ function entete($titre)
                     <span class="icon-bar"></span>
                 </a>
                 <a class="brand" href="./index.php">Hundred Miles</a>
-';                
-               if(isset($_SESSION['pseudo']))
+            '; 
+    
+  function menu($titre)
+{  
+    if(isset($_SESSION['pseudo']))
+        {    
+            if($_SESSION['idTypeUtil'] == 1)
                     {
                         echo '<div class="btn-group pull-right">
                             <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
@@ -80,41 +85,90 @@ function entete($titre)
                                 <li class="divider"></li>
                                 <li><a href="./connect.php?action=logout">Se déconnecter</a></li>
                             </ul>
-                    </div>';  
-                    }   
-echo'
-                <div class="nav-collapse">
-                    <ul class="nav">             
-                        <div class="tabbable">
-                            <ul class="nav nav-pills">
-                                <ul class="nav nav-pills">
-                                    <li class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#tab1">Organisation</a></li>
-                                            <li><a href="./categorie.php">Musiques</a></li>
-                                            <li><a href="#tab2">Concerts</a></li>
-                                            <li><a href="#tab2">Equipe</a></li>
-                                            <li><a href="#tab2">Groupes</a></li>
-                                            <li><a href="#tab2">Support</a></li>
-                                        </ul>
-                                    </li>
+                            </div>';
+                        echo '
+                            <div class="nav-collapse">
+                                <ul class="nav">             
+                                    <div class="tabbable">
+                                        <ul class="nav nav-pills">
+                                            <ul class="nav nav-pills">
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#tab1">Organisation</a></li>
+                                                        <li><a href="./categorie.php">Musiques</a></li>
+                                                        <li><a href="#tab2">Concerts</a></li>
+                                                        <li><a href="#tab2">Equipe</a></li>
+                                                        <li><a href="#tab2">Groupes</a></li>
+                                                        <li><a href="#tab2">Support</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>';
+                    }
+            else if($SESSION['idTypeUtil']==2)
+                {
+                    echo '<div class="btn-group pull-right">
+                                <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="icon-user"></i> ';
+                            echo $_SESSION['pseudo'];
+                            echo    '<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./profil.php">Profil</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./connect.php?action=logout">Se déconnecter</a></li>
                                 </ul>
-                                <ul class="nav nav-pills">
-                                    <li class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
-                                            <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
-                                            <li><a href="./listeForum.php">Gestion des forums</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>        
-                                </ul class="nav">
-                                    <ul class="nav nav-pills">
-                                        <a data-toggle="modal" href="#myModal" class="btn btn-danger"><i>Se connecter</i></a> 
-                                    </ul>   
-                                </ul>
+                                </div>';
+                            echo '
+                                <div class="nav-collapse">
+                                    <ul class="nav">             
+                                        <div class="tabbable">
+                                            <ul class="nav nav-pills">
+                                                <ul class="nav nav-pills">
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#tab1">Organisation</a></li>
+                                                            <li><a href="./categorie.php">Musiques</a></li>
+                                                            <li><a href="#tab2">Concerts</a></li>
+                                                            <li><a href="#tab2">Equipe</a></li>
+                                                            <li><a href="#tab2">Groupes</a></li>
+                                                            <li><a href="#tab2">Support</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>';
+                            echo '      <ul class="nav nav-pills">
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
+                                                <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
+                                                <li><a href="./listeForum.php">Gestion des forums</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> ';
+                }
+        }              
+}
+
+                                //<ul class="nav nav-pills">
+                                //    <li class="dropdown">
+                                //        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                //        <ul class="dropdown-menu">
+                                //            <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
+                                //            <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
+                                //            <li><a href="./listeForum.php">Gestion des forums</a></li>
+                                //        </ul>
+                                //    </li>
+                                //</ul>        
+
+           echo'
+                    <ul class="nav">
+                    <ul class="nav nav-pills">
+                        <a data-toggle="modal" href="#myModal" class="btn btn-danger"><i>Se connecter</i></a> 
+                    </ul>   
+                    </ul>
                         </div> 
                 </div>
             </div>
@@ -163,7 +217,7 @@ echo'
         </div>
     </body>
     </html> ';
-}
+    }
 
 ?>
 
