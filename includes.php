@@ -59,7 +59,7 @@ function entete($titre)
             {
                 if ($_SESSION['idTypeUtil']==1)
                 {
-                    echo"tu n'es qu'un petit utilisateur";
+                    
                 }
                 elseif($_SESSION['idTypeUtil']==2)
                 {
@@ -118,15 +118,17 @@ function entete($titre)
                         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="icon-user"></i> ';
             echo $_SESSION['pseudo'];
-            echo    '<span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./profil.php">Profil</a></li>
-                    <li class="divider"></li>
-                    <li><a href="./connect.php?action=logout">Se déconnecter</a></li>
-                </ul>
-                </div>';
-
+            echo    '
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./profil.php">Profil</a></li>
+                        <li class="divider"></li>
+                        <li><a href="./connect.php?action=logout">Se déconnecter</a></li>
+                    </ul>
+                    </div>
+                    </div>
+                    ';
 
         }
     else
@@ -183,8 +185,8 @@ function entete($titre)
         <script src="./js/jquery.js"></script>
         <script src="./js/bootstrap.min.js"></script>
         </div>
-    </body>
-    </html> ';
+        </body>
+        </html> ';
     }
 
 ?>
