@@ -31,29 +31,7 @@ function entete($titre)
             </style>        
             <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
             <link href="./css/bootstrap-responsive.css" rel="stylesheet">
-             
-            <!--------- Editeur de text -------->
-                <script type="text/javascript" src="./js/tiny_mce/tiny_mce.js"></script>
-                <script type="text/javascript">
-                tinyMCE.init({
-                    // General options
-                    mode : "textareas",
-                    theme : "advanced",
-                    plugins : "autolink,lists,spellchecker,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template",
-
-                    // Theme options
-                    theme_advanced_buttons1 : "bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,bullist,numlist,|,blockquote",
-                    theme_advanced_buttons2 : "undo,redo,|,link,unlink,anchor,image,code,|,insertdate,inserttime,preview",
-                    theme_advanced_buttons3 : "forecolor,backcolor,|,sub,sup,|,emotions,iespell,media,|,insertfile,insertimage",
-                    theme_advanced_toolbar_location : "top",
-                    theme_advanced_toolbar_align : "left",   
-                    theme_advanced_resizing : true,
-
-                    // Skin options
-                    skin : "o2k7",
-                    skin_variant : "silver"
-                });
-                </script>
+          
         </head>
         <body>
             <div class="navbar navbar-fixed-top">
@@ -79,34 +57,62 @@ function entete($titre)
             
             if (isset($_SESSION['idTypeUtil']))
             {
-                if ($_SESSION['idTypeUtil']===1)
+                if ($_SESSION['idTypeUtil']==1)
                 {
-                    echo '
-                        <div class="nav-collapse">
-                            <ul class="nav">             
-                                <div class="tabbable">
-                                    <ul class="nav nav-pills">
-                                        <ul class="nav nav-pills">
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#tab1">Organisation</a></li>
-                                                    <li><a href="./categorie.php">Musiques</a></li>
-                                                    <li><a href="#tab2">Concerts</a></li>
-                                                    <li><a href="#tab2">Equipe</a></li>
-                                                    <li><a href="#tab2">Groupes</a></li>
-                                                    <li><a href="#tab2">Support</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </lu>
-                                </div>
-                            </ul>
-                        </div>
+                    echo"tu n'es qu'un petit utilisateur";
+                }
+                elseif($_SESSION['idTypeUtil']==2)
+                {
+                    echo '      
+                        <ul class="nav nav-pills">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
+                                    <li><a href="./listeForum.php">Gestion des forums</a></li>
+                                </ul>
+                            </li>
+                        </ul> 
                         ';
                 }
-                
+                elseif($_SESSION['idTypeUtil']==3)
+                {
+                    echo '      
+                        <ul class="nav nav-pills">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
+                                    <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
+                                    <li><a href="./listeForum.php">Gestion des forums</a></li>
+                                </ul>
+                            </li>
+                        </ul> ';
+                }
             }
+            echo '
+                <div class="nav-collapse">
+                    <ul class="nav">             
+                        <div class="tabbable">
+                            <ul class="nav nav-pills">
+                                <ul class="nav nav-pills">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#tab1">Organisation</a></li>
+                                            <li><a href="./categorie.php">Musiques</a></li>
+                                            <li><a href="#tab2">Concerts</a></li>
+                                            <li><a href="#tab2">Equipe</a></li>
+                                            <li><a href="#tab2">Groupes</a></li>
+                                            <li><a href="#tab2">Support</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </lu>
+                        </div>
+                    </ul>
+                </div>
+                ';
             echo '<div class="btn-group pull-right">
                         <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
                         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
