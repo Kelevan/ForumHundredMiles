@@ -32,6 +32,7 @@
 					die('<meta http-equiv="refresh" content="2;URL=./index.php">');
 				}	
 				$_SESSION['pseudo']=$connexion['pseudo'];
+                                $_SESSION['idTypeUtil']=$connexion['idTypeUtil'];
 				echo "Connexion reussie... Renvoi vers l'accueil.";
 				pied();
 				die('<meta http-equiv="refresh" content="2;URL=./index.php">');

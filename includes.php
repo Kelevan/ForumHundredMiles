@@ -6,7 +6,7 @@ session_start();
 // Verification du script DB.PHP
 include_once("./db.php");
 
-//page de fonctions
+// --------------------- FONCTION ENTETE -------------------
 function entete($titre)
 {
     echo'
@@ -64,106 +64,68 @@ function entete($titre)
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="./index.php">Hundred Miles</a>
-            '; 
-    
-  function menu($titre)
+                <a class="brand" href="./index.php">Hundred Miles</a>               
+            ';
+    menu();
+    echo'</div></div>';
+}   
+
+// --------------------- FONCTION DU MENU POUR GERER LES DROITS -------------------
+
+  function menu()
 {  
     if(isset($_SESSION['pseudo']))
-        {    
-            if($_SESSION['idTypeUtil'] == 1)
-                    {
-                        echo '<div class="btn-group pull-right">
-                            <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
-                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="icon-user"></i> ';
-                        echo $_SESSION['pseudo'];
-                        echo    '<span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./profil.php">Profil</a></li>
-                                <li class="divider"></li>
-                                <li><a href="./connect.php?action=logout">Se déconnecter</a></li>
-                            </ul>
-                            </div>';
-                        echo '
-                            <div class="nav-collapse">
-                                <ul class="nav">             
-                                    <div class="tabbable">
-                                        <ul class="nav nav-pills">
-                                            <ul class="nav nav-pills">
-                                                <li class="dropdown">
-                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#tab1">Organisation</a></li>
-                                                        <li><a href="./categorie.php">Musiques</a></li>
-                                                        <li><a href="#tab2">Concerts</a></li>
-                                                        <li><a href="#tab2">Equipe</a></li>
-                                                        <li><a href="#tab2">Groupes</a></li>
-                                                        <li><a href="#tab2">Support</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>';
-                    }
-            else if($SESSION['idTypeUtil']==2)
+        {
+            
+            if (isset($_SESSION['idTypeUtil']))
+            {
+                if ($_SESSION['idTypeUtil']===1)
                 {
-                    echo '<div class="btn-group pull-right">
-                                <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
-                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="icon-user"></i> ';
-                            echo $_SESSION['pseudo'];
-                            echo    '<span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="./profil.php">Profil</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="./connect.php?action=logout">Se déconnecter</a></li>
-                                </ul>
-                                </div>';
-                            echo '
-                                <div class="nav-collapse">
-                                    <ul class="nav">             
-                                        <div class="tabbable">
-                                            <ul class="nav nav-pills">
-                                                <ul class="nav nav-pills">
-                                                    <li class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a href="#tab1">Organisation</a></li>
-                                                            <li><a href="./categorie.php">Musiques</a></li>
-                                                            <li><a href="#tab2">Concerts</a></li>
-                                                            <li><a href="#tab2">Equipe</a></li>
-                                                            <li><a href="#tab2">Groupes</a></li>
-                                                            <li><a href="#tab2">Support</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>';
-                            echo '      <ul class="nav nav-pills">
-                                        <li class="dropdown">
-                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
-                                                <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
-                                                <li><a href="./listeForum.php">Gestion des forums</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul> ';
+                    echo '
+                        <div class="nav-collapse">
+                            <ul class="nav">             
+                                <div class="tabbable">
+                                    <ul class="nav nav-pills">
+                                        <ul class="nav nav-pills">
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#tab1">Organisation</a></li>
+                                                    <li><a href="./categorie.php">Musiques</a></li>
+                                                    <li><a href="#tab2">Concerts</a></li>
+                                                    <li><a href="#tab2">Equipe</a></li>
+                                                    <li><a href="#tab2">Groupes</a></li>
+                                                    <li><a href="#tab2">Support</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </lu>
+                                </div>
+                            </ul>
+                        </div>
+                        ';
                 }
-        }              
-}
+                
+            }
+            echo '<div class="btn-group pull-right">
+                        <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="icon-user"></i> ';
+            echo $_SESSION['pseudo'];
+            echo    '<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="./profil.php">Profil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="./connect.php?action=logout">Se déconnecter</a></li>
+                </ul>
+                </div>';
 
-                                //<ul class="nav nav-pills">
-                                //    <li class="dropdown">
-                                //        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
-                                //        <ul class="dropdown-menu">
-                                //            <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
-                                //            <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
-                                //            <li><a href="./listeForum.php">Gestion des forums</a></li>
-                                //        </ul>
-                                //    </li>
-                                //</ul>        
 
-           echo'
+        }
+    else
+        {
+            echo'
                     <ul class="nav">
                     <ul class="nav nav-pills">
                         <a data-toggle="modal" href="#myModal" class="btn btn-danger"><i>Se connecter</i></a> 
@@ -171,38 +133,38 @@ function entete($titre)
                     </ul>
                         </div> 
                 </div>
-            </div>
-            </div>
-            <div id="myModal" class="modal hide fade">
-                <div class="modal-header">
-                    <button class="close" data-dismiss="modal">&times;</button>
-                    <h3>Connexion</h3>
                 </div>
-                <div class="modal-body">
-                    <div class="tab-pane active" id="connexion">
-                    <form class="well form-horizontal" method="post" action="./connect.php?action=login">
-                            <div class="control-group">
-                                <label class="control-label" for="input01"><b>E-mail</b></label>
-                                <div class="controls">
-                                    <input type="text" class="input-medium" id="mail" name="mail">  
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="input01"><b>mot de passe</b></label>
-                                <div class="controls">
-                                    <input type="password" class="input-medium" id="pass" name="pass">  
-                                </div>
-                            </div>
-                </div>             
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Se connecter</button>
-                    <button type="reset" class="btn btn-warning">Annuler</button>
                 </div>
-                    </form>
-                    </div>                   
-            </div>';
-    }
-
+                <div id="myModal" class="modal hide fade">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h3>Connexion</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-pane active" id="connexion">
+                        <form class="well form-horizontal" method="post" action="./connect.php?action=login">
+                                <div class="control-group">
+                                    <label class="control-label" for="input01"><b>E-mail</b></label>
+                                    <div class="controls">
+                                        <input type="text" class="input-medium" id="mail" name="mail">  
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="input01"><b>mot de passe</b></label>
+                                    <div class="controls">
+                                        <input type="password" class="input-medium" id="pass" name="pass">  
+                                    </div>
+                                </div>
+                    </div>             
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Se connecter</button>
+                        <button type="reset" class="btn btn-warning">Annuler</button>
+                    </div>
+                        </form>
+                        </div>                   
+                </div>';
+        }
+}              
     function pied()
     {
         echo'
