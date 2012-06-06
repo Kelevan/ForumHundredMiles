@@ -1,6 +1,6 @@
 <?php
     include_once("./includes.php");
-    entete("Administration");
+    entete("Message Privé");
 ?>
 
     <div class="container">
@@ -9,7 +9,8 @@
                 <a href="./messagerie.php"><i class="icon-envelope"></i> Messagerie</a>
             </li>
         </ul>
-        <form class="well">    
+        <form class="well">
+            <fieldset>
             <table class="table table-bordered table-condensed">
                 <tbody>
                     <tr class="row">
@@ -18,12 +19,14 @@
                     </tr>
                 </tbody>
             </table>
-            <textarea name="content" style="width:50%"></textarea>            
+            <textarea name="content" style="width:50%"></textarea>   
+            <div class="form-actions">
+                <button type="submit" class="btn btn-success">Répondre</button>
+            </div>
+            </fieldset>
         </form>
 
-        <div class="form-actions">
-            <button type="submit" class="btn btn-success">Répondre</button>
-        </div>
+        
         
 <?php
     pied();

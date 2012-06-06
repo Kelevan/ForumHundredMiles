@@ -18,23 +18,41 @@
             <div class="well sidebar-nav">
                 <ul class="nav nav-list">
                     <li class="nav-header">Dernier&nbsp;fichier&nbsp;upload</li>
-                    <li><a href="./audio/SleepAway.mp3">2 see</a></li>
+                    <li><a href="./audio/SleepAway.mp3">2 see</a><span><h6>06/06/12</h6></span></li>
                     <li class="nav-header">Uploader&nbsp;un&nbsp;Fichier</li>
-                    <li><input class="input-file" id="fileInput" type="file"></li>
+                    <li>
+                        <div class="btn-group">
+                            <a href="./upload.php" class="btn btn-info">Upload</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
         
         <div class="span9">   
             <form class="well">
+                <legend><a href="./message.php">>&nbsp;You&nbsp;see</a></legend>
                 <table class="table table-bordered table-condensed">
-                    <legend><a href="./message.php">>&nbsp;You&nbsp;see</a></legend>
+                    <thead>
+                        <tr>
+                            <th colspan="2"><h6>Mercredi 6 Juin 2012 <a class="btn btn-small pull-right" href="./editmessage.php"><i class="icon-edit"></i></a></h6></th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr class="row">
+                        <tr>
                             <td>Valou <br/> image </td>
                             <td><a href="./message.php">Salut les pd ! fvrezjikrvojreoi  gjh iogr hhjnoi gjhi  j kogrp gtjio grr htr gri jgtrio grtz gjio gpb tr jibgop b hgtr,io p  nhtip hjgjtog bniogtp   jp   gtnjiohtjkhtrjioohrjikop   jhuhntglm b njiobh  bhntjnio  hy,,jiko hty  </a></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th colspan="2"><h6>Mercredi7 Juin 2012 <a class="btn btn-small pull-right" href="./editmessage.php"><i class="icon-edit"></i></a></h6></th>
                         </tr>
-                        <tr class="row">
+                    </thead>
+                    <tbody>
+                        <tr>
                             <td>Thom <br/> image </td>
                             <td><a href="./message.php">HEUREUSEMENT QUE THOMAS EST PLUS BRINGGGGGGGGGGGGGGGGGGGGGGG MEEEEEEEEEEEEEEEEEEEEEEEEEEE QUE PINKIE BILLY SINON ON SERAIT PAS DANS LE CACA </a></td>
                         </tr>
@@ -44,21 +62,17 @@
 
             <div class="pagination">
                 <ul>            
-                    <li><a href="#">Prev</a></li>
+                    <li><a href="#"><i class="icon-chevron-left"></i></a></li>
                     <li class="active">
                         <a href="#">1</a>
                     </li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">Next</a></li>            
+                    <li><a href="#"><i class="icon-chevron-right"></i></a></li>            
                 </ul>  
             </div>
 
             <div class="btn-group form-actions">
-                <a href="./sendmessage.php" class="btn btn-success">Répondre</a>
+                <a href="./sendmessage.php" class="btn btn-success">Répondre&nbsp;<i class="icon-pencil icon-white"></i></a>
             </div>
-
         </div>    
   </div>
 <?php

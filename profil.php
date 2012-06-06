@@ -45,11 +45,12 @@
                                     <input type="password" class="input-xlarge" id="inputtnouveau2" value="">
                                 </div>
                             </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                            </div>
                         </fieldset>
                     </form>
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Enregistrer</button>
-                    </div>
+                    
                 </div>
 
                 <!---- AVATAR ----->
@@ -73,10 +74,10 @@
                                 <input class="input-file" id="fileInputimage" type="file">                                    
                             </div>
                         </div>
-                    </form>
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Enregistrer</button>
-                    </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Enregistrer</button>
+                        </div>
+                    </form>                    
                 </div>
             </div>
         </div>
