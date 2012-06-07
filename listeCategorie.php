@@ -19,35 +19,42 @@
                 <tr class="row">
                     <th><center>ID </center></th>
                     <th>Nom de la catégorie</th>
+                    <th>Description de la Catégorie</th>
                     <th>Modifications</th>
                 </tr>
             </thead>
         <tbody>
-            <tr class="row">
-                <td>1</td>
-                <td>Organisation</td>
-                <td>
-                    <a class="btn" href="./editCategorie.php">
-                        <i class="icon-pencil"></i>
-                    </a>
-                    <div id="SuppresionCategorie" class="modal hide fade">
-                        <div class="modal-header">
-                            <button class="close" data-dismiss="modal">&times;</button>
-                            <h3>Suppression d'une catégorie</h3>
-                        </div>
-                        <div class="modal-body">
-                            <h5>Etes-vous sur de vouloir supprimer la catégorie organisation ?</h5>    
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#" class="btn btn-primary">Oui</a>
-                            <a href="#" class="btn btn-warning" data-dismiss="modal">Non</a>
-                        </div>
-                    </div>    
-                    <a data-toggle="modal" href="#SuppresionCategorie" class="btn btn-danger">
-                        <i class="icon-remove"></i>
-                    </a>   
-                </td>
-            </tr>
+            <?php
+                $req_connexion=query("select * from categorie");
+                while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
+                    echo "<tr class=row><td>".$row[0]."</td>
+                            <td>".$row[1]."</td>
+                            <td>".$row[2]."</td>
+                            <td>
+                                <a class='btn' href='./editCategorie.php'>
+                                <i class='icon-pencil'></i>
+                                </a>
+                                <div id='myModal' class='modal hide fade'>
+                                <div class='modal-header'>
+                                    <button class='close' data-dismiss='modal'>.&times;.</button>
+                                    <h3>Suppression d une catégorie</h3>
+                                </div>
+                                <div class='modal-body'>
+                                    <h5>Etes-vous sur de vouloir supprimer la catégorie organisation ?</h5>    
+                                </div>
+                                <div class='modal-footer'>
+                                    <a href='#' class='btn btn-primary'>Oui</a>
+                                    <a href='#' class='btn btn-warning' data-dismiss='modal'>Non</a>
+                                </div>
+                                </div>    
+                                <a data-toggle='modal' href='SuppresionCategorie' class='btn btn-danger'>
+                                    <i class='icon-remove'></i>
+                                </a> 
+                            </td>
+                        </tr>";
+
+                }
+            ?>
         </tbody>
     </table>
     </div>
