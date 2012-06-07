@@ -10,7 +10,7 @@
                     <li><a href="./addMembre.php">Ajouter un membre</a></li>
                     <li><a href="./editMembre.php">Modifier un membre</a></li>
                 </ul>
-                <table class="table table-bordered table-condensed">
+                <table class="table table-bordered table-condensed">    
                     <thead>
                         <tr class="row">               
                             <th><b>Liste des utilisateurs</b></th>
@@ -23,7 +23,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="row">
+                        <?php
+                            $req_connexion=query("select * from utilisateur");
+                            while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
+                                echo "<tr class=row><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[1]."</td></tr>";
+
+                            }
+                        ?>
+                        
+                        
+                        <!--<tr class="row">
                             <td>1</td>
                             <td>KirbyFR</td>
                             <td>Kirby@live.fr</td>
@@ -73,7 +82,7 @@
                                 <a data-toggle="modal" href="#SuppressionMembre1" class="btn btn-danger">
                                     <i class="icon-remove"></i>
                                 </a>  
-                            </tr>
+                            </tr>-->
                         </tbody>
                     </table>
                 </div>
