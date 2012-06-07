@@ -31,10 +31,10 @@
                             <td>".$row[1]."</td>
                             <td>".$row[2]."</td>
                             <td>
-                                <a class='btn' href='./editCategorie.php'>
+                                <a class='btn' href='./editCategorie.php?id=".$row[0]."'>
                                 <i class='icon-pencil'></i>
                                 </a>
-                                <div id='myModal' class='modal hide fade'>
+                                <div id='SuppressionCategorie".$row[0]."' class='modal hide fade'>
                                 <div class='modal-header'>
                                     <button class='close' data-dismiss='modal'>.&times;.</button>
                                     <h3>Suppression d une catégorie</h3>
@@ -43,11 +43,11 @@
                                     <h5>Etes-vous sur de vouloir supprimer la catégorie organisation ?</h5>    
                                 </div>
                                 <div class='modal-footer'>
-                                    <a href='#' class='btn btn-primary'>Oui</a>
+                                    <a href='deletecategorie.php?id=".$row[0]."' class='btn btn-primary'>Oui</a>
                                     <a href='#' class='btn btn-warning' data-dismiss='modal'>Non</a>
                                 </div>
                                 </div>    
-                                <a data-toggle='modal' href='SuppresionCategorie' class='btn btn-danger'>
+                                <a data-toggle='modal' href='#SuppressionCategorie".$row[0]."' class='btn btn-danger'>
                                     <i class='icon-remove'></i>
                                 </a> 
                             </td>

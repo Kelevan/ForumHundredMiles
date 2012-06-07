@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Musique");
+    echo $_GET['id'];
 ?>    
     <div class="container">
         <ul class="breadcrumb">
@@ -10,7 +11,6 @@
         </li>
         </ul>
     </div> 
-
     <div class="container">
     <table class="table table-bordered table-condensed">
         <thead>

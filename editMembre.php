@@ -14,6 +14,11 @@
                 <div class="tab-pane active" id="tab1">
                     <form class="well form-horizontal" method="POST" action="transfert_editMembre.php">
                         <fieldset>
+                            <?php
+                                if(isset($_GET['id'])){
+                                    echo $_GET['id'];
+                                }
+                            ?>
                             <div class="control-group">
                                 <label class="control-label" for="select01"><b>Numéro du membre</b></label>
                                 <div class="controls">
