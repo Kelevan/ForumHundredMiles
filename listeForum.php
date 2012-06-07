@@ -36,8 +36,6 @@
                             $forumpere=mysql_fetch_array($result);
                             $nomForumPère = $forumpere[0];
                         }
-                        
-                         
                         echo"<td>".$nomForumPère."</td>
                         <td><a class='btn' href='./editForum.php?id=".$row[0]."'><i class='icon-pencil'></i></a>
                         <div id='SuppressionMembre' class='modal hide fade'>
