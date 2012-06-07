@@ -2,6 +2,7 @@
     include_once("./db.php");
 
         if ($_POST["pseudo"]==""){
+            echo'bonjour';
             header("location: ./addMembre.php");
          
         }else{

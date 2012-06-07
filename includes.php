@@ -101,10 +101,10 @@ function entete($titre)
                                         <ul class="dropdown-menu">
                                         ';
             
-                                                $req_connexion=query("select nomCat from categorie");
+                                                $req_connexion=query("select idCat,nomCat from categorie");
                                                 while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
                                                 {
-                                                echo "<li><a href=./categorie.php>".$row[0]."</a></li>";
+                                                echo "<li><a href=./categorie.php?id=".$row[0].">".$row[1]."</a></li>";
                                                 }
 
             echo'
