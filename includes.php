@@ -99,12 +99,15 @@ function entete($titre)
                                     <li class="dropdown">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#tab1">Organisation</a></li>
-                                            <li><a href="./categorie.php">Musiques</a></li>
-                                            <li><a href="#tab2">Concerts</a></li>
-                                            <li><a href="#tab2">Equipe</a></li>
-                                            <li><a href="#tab2">Groupes</a></li>
-                                            <li><a href="#tab2">Support</a></li>
+                                        ';
+            
+                                                $req_connexion=query("select nomCat from categorie");
+                                                while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
+                                                {
+                                                echo "<li><a href=./categorie.php>".$row[0]."</a></li>";
+                                                }
+
+            echo'
                                         </ul>
                                     </li>
                                 </ul>
