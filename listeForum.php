@@ -27,7 +27,8 @@
                     while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
                         echo "<tr class='row'><td>".$row[0]."</td>
                             <td>".$row[1]."</td>
-                            <td>".$result=query("select nomForum from forum where idForum=".$row[3].")"."</td>
+                                ".$idforumpere=$req_connexion('row[3]');"
+                            <td>".$result=query("select nomForum from forum where idForum=".$idforumpere); $resultidforumpere=$result; $resultidforumpere."</td>
                             <td><a class='btn' href='./editForum.php?id=".$row[0]."'><i class='icon-pencil'></i></a>
                             <div id='SuppressionMembre' class='modal hide fade'>
                                 <div class='modal-header'>
