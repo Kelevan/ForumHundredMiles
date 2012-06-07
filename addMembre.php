@@ -7,13 +7,11 @@
         <li><a href="./listeMembre.php">Listes</a></li>
         <li><a href="./addMembre.php">Ajouter un membre</a></li>
         <li><a href="./editMembre.php">Modifier un membre</a></li>
-    </ul>    
-    <div class="row">          
-    <div>
+    </ul>
     <h3>Ajouter un membre</h3><br/>
-    <div id="form_container">
+    
         <div class="tab-pane active" id="tab1">
-            <form class="well form-horizontal" method="post" action="./addutilisateur.php">
+            <form class="well form-horizontal" method="post" action="./transfert_addMembre.php">
                 <fieldset>
                     <div class="control-group">
                         <label class="control-label" for="input01"><b>Pseudo</b></label>
@@ -60,9 +58,7 @@
                 </fieldset>
             </form>
         </div>
-    </div>
-    </div>
-    </div>  
+   
 <?php
     pied();
 ?>

@@ -11,54 +11,57 @@
       <div class="row">          
         <div class="span12">
             <h3>Modifier un membre</h3><br/>
-            <div id="form_container">
                 <div class="tab-pane active" id="tab1">
                 <form class="well form-horizontal">
                     <fieldset>
                         <div class="control-group">
                             <label class="control-label" for="select01"><b>Numéro du membre</b></label>
                             <div class="controls">
-                            <select id="select01">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
+                                <?php
+                                    $req_connexion=query("select (idUtil) from utilisateur");
+                                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
+                                       echo "<input value='".$row[0]."'>".$row[0]."</input>";
+                                               
+                                    }
+                                ?>
                             </div>
                         </div>                         
                         <div class="control-group">
                             <label class="control-label" for="input01"><b>Pseudo</b></label>
                             <div class="controls">
-                                <input type="text" class="input-medium" id="input01" value="Tom">  
+                                <input type="text" class="input-medium" id="pseudo" name="pseudo">  
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="input02"><b>E-mail</b></label>
                             <div class="controls">
-                                <input type="email" class="input-medium" id="input01" value="Tom@Hundred.Miles">  
+                                <input type="email" class="input-medium" id="mail" name="mail">  
                             </div>
                         </div> 
                         <div class="control-group">
                             <label class="control-label" for="select01"><b>Changer son droit</b></label>
                             <div class="controls">
-                            <select id="select01">
-                                <option>Utilisateur</option>
-                                <option>Modérateur</option>
-                                <option>Administrateur</option>
+                            <select id="select02">
+                                <?php
+                                    $req_connexion=query("select * from type_utilisateur");
+                                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
+                                       echo "<option value='".$row[0]."'>".$row[1]."</option>";
+                                               
+                                    }
+                                ?>
                             </select>
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label"><b>Mot&nbsp;de&nbsp;passe&nbsp;:*</b></label>   
                             <div class="controls">
-                                <input type="text" class="input-xlarge" id="inputtactuel" value="" type="text">
+                                <input type="password" class="input-xlarge" id="pass" name="pass">
                             </div>
                         </div>
                         <div class="control-group">                                                       
                             <label class="control-label"><b>Confirmation:*</b></label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge" id="inputtnouveau2" value="" type="text">
+                                <input type="password" class="input-xlarge" id="pass2" name="pass2">
                             </div>
                         </div>
                         <div class="form-actions">
