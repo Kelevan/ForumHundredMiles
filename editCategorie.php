@@ -24,18 +24,17 @@
                 <div class="control-group">
                     <label class="control-label" for="input01"><b>Nom</b></label>
                     <div class="controls">
-                        <!--<?php
+                        <?php
                             echo"<input type='text' class='input-medium' id='Catnom' name='Catnom' value='".$row[1]."'>";
-                        ?> -->  
-                        <input type='text' class='input-medium' id='Catnom' name='Catnom' value=''>
+                        ?>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="input02"><b>Description</b></label>
                     <div class="controls">
-                    <!--<?php
+                        <?php
                             echo"<textarea class='input-xlarge' id='catTextarea' name='catTextarea' rows='3'>".$row[2]."</textarea>";
-                        ?>-->
+                        ?>
                         <textarea class='input-xlarge' id='catTextarea' name='catTextarea' rows='3'></textarea>
                     </div>
                 </div> 
