@@ -25,7 +25,8 @@
                 <?php
                     $req_connexion=query("select * from forum");
                     while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
-                        echo "<tr class='row'><td>".$row[0]."</td>
+                        echo "<tr class='row'>
+                            <td>".$row[0]."</td>
                             <td>".$row[1]."</td>";
                         $result=query("select nomForum from forum where idForum=".$row[3]);
                         

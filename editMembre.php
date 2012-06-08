@@ -35,7 +35,7 @@
                                 </div>
                             </div> 
                             <div class="control-group">
-                                <label class="control-label" for="select01"><b>Changer son droit</b></label>
+                                <label class="control-label" for="select01"><b>Changer son rôle</b></label>
                                 <div class="controls">
                                 <select id="select02">
                                     <?php
