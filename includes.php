@@ -51,7 +51,7 @@ function entete($titre)
 // --------------------- FONCTION DU MENU POUR GERER LES DROITS -------------------
 function verif_connexion()
 {
-       if (!isset($_SESSION['idUlti']))
+       if (!isset($_SESSION['idUtil']))
        {
                        echo'Vous devez etre inscrit et connect&eacute; pour visionner cette page.';
                        $url="./index.php";
