@@ -148,7 +148,7 @@ function verif_connexion()
             echo'
                     <ul class="nav">
                     <ul class="nav nav-pills">
-                        <a data-toggle="modal" href="#myModal" class="btn btn-danger"><i>Se connecter</i></a> 
+                        <a data-toggle="modal" href="#myModal" class="btn btn-danger" class="btn-group pull-right"><i>Se connecter</i></a> 
                     </ul>   
                     </ul>
                         </div> 
