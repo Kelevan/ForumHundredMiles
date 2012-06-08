@@ -166,13 +166,13 @@ function verif_connexion()
                                 <div class="control-group">
                                     <label class="control-label" for="input01"><b>E-mail</b></label>
                                     <div class="controls">
-                                        <input type="text" class="input-medium" id="mail" name="mail">  
+                                        <input type="text" class="input-large" id="mail" name="mail">  
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label" for="input01"><b>mot de passe</b></label>
                                     <div class="controls">
-                                        <input type="password" class="input-medium" id="pass" name="pass">  
+                                        <input type="password" class="input-large" id="pass" name="pass">  
                                     </div>
                                 </div>
                     </div>             
