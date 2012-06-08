@@ -38,7 +38,7 @@
                         }
                         echo"<td>".$nomForumPère."</td>
                         <td><a class='btn' href='./editForum.php?id=".$row[0]."'><i class='icon-pencil'></i></a>
-                        <div id='SuppressionMembre' class='modal hide fade'>
+                        <div id='SuppressionForum".$row[0]."' class='modal hide fade'>
                             <div class='modal-header'>
                                 <button class='close' data-dismiss='modal'>&times;</button>
                                 <h3>Suppression d'un utilisateur</h3>
@@ -51,7 +51,7 @@
                                 <a href='#' class='btn btn-warning data-dismiss=modal'>Non</a>
                             </div>
                         </div>
-                        <a data-toggle='modal' href='#' class='btn btn-danger'>
+                        <a data-toggle='modal' href='#SuppressionForum".$row[0]."' class='btn btn-danger'>
                             <i class='icon-remove'></i>
                         </a></td>
                         </tr>";

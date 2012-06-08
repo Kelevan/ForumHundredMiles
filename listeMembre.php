@@ -31,7 +31,7 @@
                                         <td>".$row[1]."</td>
                                         <td>".$row[3]."</td>
                                         <td><a class='btn' href='./editMembre.php?id=".$row[0]."'><i class='icon-pencil'></i></a>
-                                        <div id='SuppressionMembre' class='modal hide fade'>
+                                        <div id='SuppressionMembre".$row[0]."' class='modal hide fade'>
                                             <div class='modal-header'>
                                                 <button class='close' data-dismiss='modal'>&times;</button>
                                                 <h3>Suppression d'un utilisateur</h3>
@@ -44,7 +44,7 @@
                                                 <a href='#' class='btn btn-warning data-dismiss=modal'>Non</a>
                                             </div>
                                         </div>
-                                        <a data-toggle='modal' href='#SuppressionMembre' class='btn btn-danger'>
+                                        <a data-toggle='modal' href='#SuppressionMembre".$row[0]."' class='btn btn-danger'>
                                             <i class='icon-remove'></i>
                                         </a></td>
                                         </tr>";
