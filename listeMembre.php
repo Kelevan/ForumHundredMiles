@@ -40,7 +40,7 @@
                                                 <h5>Etes-vous sur de vouloir supprimer l'utilisateur KirbyFr ?</h5>    
                                             </div>
                                             <div class='modal-footer'>
-                                                <a href='deleteMembre' class='btn btn-primary'>Oui</a>
+                                                <a href='./deleteMembre.php?id=".$row[0]."' class='btn btn-primary'>Oui</a>
                                                 <a href='#' class='btn btn-warning data-dismiss=modal'>Non</a>
                                             </div>
                                         </div>
