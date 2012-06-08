@@ -7,7 +7,6 @@
     <ul class="nav nav-tabs">
         <li><a href="./listeMembre.php">Listes</a></li>
         <li><a href="./addMembre.php">Ajouter un membre</a></li>
-        <li><a href="./editMembre.php">Modifier un membre</a></li>
     </ul>
     <h3>Ajouter un membre</h3><br/>
     

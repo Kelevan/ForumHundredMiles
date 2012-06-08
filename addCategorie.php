@@ -9,7 +9,6 @@
     <ul class="nav nav-tabs">
         <li><a href="./listeCategorie.php">Listes</a></li>
         <li><a href="./addCategorie.php">Ajouter une catégorie</a></li>
-        <li><a href="./editCategorie.php">Modifier une categorie</a></li>
     </ul>
     <h3>Ajouter une catégorie</h3><br/>
     <div id="form_container">
