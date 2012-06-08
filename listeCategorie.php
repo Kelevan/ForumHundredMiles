@@ -43,7 +43,7 @@
                                     <h5>Etes-vous sur de vouloir supprimer la catégorie organisation ?</h5>    
                                 </div>
                                 <div class='modal-footer'>
-                                    <a href='deletecategorie.php?id=".$row[0]."' class='btn btn-primary'>Oui</a>
+                                    <a href='deleteCategorie.php?id=".$row[0]."' class='btn btn-primary'>Oui</a>
                                     <a href='#' class='btn btn-warning' data-dismiss='modal'>Non</a>
                                 </div>
                                 </div>    
