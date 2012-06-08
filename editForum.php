@@ -1,6 +1,11 @@
 <?php
     include_once("./includes.php");
     entete("Modifier un forum");
+    
+    if(isset($_GET['id'])){                                
+        $forum_connexion=query("select * from forum where idForum=".$_GET['id']."");
+        $row=mysql_fetch_array($forum_connexion);
+    }
 ?> 
 <div class="container">
     <ul class="nav nav-tabs">
@@ -16,34 +21,36 @@
             <form class="well form-horizontal">
                 <fieldset>
                     <div class="control-group">
-                        <label class="control-label" for="select01"><b>Numéro du forum</b></label>
-                        <div class="controls">
-                        <select id="select01">
-                            <option>1</option>
-                        </select>
-                        </div>
-                    </div>
-                    <div class="control-group">
                         <label class="control-label" for="input01"><b>Nom du forum</b></label>
                         <div class="controls">
-                            <input type="text" class="input-medium" id="input01" value="Tom">  
+                            <?php
+                                echo"<input type='text' class='input-medium' id='nomCat' name='nomCat' value='".$row[1]."'>";
+                            ?>  
                         </div>
                     </div> 
                     <div class="control-group">
                         <label class="control-label" for="select01"><b>Nom catégorie</b></label>
                         <div class="controls">
-                        <select id="select01">
-                            <option>Organisation</option>
-                        </select>
+                            <select id="select01">
+                                <?php
+                                    $cat_connexion=query("select * from categorie");
+                                    while ($cat = mysql_fetch_array($cat_connexion, MYSQL_NUM)) {
+                                    echo "<option value='".$cat[0]."'>".$cat[1]."</option>";
+                                    }
+                                ?>
+                            </select>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="select01"><b>Nom du forum père</b></label>
                         <div class="controls">
-                        <select id="select01">
-                            <option></option>
-                            <option>Lyrics</option>
-                        </select>
+                            <select id="select01">
+                                <?php
+                                    while ($row = mysql_fetch_array($forum_connexion, MYSQL_NUM)) {
+                                            echo "<option value=".$row[0].">".$row[1]."</option>";
+                                            };
+                                ?>
+                            </select>
                         </div>
                     </div>
                     <div class="form-actions">

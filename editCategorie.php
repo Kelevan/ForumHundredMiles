@@ -1,6 +1,11 @@
 <?php
     include_once("./includes.php");
     entete("Modifier une catégorie");
+    
+    if(isset($_GET['id'])){                                
+        $cat_connexion=query("select * from categorie where idCat=".$_GET['id']."");
+        $row=mysql_fetch_array($cat_connexion);
+    }
 ?> 
     <div class="container">
       <div class="row">          
@@ -16,23 +21,21 @@
             <form class="well form-horizontal">
             <fieldset>
                 <div class="control-group">
-                    <label class="control-label" for="select01"><b>Numéro</b></label>
-                    <div class="controls">
-                    <select id="select01">
-                        <option>1</option>
-                    </select>
-                    </div>
-                </div>
-                <div class="control-group">
                     <label class="control-label" for="input01"><b>Nom</b></label>
                     <div class="controls">
-                        <input type="text" class="input-medium" id="input01" value="Musiques">  
+                        <!--<?php
+                            echo"<input type='text' class='input-medium' id='Catnom' name='Catnom' value='".$row[1]."'>";
+                        ?> -->  
+                        <input type='text' class='input-medium' id='Catnom' name='Catnom' value=''>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="input02"><b>Description</b></label>
                     <div class="controls">
-                    <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+                    <!--<?php
+                            echo"<textarea class='input-xlarge' id='catTextarea' name='catTextarea' rows='3'>".$row[2]."</textarea>";
+                        ?>-->
+                        <textarea class='input-xlarge' id='catTextarea' name='catTextarea' rows='3'></textarea>
                     </div>
                 </div> 
                 <div class="form-actions">

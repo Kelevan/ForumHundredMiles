@@ -1,6 +1,11 @@
 <?php
     include_once("./includes.php");
     entete("Modifier un membre");
+
+    if(isset($_GET['id'])){                                
+        $util_connexion=query("select * from utilisateur where idUtil=".$_GET['id']."");
+        $row=mysql_fetch_array($util_connexion);
+    }
 ?> 
     <div class="container">
         <ul class="nav nav-tabs">
@@ -18,10 +23,6 @@
                                 <label class="control-label" for="input01"><b>Pseudo</b></label>
                                 <div class="controls">
                                     <?php 
-                                         if(isset($_GET['id'])){                                
-                                            $util_connexion=query("select * from utilisateur where idUtil=".$_GET['id']."");
-                                            $row=mysql_fetch_array($util_connexion);
-                                        }
                                         echo"<input type='text' class='input-medium' id='pseudo' name='pseudo' value='".$row[1]."'>"; 
                                     ?> 
                                 </div>
