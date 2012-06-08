@@ -9,7 +9,6 @@
                 <ul class="nav nav-tabs">
                     <li><a href="./listeMembre.php">Listes</a></li>
                     <li><a href="./addMembre.php">Ajouter un membre</a></li>
-                    <li><a href="./editMembre.php">Modifier un membre</a></li>
                 </ul>
                 <form class="well form-horizontal" method="post" action="./editMembre.php">
                     <table class="table table-bordered table-condensed">    

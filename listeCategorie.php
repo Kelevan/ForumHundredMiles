@@ -9,7 +9,6 @@
         <ul class="nav nav-tabs">
             <li><a href="./listeCategorie.php">Listes</a></li>
             <li><a href="./addCategorie.php">Ajouter une catégorie</a></li>
-            <li><a href="./editCategorie.php">Modifier une categorie</a></li>
         </ul>
         <div class="container">
         <table class="table table-bordered table-condensed">

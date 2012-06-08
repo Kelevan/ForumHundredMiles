@@ -7,7 +7,6 @@
         <ul class="nav nav-tabs">
             <li><a href="./listeForum.php">Listes</a></li>
             <li><a href="./addForum.php">Ajouter un forum</a></li>
-            <li><a href="./editForum.php">Modifier un forum</a></li>
         </ul>
         <form class="well form-horizontal" method="post" action="./editeditForum.php">
             <table class="table table-bordered table-condensed">
