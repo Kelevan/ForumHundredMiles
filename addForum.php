@@ -42,7 +42,7 @@
                         <select id="Forum" name="Forum">
                                 <?php
                                     $req_connexion=query("select * from forum");
-                                    echo"<option value='".$row[3]."'></option>";
+                                    echo"<option value='".$row[3]."'>0</option>";
                                     while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
                                        echo "<option value='".$row[0]."'>".$row[1]."</option>";
                                                
