@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Panel Catégorie");
+    verif_connexion();
 ?> 
     <div class="container">
     <div class="row">          

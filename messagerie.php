@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Messagerie");
+    verif_connexion();
 ?> 
    
     <div class="container">

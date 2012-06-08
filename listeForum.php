@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Panel Forum");
+    verif_connexion();
 ?> 
     <div class="container">   
         <ul class="nav nav-tabs">

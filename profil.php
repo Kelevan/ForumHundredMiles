@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Profil");
+    verif_connexion();
 ?> 
   
     <div class="container">

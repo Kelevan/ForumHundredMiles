@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Modifier une catégorie");
+    verif_connexion();
     
     if(isset($_GET['id'])){                                
         $cat_connexion=query("select * from categorie where idCat=".$_GET['id']."");

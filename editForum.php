@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Modifier un forum");
+    verif_connexion();
     
     if(isset($_GET['id'])){                                
         $forum_connexion=query("select * from forum where idForum=".$_GET['id']."");

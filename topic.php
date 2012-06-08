@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Lirycs");
+    verif_connexion();
 ?> 
     <div class="container">
             <ul class="breadcrumb">

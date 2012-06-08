@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Modifier un membre");
+    verif_connexion();
 
     if(isset($_GET['id'])){                                
         $util_connexion=query("select * from utilisateur where idUtil=".$_GET['id']."");

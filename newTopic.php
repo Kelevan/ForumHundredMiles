@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Nouveau Topic");
+    verif_connexion();
 ?> 
 
 <div class="container">     

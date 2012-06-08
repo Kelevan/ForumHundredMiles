@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Sendmessage");
+    verif_connexion();
 ?>  
   
 <!--------------------------------BODY------------------------------------->  

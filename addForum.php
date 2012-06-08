@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Ajouter un forum");
+    verif_connexion();
 ?> 
 <div class="container">
     <ul class="nav nav-tabs">

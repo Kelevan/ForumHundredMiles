@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Panel Membre");
+    verif_connexion();
 ?> 
     <div class="container">
         <div class="row">          
