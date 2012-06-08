@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Topic");
+    verif_connexion();
 ?>  
   
 <!--------------------------------BODY------------------------------------->  

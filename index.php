@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Index");
+    
 ?>
 
     <div class="container">

@@ -1,6 +1,7 @@
 <?php
     include_once("./db.php");
     
+    
     echo "Vous avez supprime le forum numero ".$_GET['id']."";
     if (isset($_GET['id']))  
     {

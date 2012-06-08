@@ -1,6 +1,7 @@
 <?php
     include_once("./includes.php");
     entete("Forum");
+    verif_connexion();
 ?> 
  <div class="container">     
     <ul class="breadcrumb">

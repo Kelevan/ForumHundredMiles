@@ -49,12 +49,21 @@ function entete($titre)
 }   
 
 // --------------------- FONCTION DU MENU POUR GERER LES DROITS -------------------
+function verif_connexion()
+{
+       if (!isset($_SESSION['idUlti']))
+       {
+                       echo'Vous devez etre inscrit et connect&eacute; pour visionner cette page.';
+                       $url="./index.php";
+                       die('<meta http-equiv="refresh" content="1;URL='.$url.'">');
+       }
+}
 
   function menu()
 {  
     if(isset($_SESSION['pseudo']))
         {
-            
+
             if (isset($_SESSION['idTypeUtil']))
             {
                 if ($_SESSION['idTypeUtil']==1)
