@@ -4,8 +4,8 @@
     echo "Vous avez supprime le membre numero ".$_GET['id']."";
     if (isset($_GET['id']))  
     {
-        query("DELETE FROM categorie WHERE idCat=" .$_GET['id']."");
-        die('<meta http-equiv="refresh" content="2;URL=./listeCategorie.php">');
+        query("DELETE FROM utilisateur WHERE idUtil=" .$_GET['id']."");
+        die('<meta http-equiv="refresh" content="2;URL=./listeMembre.php">');
     }
     else
     {

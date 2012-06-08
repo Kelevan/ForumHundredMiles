@@ -36,7 +36,7 @@
                                 </a>
                                 <div id='SuppressionCategorie".$row[0]."' class='modal hide fade'>
                                 <div class='modal-header'>
-                                    <button class='close' data-dismiss='modal'>.&times;.</button>
+                                    <button class='close' data-dismiss='modal'>&times;</button>
                                     <h3>Suppression d une catégorie</h3>
                                 </div>
                                 <div class='modal-body'>
