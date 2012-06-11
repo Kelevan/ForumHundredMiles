@@ -2,7 +2,6 @@
     include_once("./includes.php");
     entete("Musique");
     verif_connexion();
-    echo $_GET['id'];
 ?>    
     <div class="container">
         <ul class="breadcrumb">
