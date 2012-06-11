@@ -42,14 +42,14 @@
                         <div id='SuppressionForum".$row[0]."' class='modal hide fade'>
                             <div class='modal-header'>
                                 <button class='close' data-dismiss='modal'>&times;</button>
-                                <h3>Suppression d'un utilisateur</h3>
+                                <h3>Suppression d'un forum</h3>
                             </div>
                             <div class='modal-body'>
-                                <h5>Etes-vous sur de vouloir supprimer l'utilisateur KirbyFr ?</h5>    
+                                <h5>Etes-vous sur de vouloir supprimer le forum ".$row[1]."?</h5>    
                             </div>
                             <div class='modal-footer'>
                                 <a href='./deleteForum.php?id=".$row[0]."' class='btn btn-primary'>Oui</a>
-                                <a href='#' class='btn btn-warning data-dismiss=modal'>Non</a>
+                                <a href='#' class='btn btn-warning' data-dismiss='modal'>Non</a>
                             </div>
                         </div>
                         <a data-toggle='modal' href='#SuppressionForum".$row[0]."' class='btn btn-danger'>

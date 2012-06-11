@@ -40,7 +40,7 @@
                                     <h3>Suppression d une catégorie</h3>
                                 </div>
                                 <div class='modal-body'>
-                                    <h5>Etes-vous sur de vouloir supprimer la catégorie organisation ?</h5>    
+                                    <h5>Etes-vous sur de vouloir supprimer la catégorie ".$row[1]." ?</h5>    
                                 </div>
                                 <div class='modal-footer'>
                                     <a href='deleteCategorie.php?id=".$row[0]."' class='btn btn-primary'>Oui</a>

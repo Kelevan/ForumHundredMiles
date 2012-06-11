@@ -51,11 +51,11 @@
                                                 <h3>Suppression d'un utilisateur</h3>
                                             </div>
                                             <div class='modal-body'>
-                                                <h5>Etes-vous sur de vouloir supprimer l'utilisateur KirbyFr ?</h5>    
+                                                <h5>Etes-vous sur de vouloir supprimer l'utilisateur ".$row[1]." ?</h5>    
                                             </div>
                                             <div class='modal-footer'>
                                                 <a href='./deleteMembre.php?id=".$row[0]."' class='btn btn-primary'>Oui</a>
-                                                <a href='#' class='btn btn-warning data-dismiss=modal'>Non</a>
+                                                <a href='#' class='btn btn-warning' data-dismiss='modal'>Non</a>
                                             </div>
                                         </div>
                                         <a data-toggle='modal' href='#SuppressionMembre".$row[0]."' class='btn btn-danger'>
