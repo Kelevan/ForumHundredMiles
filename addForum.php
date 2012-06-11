@@ -24,30 +24,30 @@
                     <div class="control-group">
                         <label class="control-label" for="select01"><b>ID catégorie</b></label>
                         <div class="controls">
-                        <select id="nomCat" name="nomCat">
-                                <?php
-                                    $req_connexion=query("select * from categorie");
-                                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
-                                       echo "<option value='".$row[0]."'>".$row[1]."</option>";
-                                               
-                                    }
-                                ?>
-                        </select>
+                            <select id="nomCat" name="nomCat">
+                                    <?php
+                                        $req_connexion=query("select * from categorie");
+                                        while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
+                                        echo "<option value='".$row[0]."'>".$row[1]."</option>";
+
+                                        }
+                                    ?>
+                            </select>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="select01"><b>ID forum père</b></label>
                         <div class="controls">
-                        <select id="Forum" name="Forum">
-                                <?php
-                                    $req_connexion=query("select * from forum");
-                                    echo"<option value='".$row[3]."'>0</option>";
-                                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
-                                       echo "<option value='".$row[0]."'>".$row[1]."</option>";
-                                               
-                                    }
-                                ?>
-                        </select>
+                            <select id="Forum" name="Forum">
+                                    <?php
+                                        $req_connexion=query("select * from forum");
+                                        echo"<option value='".$row[3]."'>0</option>";
+                                        while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
+                                        echo "<option value='".$row[0]."'>".$row[1]."</option>";
+
+                                        }
+                                    ?>
+                            </select>
                         </div>
                     </div>
                     <div class="form-actions">
