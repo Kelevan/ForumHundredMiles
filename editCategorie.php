@@ -14,7 +14,6 @@
         <ul class="nav nav-tabs">
             <li><a href="./listeCategorie.php">Listes</a></li>
             <li><a href="./addCategorie.php">Ajouter une catégorie</a></li>
-            <li><a href="./editCategorie.php">Modifier une categorie</a></li>
         </ul>  
         <h3>Modifier une catégorie</h3><br/>
         <div id="form_container">
@@ -25,7 +24,7 @@
                     <label class="control-label" for="input01"><b>Nom</b></label>
                     <div class="controls">
                         <?php
-                            echo"<input type='text' class='input-medium' id='Catnom' name='Catnom' value='".$row[1]."'>";
+                            echo"<input type='text' class='input' id='catNom' name='catNom' value='".$row[1]."'>";
                         ?>
                     </div>
                 </div>
@@ -35,12 +34,13 @@
                         <?php
                             echo"<textarea class='input-xlarge' id='catTextarea' name='catTextarea' rows='3'>".$row[2]."</textarea>";
                         ?>
-                        <textarea class='input-xlarge' id='catTextarea' name='catTextarea' rows='3'></textarea>
                     </div>
                 </div> 
                 <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">modifier</button>
-                    <button type="reset" class="btn btn-warning">Annuler</button>
+                    <?php
+                        echo"<a class='btn btn-primary' href='./updateCategorie.php?id=".$row[0]."'>Modifier</a>
+                            <a class='btn btn-warning' href='./listeCategorie.php'>Anuler</a>"
+                    ?>
                 </div>
             </fieldset>
             </form>	
