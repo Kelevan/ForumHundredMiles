@@ -21,7 +21,7 @@
             <form class="well form-horizontal" method="post" action="./updateCategorie.php">
                 <fieldset>
                     <?php
-                    "<input type='hidden' id='idCate' name='idCate' value='".$_GET['id']."'>"
+                        "<input type='text hidden' id='idCate' name='idCate' value='".$_GET['id']."'>";
                     ?> 
                     <div class="control-group">
                         <label class="control-label" for="input01"><b>Nom</b></label>
