@@ -178,7 +178,7 @@ function verif_connexion()
                     </div>             
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Se connecter</button>
-                        <button type="remove" class="btn btn-warning">Annuler</button>
+                        <button data-dismiss="modal" class="btn btn-warning">Annuler</button>
                     </div>
                         </form>
                         </div>                   
