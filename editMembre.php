@@ -18,8 +18,11 @@
         <div class="span12">
             <h3>Modifier un membre</h3><br/>
                 <div class="tab-pane active" id="tab1">
-                    <form class="well form-horizontal" method="POST" action="transfert_editMembre.php">
-                        <fieldset>                                                  
+                    <form class="well form-horizontal" method="post" action="./updateMembre.php">
+                        <fieldset>
+                            <?php
+                                echo"<input type='hidden' id='idUtile' name='idUtile' value='".$_GET['id']."'>";
+                            ?> 
                             <div class="control-group">
                                 <label class="control-label" for="input01"><b>Pseudo</b></label>
                                 <div class="controls">
@@ -39,7 +42,7 @@
                             <div class="control-group">
                                 <label class="control-label" for="select01"><b>Changer son rôle</b></label>
                                 <div class="controls">
-                                <select id="select02">
+                                    <select id="typeUtil" name="typeUtil">
                                     <?php
                                         $typeutil_connexion=query("select * from type_utilisateur");
                                         while ($row = mysql_fetch_array($typeutil_connexion, MYSQL_NUM)) {
@@ -63,7 +66,7 @@
                             </div>
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary">Modifier</button>
-                                <button type="reset" class="btn btn-warning">Annuler</button>
+                                <button type="reset" class="btn btn-warning" href='./listeMembre.php'>Annuler</button>
                             </div>
                         </fieldset>
                     </form>
