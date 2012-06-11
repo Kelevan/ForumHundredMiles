@@ -7,7 +7,13 @@
         <ul class="breadcrumb">
         <li>
         <a href="./index.php">Home</a> <span class="divider">/</span>
-        <a href="./categorie.php">Musique</a></span>
+        <?php
+        $req_connexion=query("select idCat, from categorie where idCat='".$_POST['nomCat']."'");
+        while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
+        {
+        echo "<a href=./categorie.php?id=".$row[0].">".$row[1]."</a>";
+        }        
+       ?>
         </li>
         </ul>
     </div> 
