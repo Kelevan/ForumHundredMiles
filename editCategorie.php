@@ -21,7 +21,7 @@
             <form class="well form-horizontal" method="post" action="./updateCategorie.php">
                 <fieldset>
                     <?php
-                        "<input type='text hidden' id='idCate' name='idCate' value='".$_GET['id']."'>";
+                        echo"<input type='hidden' id='idCate' name='idCate' value='".$_GET['id']."'>";
                     ?> 
                     <div class="control-group">
                         <label class="control-label" for="input01"><b>Nom</b></label>
@@ -41,7 +41,7 @@
                     </div> 
                     <div class="form-actions">
                         <div class="control-group">
-                            <button type="submit" class="btn">Modifier</button>
+                            <button type="submit" class="btn btn-primary">Modifier</button>
                             <a class='btn btn-warning' href='./listeCategorie.php'>Anuler</a>
                         </div>
                     </div>

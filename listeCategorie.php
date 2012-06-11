@@ -32,7 +32,7 @@
                                     <td>".$row[2]."</td>
                                     <td>
                                         <a class='btn' href='./editCategorie.php?id=".$row[0]."'>
-                                        <i class='icon-pencil'></i>
+                                            <i class='icon-pencil'></i>
                                         </a>
                                         <div id='SuppressionCategorie".$row[0]."' class='modal hide fade'>
                                         <div class='modal-header'>

@@ -44,23 +44,27 @@
                                         }
                                         echo"<td>".$nomTypeUtil."</td>
                                         
-                                        <td><a class='btn' href='./editMembre.php?id=".$row[0]."'><i class='icon-pencil'></i></a>
-                                        <div id='SuppressionMembre".$row[0]."' class='modal hide fade'>
-                                            <div class='modal-header'>
-                                                <button class='close' data-dismiss='modal'>&times;</button>
-                                                <h3>Suppression d'un utilisateur</h3>
+                                        <td>
+                                            <a class='btn' href='./editMembre.php?id=".$row[0]."'>
+                                                    <i class='icon-pencil'></i>
+                                                </a>
+                                            <div id='SuppressionMembre".$row[0]."' class='modal hide fade'>
+                                                <div class='modal-header'>
+                                                    <button class='close' data-dismiss='modal'>&times;</button>
+                                                    <h3>Suppression d'un utilisateur</h3>
+                                                </div>
+                                                <div class='modal-body'>
+                                                    <h5>Etes-vous sur de vouloir supprimer l'utilisateur ".$row[1]." ?</h5>    
+                                                </div>
+                                                <div class='modal-footer'>
+                                                    <a href='./deleteMembre.php?id=".$row[0]."' class='btn btn-primary'>Oui</a>
+                                                    <a href='#' class='btn btn-warning' data-dismiss='modal'>Non</a>
+                                                </div>
                                             </div>
-                                            <div class='modal-body'>
-                                                <h5>Etes-vous sur de vouloir supprimer l'utilisateur ".$row[1]." ?</h5>    
-                                            </div>
-                                            <div class='modal-footer'>
-                                                <a href='./deleteMembre.php?id=".$row[0]."' class='btn btn-primary'>Oui</a>
-                                                <a href='#' class='btn btn-warning' data-dismiss='modal'>Non</a>
-                                            </div>
-                                        </div>
-                                        <a data-toggle='modal' href='#SuppressionMembre".$row[0]."' class='btn btn-danger'>
-                                            <i class='icon-remove'></i>
-                                        </a></td>
+                                            <a data-toggle='modal' href='#SuppressionMembre".$row[0]."' class='btn btn-danger'>
+                                                <i class='icon-remove'></i>
+                                            </a>
+                                        </td>
                                         </tr>";
 
                                 }
