@@ -11,7 +11,7 @@
         $req_connexion=query("select * from categorie where idCat='".$_GET['id']."'");
         while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
         {
-        echo "<a href=./categorie.php?id=".$row[0].">".$row[1]."</a>";
+        echo "<a href='./categorie.php?id=".$row[0]."'>".$row[1]."</a>";
         }        
        ?>
         </li>
