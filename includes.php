@@ -72,31 +72,36 @@ function verif_connexion()
                 }
                 elseif($_SESSION['idTypeUtil']==2)
                 {
-                    echo '      
-                        <ul class="nav nav-pills">
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
-                                    <li><a href="./listeForum.php">Gestion des forums</a></li>
-                                </ul>
-                            </li>
-                        </ul> 
+                    echo '
+                        <div class="nav-collapse">
+                            <ul class="nav nav-pills">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
+                                        <li><a href="./listeForum.php">Gestion des forums</a></li>
+                                    </ul>
+                                </li>
+                            </ul> 
+                        </div>
                         ';
                 }
                 elseif($_SESSION['idTypeUtil']==3)
                 {
-                    echo '      
-                        <ul class="nav nav-pills">
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
-                                    <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
-                                    <li><a href="./listeForum.php">Gestion des forums</a></li>
-                                </ul>
-                            </li>
-                        </ul> ';
+                    echo '
+                        <div class="nav-collapse">
+                            <ul class="nav nav-pills">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
+                                        <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
+                                        <li><a href="./listeForum.php">Gestion des forums</a></li>
+                                    </ul>
+                                </li>
+                            </ul> 
+                        </div>
+                        ';
                 }
             }
             echo '
@@ -147,7 +152,7 @@ function verif_connexion()
         {
             echo'
                     <ul class="nav pull-right">
-                    <ul class="nav nav-pills ">
+                    <ul class="nav nav-pills">
                         <a data-toggle="modal" href="#myModal" class="btn btn-danger" class="btn-group"><i>Se connecter</i></a> 
                     </ul>   
                     </ul>
