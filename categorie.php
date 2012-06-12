@@ -16,40 +16,39 @@
        ?>
         </li>
         </ul>
-    </div> 
-    <div class="container">
         <form class="well form-horizontal" method="post">        
-    <table class="table table-bordered table-condensed">
-        <thead>
-            <tr>
-                <th><a href="#">> Musique</a></th>
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr class="row">
+                        <th>Img forum</th>
+                        <th><center>Forums </center></th>
+                        <th>Messages</th>
+                        <th>Vues</th>
+                        <th>Dernier message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                    $req_connexion=query("select * from forum,categorie where categorie.idCat=forum.id_Cat and idCat='".$_GET['id']."'");
+                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
+                    {
+                    echo "
+                        <tr class='row'> 
+                        <td></td>
+                        <td><a href='./forum.php?id=".$row[0]."'>".$row[1]."</a></td>
+                        <td></td>
+                        <td></td>    
+                        <td></td>    
+                        </tr>
+                        ";
+                    }
 
-            </tr>
-            <tr calss="row">
-                <th>Img forum</th>
-                <th><center>Forums </center></th>
-                <th>Messages</th>
-                <th>Vues</th>
-                <th>Dernier message</th>
-            </tr>
-        </thead>
-        <tbody>
-        <?php
-        $req_connexion=query("select * from forum");
-        while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
-        echo "<tr class='row'> 
-        <td>".$row[1]."</td>
-        <td></td>
-        <td></td>
-        <td></td>    
-        <td></td>    
-        </tr>";
-        }
+                ?>
 
-        ?>
-
-        </tbody>
-    </table>
+                </tbody>
+            </table>
+        </form>
+        
 <?php
     pied();
 ?>               
