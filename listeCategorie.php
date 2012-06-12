@@ -18,9 +18,9 @@
                         </tr>
                         <tr class="row">
                             <th><center>ID </center></th>
-                            <th>Nom de la catégorie</th>
-                            <th>Description de la Catégorie</th>
-                            <th>Modifications</th>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>

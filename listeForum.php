@@ -16,10 +16,10 @@
                     </tr>
                     <tr class="row">
                         <th><center>ID </center></th>
-                        <th>Nom du forum</th>
+                        <th>Nom</th>
                         <th>Forum Père</th>
                         <th>Catégorie</th>
-                        <th>Modifications</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
             <tbody>

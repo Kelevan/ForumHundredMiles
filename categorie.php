@@ -11,45 +11,50 @@
         $req_connexion=query("select * from categorie where idCat='".$_GET['id']."'");
         while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
         {
-        echo "<a href=./categorie.php?id=".$row[0].">".$row[1]."</a>";
+        echo "<a href='./categorie.php?id=".$row[0]."'>".$row[1]."</a>";
         }        
        ?>
         </li>
         </ul>
-    </div> 
-    <div class="container">
         <form class="well form-horizontal" method="post">        
-    <table class="table table-bordered table-condensed">
-        <thead>
-            <tr>
-                <th><a href="#">> Musique</a></th>
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr class="row">
+                        <th>Img forum</th>
+                        <th><center>Forums</center></th>
+                        <th>Nb Topics</th>
+                        <th>Dernier message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <?php
+                        $req_connexion0=query("select * from forum where id_Cat='".$_GET['id']."'");
+                        while ($row = mysql_fetch_array($req_connexion0, MYSQL_NUM)) 
+                        {
+                            echo " <tr class='row'> 
+                            <td></td>
+                                <td><a href='./forum.php?id=".$row[0]."'>".$row[1]."</a></td>
+                                ";
+                        
+                        
+                            $req_connexion1=query("select count(idTopic) from topic where id_Forum='".$row[0]."'");
+                            while ($row1 = mysql_fetch_array($req_connexion1, MYSQL_NUM)) 
+                            {
+                            echo "
+                                <td>".$row1[0]."</td>
+                                <td></td>
+                            </tr>
+                                ";
+                            }
+                        }
+                    ?>
+                        
 
-            </tr>
-            <tr calss="row">
-                <th>Img forum</th>
-                <th><center>Forums </center></th>
-                <th>Messages</th>
-                <th>Vues</th>
-                <th>Dernier message</th>
-            </tr>
-        </thead>
-        <tbody>
-        <?php
-        $req_connexion=query("select * from forum");
-        while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
-        echo "<tr class='row'> 
-        <td>".$row[1]."</td>
-        <td></td>
-        <td></td>
-        <td></td>    
-        <td></td>    
-        </tr>";
-        }
-
-        ?>
-
-        </tbody>
-    </table>
+                </tbody>
+            </table>
+        </form>
+        
 <?php
     pied();
 ?>               

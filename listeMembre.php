@@ -21,7 +21,7 @@
                                 <th>Pseudo</th>
                                 <th>E-mail</th>
                                 <th>Rôle</th>
-                                <th>Modifications</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
