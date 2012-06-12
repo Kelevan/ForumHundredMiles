@@ -22,7 +22,7 @@
                         </div>
                     </div> 
                     <div class="control-group">
-                        <label class="control-label" for="select01"><b>ID catégorie</b></label>
+                        <label class="control-label" for="select01"><b>Catégorie</b></label>
                         <div class="controls">
                             <select id="nomCat" name="nomCat">
                                     <?php
@@ -36,12 +36,12 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="select01"><b>ID forum père</b></label>
+                        <label class="control-label" for="select01"><b>Forum père</b></label>
                         <div class="controls">
                             <select id="Forum" name="Forum">
                                     <?php
                                         $req_connexion=query("select * from forum");
-                                        echo"<option value='".$row[3]."'>0</option>";
+                                        echo"<option value='0'></option>";
                                         while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
                                         echo "<option value='".$row[0]."'>".$row[1]."</option>";
 

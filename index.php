@@ -8,9 +8,15 @@
 <!----------- Tab FICHIERS ----------->
       <div class="row"> 
         <div class="span6">
-            <form class="form-actions">
+            <?php
+            if (!isset($_SESSION['idUtil']))
+            {
+                echo'Vous devez etre inscrit et connect&eacute; pour visionner cette page.';
+                header("location : ./index.php");
+            }else{
+            echo"<form class='form-actions'>
                 <legend>Derniers&nbsp;Ajouts</legend>
-                <table class="table table-bordered table-condensed">
+                <table class='table table-bordered table-condensed'>
                     <thead>
                         <tr>
                             <th><h4>Nom&nbsp;du&nbsp;fichier</h4></th>
@@ -21,14 +27,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="./audio/SleepAway.mp3">2 see</a></td>
-                            <td><a href="./message.php">You&nbsp;See</a></td>
+                            <td><a href='./audio/SleepAway.mp3'>2 see</a></td>
+                            <td><a href='./message.php'>You&nbsp;See</a></td>
                             <td>Val</td>
                             <td>Audio</td>
                         </tr>
                         <tr>
-                            <td><a href="./audio/Kalimba.mp3">Kalimba</a></td>
-                            <td><a href="./message.php">To&nbsp;My&nbsp;Dad</td>
+                            <td><a href='./audio/Kalimba.mp3'>Kalimba</a></td>
+                            <td><a href='./message.php'>To&nbsp;My&nbsp;Dad</td>
                             <td>Val</td>
                             <td>Audio</td>
                         </tr>
@@ -38,10 +44,10 @@
         </div>
 
 <!----------- Tab Topics/Messages ----------->
-        <div class="span6">             
-            <form class="form-actions">
+        <div class='span6'>             
+            <form class='form-actions'>
                 <legend>Dernières&nbsp;news</legend>
-                <table class="table table-bordered table-condensed">
+                <table class='table table-bordered table-condensed'>
                     <thead>
                         <tr>
                             <th><h4>Forum</h4></th>
@@ -52,14 +58,15 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="./forum.php">Lyrics</a></td>
-                            <td><a href="./topic.php">Lyrics</a></td>
-                            <td><a href="./message.php">2 see</a></td>
+                            <td><a href='./forum.php'>Lyrics</a></td>
+                            <td><a href='./topic.php'>Lyrics</a></td>
+                            <td><a href='./message.php'>2 see</a></td>
                             <td>Mer mar 14, 2012 3:05pm<br/>Tom</td>
                         </tr>
                     </tbody>
                 </table>
-            </form>
+            </form>";};
+                    ?>
         </div>
       </div>
 <?php

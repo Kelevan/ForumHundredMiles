@@ -17,8 +17,7 @@
         <legend><a href="./categorie.php">> Lyrics</a></Legend>
         <table class="table table-bordered">      
             <thead>                         
-                <tr class="row">                
-                    <th></th>
+                <tr class="row">
                     <th><center>Topics </center></th>
                     <th><center>Réponses</center></th>
                     <th><center>Vues</center></th>
@@ -27,21 +26,18 @@
             </thead>
             <tbody>
                 <tr class="row">
-                    <td>logo_new</td>
                     <td><a href="./message.php">You See</a></td>
                     <td>0</td>
                     <td>30</td>
                     <td>Mer mar 14, 2012 3:05pm<br/>Tom</td>
                 </tr>
                 <tr class="row">
-                    <td>logo_new</td>
                     <td><a href="./message.php">To My dad</a></td>
                     <td>0</td>
                     <td>19</td>
                     <td>Valou</td>
                 </tr>
                 <tr class="row">
-                    <td>logo_new</td>
                     <td><a href="./message.php">Life on Demand </a></td>
                     <td>5</td>
                     <td>18</td>

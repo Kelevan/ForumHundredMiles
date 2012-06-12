@@ -42,7 +42,7 @@
                     <tbody>
                         <tr>
                             <td>Valou <br/> image </td>
-                            <td>Salut les pd ! fvrezjikrvojreoi  gjh iogr hhjnoi gjhi  j kogrp gtjio grr htr gri jgtrio grtz gjio gpb tr jibgop b hgtr,io p  nhtip hjgjtog bniogtp   jp   gtnjiohtjkhtrjioohrjikop   jhuhntglm b njiobh  bhntjnio  hy,,jiko hty</td>
+                            <td>Salut !</td>
                         </tr>                        
                     </tbody>
                 </table>

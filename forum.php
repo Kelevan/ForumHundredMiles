@@ -18,7 +18,6 @@
          <table class="table table-bordered table-condensed">            
             <thead>               
                 <tr>
-                    <th></th>
                     <th><center>Forums </center></th>
                     <th>Sujets</th>
                     <th>Messages</th>
@@ -27,21 +26,19 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="label label-info">NEW</span></td>
+                   
                     <td><a href="./topic.php">Lyrics <br/></a>Lyrics terminée et opérationnelles.</td>
                     <td>11</td>
                     <td>24</td>
                     <td><a href="./message.php">You&nbsp;See</a><br/>Mer mar 14, 2012 3:05pm<br/>Tom</td>
                 </tr>
-                <tr>              
-                    <td></td>
+                <tr>        
                     <td><a href="#">Traduction<br/></a>Traduction des lyrics existantes.</td>
                     <td>7</td>
                     <td>9</td>
                     <td>Jeu dec 09, 2010 2:20am<br/>Valou</td>
                 </tr>
                 <tr>
-                    <td><td>
                     <td><a href="#">Idées<br/></a>Idées de lyrics qui trainent.</td>
                     <td>4</td>
                     <td>24</td>
@@ -54,26 +51,24 @@
     <form class="well">   
         <table class="table table-bordered table-condensed">
         <legend><a href="#">> Lyrics</a></legend>
-        <thead>
-            <tr>
-                <th></th>
-                <th><center>Sujets </center></th>
-                <th>Auteur</th>
-                <th>Réponses</th>
-                <th>Vus</th>
-                <th>Dernier message</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td>Ré-Écriture des lyrics<br/>[  Aller à la page <a>1</a>,<a>2</a>]</td>
-                <td>Valou</td>
-                <td>18</td>
-                <td>72</td>
-                <td>Mer nov 23,2011 9:38pm<br/>Dav</td>
-            </tr>
-        </tbody>
+            <thead>
+                <tr>
+                    <th><center>Sujets </center></th>
+                    <th>Auteur</th>
+                    <th>Réponses</th>
+                    <th>Vus</th>
+                    <th>Dernier message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ré-Écriture des lyrics<br/>[  Aller à la page <a>1</a>,<a>2</a>]</td>
+                    <td>Valou</td>
+                    <td>18</td>
+                    <td>72</td>
+                    <td>Mer nov 23,2011 9:38pm<br/>Dav</td>
+                </tr>
+            </tbody>
         </table>
     </form>      
         
