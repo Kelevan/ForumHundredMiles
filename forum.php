@@ -8,16 +8,17 @@
         <li>
             <a href="./index.php">Home</a> <span class="divider">/</span>
             <?php
-                $req_connexion=query("select * from categorie where idCat='".$_GET['id']."'");
+                $req_connexion=query("select idCat, nomCat from categorie c,forum f where c.idCat = f.id_Cat and f.idForum='".$_GET['id']."'");
                 while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
                 {
-                echo "<a href=./categorie.php?id=".$row[0].">".$row[1]."</a><span class='divider'> /</span>";             
-                }  
-                
-                $req_connexion1=query("select * from forum where idforum='".$_GET['id']."'");
-                while ($row = mysql_fetch_array($req_connexion1, MYSQL_NUM)) 
-                {
-                echo "<a href=./forum.php?id=".$row[0].">".$row[1]."</a>";             
+                    echo "<a href=./categorie.php?id=".$row[0].">".$row[1]."</a><span class='divider'> /</span>";             
+
+
+                    $req_connexion1=query("select * from forum where idforum='".$_GET['id']."'");
+                    while ($row = mysql_fetch_array($req_connexion1, MYSQL_NUM)) 
+                    {
+                    echo "<a href=./forum.php?id=".$row[0].">".$row[1]."</a>";             
+                    }
                 } 
             ?>
            

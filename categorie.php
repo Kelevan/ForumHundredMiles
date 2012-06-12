@@ -22,28 +22,34 @@
                     <tr class="row">
                         <th>Img forum</th>
                         <th><center>Forums</center></th>
-                        <th>Messages</th>
-                        <th>Vues</th>
+                        <th>Nb Topics</th>
                         <th>Dernier message</th>
                     </tr>
                 </thead>
                 <tbody>
-                <?php
-                    $req_connexion=query("select * from forum,categorie where categorie.idCat=forum.id_Cat and idCat='".$_GET['id']."'");
-                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
-                    {
-                    echo "
-                        <tr class='row'> 
-                        <td></td>
-                        <td><a href='./forum.php?id=".$row[0]."'>".$row[1]."</a></td>
-                        <td></td>
-                        <td></td>    
-                        <td></td>    
-                        </tr>
-                        ";
-                    }
-
-                ?>
+                   
+                    <?php
+                        $req_connexion0=query("select * from forum where id_Cat='".$_GET['id']."'");
+                        while ($row = mysql_fetch_array($req_connexion0, MYSQL_NUM)) 
+                        {
+                            echo " <tr class='row'> 
+                            <td></td>
+                                <td><a href='./forum.php?id=".$row[0]."'>".$row[1]."</a></td>
+                                ";
+                        
+                        
+                            $req_connexion1=query("select count(idTopic) from topic where id_Forum='".$row[0]."'");
+                            while ($row1 = mysql_fetch_array($req_connexion1, MYSQL_NUM)) 
+                            {
+                            echo "
+                                <td>".$row1[0]."</td>
+                                <td></td>
+                            </tr>
+                                ";
+                            }
+                        }
+                    ?>
+                        
 
                 </tbody>
             </table>
