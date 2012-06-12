@@ -21,7 +21,7 @@
                 <thead>
                     <tr class="row">
                         <th>Img forum</th>
-                        <th><center>Forums </center></th>
+                        <th><center>Forums</center></th>
                         <th>Messages</th>
                         <th>Vues</th>
                         <th>Dernier message</th>
