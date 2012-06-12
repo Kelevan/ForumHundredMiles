@@ -42,8 +42,9 @@
                         echo "<td>".$nomForumPère."</td>";
 
 
-                        $cat_connexion=query("select nomCat from categorie where categorie.idCat =forum.id_Cat and idCat=".$row[2]."");
-                        $cat=$cat_connexion[0];
+                        $cat_connexion=query("SELECT nomCat FROM categorie,forum WHERE categorie.idCat =forum.id_Cat AND idCat=".$row[2]."");
+                        $cat_result=mysql_fetch_array($cat_connexion);
+                        $cat=$cat_result[0];
 
                         echo "<td>".$cat."</td>
 
