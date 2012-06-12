@@ -8,7 +8,7 @@
         <li>
         <a href="./index.php">Home</a> <span class="divider">/</span>
         <?php
-        $req_connexion=query("select idCat, from categorie where idCat='".$_POST['nomCat']."'");
+        $req_connexion=query("select idCat, from categorie where idCat='".$_GET['id']."'");
         while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
         {
         echo "<a href=./categorie.php?id=".$row[0].">".$row[1]."</a>";
@@ -26,7 +26,6 @@
 
             </tr>
             <tr calss="row">
-                <th>Lu/non lu</th>
                 <th>Img forum</th>
                 <th><center>Forums </center></th>
                 <th>Messages</th>
@@ -38,8 +37,7 @@
         <?php
         $req_connexion=query("select * from forum");
         while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
-        echo "<tr class='row'>
-        <td></td>    
+        echo "<tr class='row'> 
         <td>".$row[1]."</td>
         <td></td>
         <td></td>
