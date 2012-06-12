@@ -130,10 +130,10 @@ function verif_connexion()
                     </ul>
                 </div>
                 ';
-            echo '<div class="btn-group pull-right">
-                        <span> <a class="btn btn-inverse" href="./messagerie.php"> <span class="add-on"><i class="icon-envelope icon-white"></i>&nbsp;</span>Messages&nbsp;</a><span>
-                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="icon-user"></i> ';
+            echo "<div class='btn-group pull-right'>
+                        <span> <a class='btn btn-inverse' href='./messagerie.php?id=".$_SESSION['idUtil']."'> <span class='add-on'><i class='icon-envelope icon-white'></i>&nbsp;</span>Messages&nbsp;</a><span>
+                        <a class='btn dropdown-toggle' data-toggle='dropdown' href='#'>
+                        <i class='icon-user'></i> ";
             echo $_SESSION['pseudo'];
             echo    '
                     <span class="caret"></span>
