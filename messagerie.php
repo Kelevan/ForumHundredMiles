@@ -14,10 +14,10 @@
             <div class="tab-content">
                 <!---- MESSAGERI ----->
                 <div class="tab-pane active" id="tab1">
-                    <form class="well form-horizontal">
+                    <form class="well form-horizontal" method="post" action="./messageprive.php">                        
                         <table class="table table-bordered table-condensed">
                             <thead>
-                                <tr>
+                                <tr class="row">
                                     <th></th>
                                     <th><h4>Sujets</h4></th>
                                     <th><h4>Auteur</h4></th>
@@ -25,43 +25,25 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><label class="large label label-info"><center>NEW</center></label></td>
-                                    <td><a href="./messageprive.php">NewParôle</a></td>
-                                    <td><a href="#">Val</a></td>
-                                    <td><label class="checkbox"><input type="checkbox"></label></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td><a href="#">Song</a></td>
-                                    <td><a href="#">Titi</a></td>
-                                    <td><label class="checkbox"><input type="checkbox"></label></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td><a href="#">Parôle Of the dead</a></td>
-                                    <td><a href="#">Val</a></td>
-                                    <td><label class="checkbox"><input type="checkbox"></label></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td><a href="#">Guitard</a></td>
-                                    <td><a href="#">Toto</a></td>
-                                    <td><label class="checkbox"><input type="checkbox"></label></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td><a href="#">Intro</a></td>
-                                    <td><a href="#">Val</a></td>
-                                    <td><label class="checkbox"><input type="checkbox"></label></td>
-                                </tr>
+                                <?php
+                                $req_connexion=query("SELECT * FROM messageprive,utilisateur WHERE messageprive.auteurId=utilisateur.idUtil AND destinateurId='".$_GET['id']."'");
+                                while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
+                                    echo "<tr class='row'>
+                                            <td></td>
+                                            <td><a href=./messageprive.php?id=".$row[0].">".$row[1]."</a></td>";
+                                                
+                                $req2_connexion=query("SELECT pseudo FROM messageprive,utilisateur WHERE messageprive.auteurId=utilisateur.idUtil AND auteurId=".$row[4]."");
+                                $auteur_result=mysql_fetch_array($req2_connexion);
+                                $auteur=$auteur_result[0];
+
+                                    echo "
+                                            <td>".$auteur."</td>
+                                            <td></td>
+                                         </tr>";
+                                    }
+                                ?>
                             </tbody>
                         </table>
-                        <div class="form-actions"> 
-                            <div class="pull-right">
-                            <button type="submit" class="btn btn-success">Supprimer</button>
-                            </div>
-                        </div>
                     </form>                    
                 </div>
 
@@ -74,20 +56,15 @@
                         </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="input01"><b>Sujet&nbsp;du&nbsp;MP</b></label>
+                            <label class="control-label" for="input01"><b>Sujet</b></label>
                             <div class="controls">
                                 <input type="text" class="input-medium" id="input01">
                             </div>
                         </div>
                         <div class="control-group">
+                            <label class="control-label" for="textcorps"><b>Corps</b></label>
                             <div class="controls">                
-                                <textarea name="content" style="width:50%" id="input02"></textarea> 
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="Upluader un Fichier"><b>Uploader&nbsp;un&nbsp;Fichier</b></label>
-                            <div class="controls">
-                                <input class="input-file" id="fileInput" type="file">
+                                <textarea name="corps" style="width:50%" id="input02"></textarea> 
                             </div>
                         </div>
                         <div class="form-actions">
