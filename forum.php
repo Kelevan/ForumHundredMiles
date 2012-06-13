@@ -26,7 +26,7 @@
     </ul>
      
 <!------------------ SOUS-FORUMS ------------------>
-     <form class="well">
+     <div class="well">
          <legend><a href="#">> Sous-Forum</a></legend>
          <table class="table table-bordered table-condensed">            
             <thead>               
@@ -38,30 +38,25 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                   
-                    <td><a href="./topic.php">Lyrics <br/></a>Lyrics terminée et opérationnelles.</td>
-                    <td>11</td>
-                    <td>24</td>
-                    <td><a href="./message.php">You&nbsp;See</a><br/>Mer mar 14, 2012 3:05pm<br/>Tom</td>
-                </tr>
-                <tr>        
-                    <td><a href="#">Traduction<br/></a>Traduction des lyrics existantes.</td>
-                    <td>7</td>
-                    <td>9</td>
-                    <td>Jeu dec 09, 2010 2:20am<br/>Valou</td>
-                </tr>
-                <tr>
-                    <td><a href="#">Idées<br/></a>Idées de lyrics qui trainent.</td>
-                    <td>4</td>
-                    <td>24</td>
-                </tr>
+                <?php
+                    $req_connexion=query("select * from forum where idForumPere='".$_GET['id']."'");
+                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
+                    {
+                        echo " <tr class='row'> 
+                        <td><a href='./forum.php?id=".$row[0]."'>".$row[1]."</a></td>
+                        <td></td>                                
+                        <td></td>
+                        <td></td>  
+                        </tr>
+                        ";
+                        }
+                ?>
             </tbody>
         </table>
-     </form>
+     </div>     
      
 <!------------------ TOPICS ------------------>
-    <form class="well">   
+    <div class="well">   
         <table class="table table-bordered table-condensed">
         <legend><a href="#">> Lyrics</a></legend>
             <thead>
@@ -83,7 +78,7 @@
                 </tr>
             </tbody>
         </table>
-    </form>      
+    </div>      
         
 <?php
     pied();
