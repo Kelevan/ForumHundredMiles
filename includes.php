@@ -126,13 +126,15 @@ function verif_connexion()
                 ';
             
             echo "
-                <div class='btn-group pull-right'>
-                        <span> <a class='btn btn-inverse' href='./messagerie.php'> <span class='add-on'><i class='icon-envelope icon-white'></i>&nbsp;</span>Messages&nbsp;</a><span>
+                <ul class='nav pull-right'>
+                    <div class='btn-group'>
+                        <a class='btn btn-inverse' href='./messagerie.php'> <span class='add-on'><i class='icon-envelope icon-white'></i>&nbsp;</span>Messages&nbsp;</a>";
+            echo "
                         <a class='btn dropdown-toggle' data-toggle='dropdown' href='#'>
                         <i class='icon-user'></i> ";
-            echo $_SESSION['pseudo'];
+            echo $_SESSION['pseudo']; 
             echo    '
-                    <span class="caret"></span>
+                    <span class="caret"></span></a>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="./profil.php">Profil</a></li>
