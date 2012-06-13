@@ -8,6 +8,6 @@
         }
         else
         {
-            echo"NO ok";echo"".$_POST['titre']."";echo"".$_POST['repondre']."";echo"".$_POST['idauteur']."";echo"".$_POST['session']."";
+            echo"NO ok";
         }
 ?>

@@ -48,41 +48,43 @@
                 </div>
                 <!---- ENVOI MP ----->
                 <div class="tab-pane" id="tab2">
-                    <form method="post"class="well form-horizontal" method="post" action="./sendMessagePrive.php"><div class="control-group">
+                    <form method="post"class="well form-horizontal" method="post" action="./sendMessagePrive.php">
+                        <div class="control-group">
                         <label class="control-label" for="inputdestinateur"><b>Destinataire</b></label>
-                        <div class="controls">
-                            <?php
-                                $util_connexion=query("SELECT pseudo FROM utilisateur");
-                                $liste = '"';
-                                while ($user = mysql_fetch_array($util_connexion, MYSQL_NUM)) {
-                                    $liste = $liste.$user[0].'","';
-                                }
-                                $liste = $liste.'"';
-                            ?>
-                             <input type="text" class="input-medium" data-provide="typeahead" id="destinataire" name="destinataire" data-items="4" data-source='[<?php echo $liste ?>]'>
-                            
-                        </div>
+                            <div class="controls">
+                                <?php
+                                echo"<input type='hidden' id='session' name='session' value='".$_SESSION['idUtil']."'>";
+                                
+                                    $util_connexion=query("SELECT pseudo FROM utilisateur");
+                                    $liste = '"';
+                                    while ($user = mysql_fetch_array($util_connexion, MYSQL_NUM)) {
+                                        $liste = $liste.$user[0].'","';
+                                    }
+                                    $liste = $liste.'"';
+                                ?>
+                                <input type="text" class="input-medium" data-provide="typeahead" id="destinataire" name="destinataire" data-items="4" data-source='[<?php echo $liste ?>]'>
+                            </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="input01"><b>Sujet</b></label>
                             <div class="controls">
-                                <input type="text" class="input-medium" id="input01">
+                                <input type="text" class="input-medium" id="titre" name="titre">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="textcorps"><b>Corps</b></label>
                             <div class="controls">                
-                                <textarea name="corps" style="width:50%" id="input02"></textarea> 
+                                <textarea name="envoie" style="width:50%" id="envoie"></textarea> 
                             </div>
                         </div>
                         <div class="form-actions">
                             <button type="submit" class="btn btn-success">Envoyer</button>
                             <button type="reset" class="btn btn-warning">Annuler</button>                   
-                        </div>
-                    </form> 
-                </div>
+                        </div> 
+                    </form>
+                </div> 
             </div>
-        </div>   
+        </div>
 <?php
     pied();
 ?>              
