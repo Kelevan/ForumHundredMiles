@@ -53,11 +53,11 @@
                         <div class="controls">
                             <?php
                                 $util_connexion=query("SELECT pseudo FROM utilisateur");
-                                $listePseudo=mysql_fetch_array($util_connexion, MYSQL_NUM); 
                                 $liste = '"';
-                                while ($user = mysql_fetch_array($listePseudo)) {
+                                while ($user = mysql_fetch_array($util_connexion, MYSQL_NUM)) {
                                     $liste = $liste.$user[0].'","';
                                 }
+                                $liste = $liste.'"';
                             ?>
                              <input type="text" class="input-medium" data-provide="typeahead" id="destinataire" name="destinataire" data-items="4" data-source='[<?php echo $liste[0] ?>]'>
                             
