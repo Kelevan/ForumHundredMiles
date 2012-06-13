@@ -59,7 +59,7 @@
                                 }
                                 $liste = $liste.'"';
                             ?>
-                             <input type="text" class="input-medium" data-provide="typeahead" id="destinataire" name="destinataire" data-items="4" data-source='[<?php echo $liste[0] ?>]'>
+                             <input type="text" class="input-medium" data-provide="typeahead" id="destinataire" name="destinataire" data-items="4" data-source='[<?php echo $liste ?>]'>
                             
                         </div>
                         </div>
