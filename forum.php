@@ -21,16 +21,15 @@
                     }
                 } 
             ?>
-           
         </li>
     </ul>
      
 <!------------------ SOUS-FORUMS ------------------>
      <div class="well">
-         <legend><a href="#">> Sous-Forum</a></legend>
+         <legend>Sous-Forum</legend>
          <table class="table table-bordered table-condensed">            
             <thead>               
-                <tr>
+                <tr class="row">
                     <th><center>Forums </center></th>
                     <th>Sujets</th>
                     <th>Messages</th>
@@ -56,26 +55,33 @@
      </div>     
      
 <!------------------ TOPICS ------------------>
-    <div class="well">   
+    <div class="well"> 
+        <legend>Topics</legend>
         <table class="table table-bordered table-condensed">
-        <legend><a href="#">> Lyrics</a></legend>
             <thead>
-                <tr>
-                    <th><center>Sujets </center></th>
+                <tr class="row">
+                    <th><center>Sujets</center></th>
                     <th>Auteur</th>
-                    <th>Réponses</th>
-                    <th>Vus</th>
-                    <th>Dernier message</th>
+                    <th>Réponse</th>
+                    <th>Vues</th>
+                    <th>Dernier Message</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Ré-Écriture des lyrics<br/>[  Aller à la page <a>1</a>,<a>2</a>]</td>
-                    <td>Valou</td>
-                    <td>18</td>
-                    <td>72</td>
-                    <td>Mer nov 23,2011 9:38pm<br/>Dav</td>
-                </tr>
+                <?php
+                    $req_connexion=query("select * from topic where id_Forum='".$_GET['id']."'");
+                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
+                    {
+                        echo " <tr class='row'> 
+                        <td><a href='./topic.php?id=".$row[0]."'>".$row[1]."</a></td>
+                        <td></td>                                
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        ";
+                        }
+                ?>
             </tbody>
         </table>
     </div>      
