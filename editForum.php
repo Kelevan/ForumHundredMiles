@@ -12,7 +12,6 @@
     <ul class="nav nav-tabs">
         <li><a href="./listeForum.php">Listes</a></li>
         <li><a href="./addForum.php">Ajouter un forum</a></li>
-        <li><a href="./editForum.php">Modifier un forum</a></li>
     </ul>    
     <div class="row">          
     <div class="span12">

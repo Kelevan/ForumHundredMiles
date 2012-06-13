@@ -41,8 +41,7 @@
                         }
                         echo "<td>".$nomForumPère."</td>";
 
-                        $req_connexion=query("SELECT * FROM messageprive,utilisateur WHERE messageprive.auteurId=utilisateur.idUtil AND destinateurId='".$_GET['id']."'");
-                        $cat_connexion=query("SELECT nomCat FROM categorie,forum WHERE categorie.idCat =forum.id_Cat AND idCat=".$row[2]."");
+                        $cat_connexion=query("SELECT nomCat FROM categorie WHERE idCat=".$row[2]."");
                         $cat_result=mysql_fetch_array($cat_connexion);
                         $cat=$cat_result[0];
 
