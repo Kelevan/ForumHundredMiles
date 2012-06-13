@@ -12,23 +12,20 @@
                 </ul>
                 <form class="well form-horizontal" method="post" action="./editMembre.php">
                     <table class="table table-bordered table-condensed">    
-                        <thead>
-                            <tr class="row">               
-                                <th><b>Liste des utilisateurs</b></th>
-                            </tr>
-                            <tr class="row">
-                                <th><center>ID </center></th>
-                                <th>Pseudo</th>
-                                <th>E-mail</th>
-                                <th>Rôle</th>
-                                <th>Actions</th>
+                        <thead class="row">
+                            <tr>
+                                <th class="span1"><center>ID </center></th>
+                                <th class="span3">Pseudo</th>
+                                <th class="span4">E-mail</th>
+                                <th class="span2">Rôle</th>
+                                <th class="span2"><center>Actions</center></th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
                                 $req_connexion=query("select * from utilisateur");
                                 while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
-                                    echo "<tr class='row'>
+                                    echo "<tr>
                                         <td>".$row[0]."</td>
                                         <td>".$row[1]."</td>
                                         <td>".$row[3]."</td>";
@@ -44,7 +41,7 @@
                                         }
                                         echo"<td>".$nomTypeUtil."</td>
                                         
-                                        <td>
+                                        <td><center>
                                             <a class='btn' href='./editMembre.php?id=".$row[0]."'>
                                                     <i class='icon-pencil'></i>
                                                 </a>
@@ -63,7 +60,7 @@
                                             </div>
                                             <a data-toggle='modal' href='#SuppressionMembre".$row[0]."' class='btn btn-danger'>
                                                 <i class='icon-remove'></i>
-                                            </a>
+                                            </a></center>
                                         </td>
                                         </tr>";
 

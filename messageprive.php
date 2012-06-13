@@ -2,13 +2,14 @@
     include_once("./includes.php");
     entete("Message Privé");
     verif_connexion();
+    
 ?>
 
     <div class="container">
         <ul class="pager">
             <li class="previous">
                 <?php
-                    echo"<a href='./messagerie.php?id=".$_SESSION['idUtil']."'><i class='icon-envelope'></i> Messagerie</a>";
+                    echo"<a href='./messagerie.php'><i class='icon-envelope'></i> Messagerie</a>";
                 ?>
             </li>
         </ul>
@@ -18,17 +19,20 @@
                 <tbody>
                     
                     <?php
+                    echo"<input type='hidden' id='session' name='session' value='".$_SESSION['idUtil']."'>";
                         $titre_connexion=query("SELECT titreMsgPrive FROM messageprive WHERE idMsgPrive=".$_GET['id']."");
                         $titre_result=mysql_fetch_array($titre_connexion);
                         $titre=$titre_result[0];
                         echo"
+                            <input type='hidden' id='titre' name='titre' value='".$titre."'>
                                 <tr class='row'>
-                                    <td name='titre' id='titre'><h4>".$titre."</h3></td>
+                                    <td><h4>".$titre."</h3></td>
                                 </tr>
                             ";
                         $search_auteur=query("SELECT auteurId FROM messageprive WHERE idMsgPrive='".$_GET['id']."'");
                         $find_auteur=  mysql_fetch_array($search_auteur);
                         $auteur1=$find_auteur[0];
+                        echo"<input type='hidden' id='idauteur' name='idauteur' value='".$auteur1."'>";
                         
                         $req2_connexion=query("SELECT pseudo FROM messageprive,utilisateur WHERE messageprive.auteurId=utilisateur.idUtil AND idUtil='".$auteur1."'");
                         $auteur_result=mysql_fetch_array($req2_connexion);

@@ -1,14 +1,13 @@
 <?php
     include_once("./db.php");
       
-        $req_connexion=query("SELECT * FROM messageprive");
-        if(mysql_num_rows($req_connexion)==0)
+        if(!isset($_POST['titre'])==0)
         {
-            query("INSERT INTO messageprive(titreMsgPrive,contenuMsgPrive,destinataireId,auteurId)values('".$_POST['nomCat']."','".($_POST['descCat'])."')");
-            header("location: ./messagerie.php?id=".$_SESSION['idUtil']."");
+            query("INSERT INTO messageprive(titreMsgPrive,contenuMsgPrive,destinataireId,auteurId) VALUES('".$_POST['titre']."','".$_POST['repondre']."','".$_POST['idauteur']."','".$_POST['session']."')");
+            header("location: ./messagerie.php");
         }
         else
         {
-            
+            echo"NO ok";echo"".$_POST['titre']."";echo"".$_POST['repondre']."";echo"".$_POST['idauteur']."";echo"".$_POST['session']."";
         }
 ?>
