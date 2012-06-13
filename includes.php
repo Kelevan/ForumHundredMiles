@@ -61,9 +61,9 @@ function verif_connexion()
 
   function menu()
 {  
+      
     if(isset($_SESSION['pseudo']))
         {
-
             if (isset($_SESSION['idTypeUtil']))
             {
                 if ($_SESSION['idTypeUtil']==1)
@@ -72,35 +72,31 @@ function verif_connexion()
                 }
                 elseif($_SESSION['idTypeUtil']==2)
                 {
-                    echo '
-                        <div class="nav-collapse">
-                            <ul class="nav nav-pills">
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
-                                        <li><a href="./listeForum.php">Gestion des forums</a></li>
-                                    </ul>
-                                </li>
-                            </ul> 
-                        </div>
+                    echo '                        
+                        <ul class="nav pull-right">
+                        <div class="btn-group">
+                            <a class="btn btn-inverse">Panel Admin</a>
+                            <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./listeCategorie.php"><i class="icon-th-large"></i> Gestion des catégories</a></li>
+                                <li><a href="./listeForum.php"><i class="icon-th-list"></i> Gestion des forums</a></li>
+                            </ul>  
+                        </ul> 
                         ';
                 }
                 elseif($_SESSION['idTypeUtil']==3)
                 {
                     echo '
-                        <div class="nav-collapse">
-                            <ul class="nav nav-pills">
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="./listeMembre.php">Gestion des utilisateurs</a></li>
-                                        <li><a href="./listeCategorie.php">Gestion des catégories</a></li>
-                                        <li><a href="./listeForum.php">Gestion des forums</a></li>
-                                    </ul>
-                                </li>
-                            </ul> 
-                        </div>
+                        <ul class="nav pull-right">
+                        <div class="btn-group">
+                            <a class="btn btn-inverse">Panel Admin</a>
+                            <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./listeMembre.php"><i class="icon-user"></i> Gestion des utilisateurs</a></li>
+                                <li><a href="./listeCategorie.php"><i class="icon-th-large"></i> Gestion des catégories</a></li>
+                                <li><a href="./listeForum.php"><i class="icon-th-list"></i> Gestion des forums</a></li>
+                            </ul>  
+                        </ul>    
                         ';
                 }
             }
@@ -108,7 +104,6 @@ function verif_connexion()
                 <div class="nav-collapse">
                     <ul class="nav">             
                         <div class="tabbable">
-                            <ul class="nav nav-pills">
                                 <ul class="nav nav-pills">
                                     <li class="dropdown">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
@@ -125,12 +120,13 @@ function verif_connexion()
                                         </ul>
                                     </li>
                                 </ul>
-                            </lu>
                         </div>
                     </ul>
                 </div>
                 ';
-            echo "<div class='btn-group pull-right'>
+            
+            echo "
+                <div class='btn-group pull-right'>
                         <span> <a class='btn btn-inverse' href='./messagerie.php?id=".$_SESSION['idUtil']."'> <span class='add-on'><i class='icon-envelope icon-white'></i>&nbsp;</span>Messages&nbsp;</a><span>
                         <a class='btn dropdown-toggle' data-toggle='dropdown' href='#'>
                         <i class='icon-user'></i> ";
@@ -175,7 +171,7 @@ function verif_connexion()
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label" for="input01"><b>mot de passe</b></label>
+                                    <label class="control-label" for="input01"><b>Mot de passe</b></label>
                                     <div class="controls">
                                         <input type="password" class="input-large" id="pass" name="pass">  
                                     </div>
