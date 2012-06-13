@@ -12,7 +12,7 @@
             </ul>
 
             <div class="tab-content">
-                <!---- MESSAGERI ----->
+                <!---- MESSAGERIE ----->
                 <div class="tab-pane active" id="tab1">
                     <form class="well form-horizontal" method="post" action="./messageprive.php">                        
                         <table class="table table-bordered table-condensed">
@@ -53,9 +53,13 @@
                         <div class="controls">
                             <?php
                                 $util_connexion=query("SELECT pseudo FROM utilisateur");
-                                $listePseudo=mysql_fetch_array($util_connexion, MYSQL_NUM);                                 
+                                $listePseudo=mysql_fetch_array($util_connexion, MYSQL_NUM); 
+                                $liste = '"';
+                                while ($user = mysql_fetch_array($listePseudo)) {
+                                    $liste = $liste.$user[0].'","';
+                                }
                             ?>
-                             <input type="text" class="input-medium" data-provide="typeahead" id="destinataire" name="destinataire" data-items="4" data-source='["<?php echo ''.$listePseudo[0].'' ?>"]'>
+                             <input type="text" class="input-medium" data-provide="typeahead" id="destinataire" name="destinataire" data-items="4" data-source='[<?php echo $liste[0] ?>]'>
                             
                         </div>
                         </div>
@@ -78,13 +82,7 @@
                     </form> 
                 </div>
             </div>
-        </div>
-        
-        
-              
-        
+        </div>   
 <?php
-    echo'
-<script src="./js/bootstrap-typeahead.js"></script>';
     pied();
 ?>              
