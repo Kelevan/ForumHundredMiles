@@ -10,27 +10,24 @@
                 <li><a href="./listeCategorie.php">Listes</a></li>
                 <li><a href="./addCategorie.php">Ajouter une catégorie</a></li>
             </ul>
-            <form class="well form-horizontal" method="post" action="./editCategorie.php">
+            <div class="well">
                 <table class="table table-bordered table-condensed">
-                    <thead>
-                        <tr class="row">               
-                            <th><b>Liste des catégories</b></th>
-                        </tr>
-                        <tr class="row">
-                            <th><center>ID </center></th>
-                            <th>Nom</th>
-                            <th>Description</th>
-                            <th>Actions</th>
+                    <thead class="row">
+                        <tr>
+                            <th class="1"><center>ID </center></th>
+                            <th class="span3">Nom</th>
+                            <th class="span6">Description</th>
+                            <th class="span2"><center>Actions</center></th>
                         </tr>
                     </thead>
                     <tbody>
                     <?php
                         $req_connexion=query("select * from categorie");
                         while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
-                            echo "<tr class=row><td>".$row[0]."</td>
+                            echo "<tr><td>".$row[0]."</td>
                                     <td>".$row[1]."</td>
                                     <td>".$row[2]."</td>
-                                    <td>
+                                    <td><center>
                                         <a class='btn' href='./editCategorie.php?id=".$row[0]."'>
                                             <i class='icon-pencil'></i>
                                         </a>
@@ -50,13 +47,13 @@
                                         <a data-toggle='modal' href='#SuppressionCategorie".$row[0]."' class='btn btn-danger'>
                                             <i class='icon-remove'></i>
                                         </a> 
-                                    </td>
+                                    </center></td>
                                 </tr>";
-                        }
-                    ?>
-                </tbody>
-            </table>
-        </form>
+                            }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 <?php

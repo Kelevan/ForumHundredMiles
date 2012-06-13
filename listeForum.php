@@ -8,18 +8,15 @@
             <li><a href="./listeForum.php">Listes</a></li>
             <li><a href="./addForum.php">Ajouter un forum</a></li>
         </ul>
-        <form class="well form-horizontal" method="post" action="./editeditForum.php">
+        <div class="well">
             <table class="table table-bordered table-condensed">
-                <thead>
-                    <tr class="row">               
-                        <th><b>Liste des forums</b></th>
-                    </tr>
-                    <tr class="row">
-                        <th><center>ID </center></th>
-                        <th>Nom</th>
-                        <th>Forum Père</th>
-                        <th>Catégorie</th>
-                        <th>Actions</th>
+                <thead class="row">
+                    <tr>
+                        <th class="span1"><center>ID </center></th>
+                        <th class="span3">Nom</th>
+                        <th class="span3">Forum Père</th>
+                        <th class="span3">Catégorie</th>
+                        <th class="span2"><center>Actions</center></th>
                     </tr>
                 </thead>
             <tbody>
@@ -27,7 +24,7 @@
                     $req_connexion=query("select * from forum");
 
                     while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
-                        echo "<tr class='row'>
+                        echo "<tr>
                             <td>".$row[0]."</td>
                             <td>".$row[1]."</td>";
 
@@ -47,7 +44,8 @@
 
                         echo "<td>".$cat."</td>
 
-                        <td><a class='btn' href='./editForum.php?id=".$row[0]."'><i class='icon-pencil'></i></a>
+                        <td><center>
+                        <a class='btn' href='./editForum.php?id=".$row[0]."'><i class='icon-pencil'></i></a>
                         <div id='SuppressionForum".$row[0]."' class='modal hide fade'>
                             <div class='modal-header'>
                                 <button class='close' data-dismiss='modal'>&times;</button>
@@ -63,13 +61,13 @@
                         </div>
                         <a data-toggle='modal' href='#SuppressionForum".$row[0]."' class='btn btn-danger'>
                             <i class='icon-remove'></i>
-                        </a></td>                      
+                        </a></center></td>                      
                         </tr>";
                     }
                 ?>
             </tbody>
         </table>
-    </form>
+    </div>
     
 <?php
     pied();

@@ -26,7 +26,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                $req_connexion=query("SELECT * FROM messageprive,utilisateur WHERE messageprive.auteurId=utilisateur.idUtil AND destinataireId='".$_GET['id']."'");
+                                $req_connexion=query("SELECT * FROM messageprive,utilisateur WHERE messageprive.auteurId=utilisateur.idUtil AND destinataireId='".$_SESSION['idUtil']."'");
                                 while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) {
                                     echo "<tr class='row'>
                                             <td></td>
@@ -53,9 +53,9 @@
                         <div class="controls">
                             <?php
                                 $util_connexion=query("SELECT pseudo FROM utilisateur");
-                                $pseudo=mysql_fetch_array($util_connexion);                                  
+                                $listePseudo=mysql_fetch_array($util_connexion, MYSQL_NUM);                                 
                             ?>
-                             <input type="text" class="input-medium" data-provide="typeahead" id="destinataire" name="destinataire" data-items="4" data-source='["<?php echo ''.$pseudo[0].'' ?>"]'>
+                             <input type="text" class="input-medium" data-provide="typeahead" id="destinataire" name="destinataire" data-items="4" data-source='["<?php echo ''.$listePseudo[0].'' ?>"]'>
                             
                         </div>
                         </div>
