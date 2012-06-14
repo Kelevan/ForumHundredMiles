@@ -5,16 +5,32 @@
 ?> 
     <div class="container">
             <ul class="breadcrumb">
-                <li><a href="./index.php">Home</a> <span class="divider">/</span></li>
-                <li><a href="./categorie.php">Musique</a> <span class="divider">/</span></li>
-                <li><a href="./forum.php">Lyrics</a> <span class="divider">/</span></li>
-                <li><a href="./topic.php">Lyrics</a> </li>
+            <a href="./index.php">Home</a> <span class="divider">/</span>    
+            <?php
+                $req_connexion=query("select idCat, nomCat from categorie c,forum f where c.idCat = f.id_Cat and f.idForum='".$_GET['id']."'");
+                while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
+                {
+                    echo "<a href=./categorie.php?id=".$row[0].">".$row[1]."</a><span class='divider'> /</span>";             
+
+                    $req_connexion1=query("select * from forum where idForum='".$_GET['id']."'");
+                    while ($row = mysql_fetch_array($req_connexion1, MYSQL_NUM)) 
+                    {
+                        echo "<a href=./forum.php?id=".$row[0].">".$row[1]."</a><span class='divider'> /</span>";
+
+                        $req_connexion2=query("select * from forum where idForumPere='".$_GET['id']."'");
+                        while ($row = mysql_fetch_array($req_connexion2, MYSQL_NUM)) 
+                        {
+                            echo "<a href=./topic.php?id=".$row[0].">".$row[1]."</a>";
+                        }
+                    }
+                } 
+            ?>
             </ul>
          
                              <!-- TABLEAU -->
     
     <form class="well">
-        <legend><a href="./categorie.php">> Lyrics</a></Legend>
+        <legend> Lyrics</Legend>
         <table class="table table-bordered">      
             <thead>                         
                 <tr class="row">
@@ -25,24 +41,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="row">
-                    <td><a href="./message.php">You See</a></td>
-                    <td>0</td>
-                    <td>30</td>
-                    <td>Mer mar 14, 2012 3:05pm<br/>Tom</td>
-                </tr>
-                <tr class="row">
-                    <td><a href="./message.php">To My dad</a></td>
-                    <td>0</td>
-                    <td>19</td>
-                    <td>Valou</td>
-                </tr>
-                <tr class="row">
-                    <td><a href="./message.php">Life on Demand </a></td>
-                    <td>5</td>
-                    <td>18</td>
-                    <td>Valou</td>
-                </tr>
+                <?php
+                    $req_connexion=query("select * from topic where idTopic='".$_GET['id']."'");
+                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
+                    {
+                        echo " <tr class='row'>
+                        <td><a href='./Message.php?id=".$row[0]."'>".$row[1]."</a></td>    
+                        <td></td>
+                        <td></td>
+                        <td></td>  
+                        </tr>
+                        ";
+                        }
+                ?>
             </tbody>
         </table>
     </form>

@@ -66,86 +66,92 @@ function verif_connexion()
         {
             if (isset($_SESSION['idTypeUtil']))
             {
-                if ($_SESSION['idTypeUtil']==1)
-                {
-                    
-                }
-                elseif($_SESSION['idTypeUtil']==2)
-                {
-                    echo '                        
-                        <ul class="nav pull-right">
-                        <div class="btn-group">
-                            <a class="btn btn-inverse">Panel Admin</a>
-                            <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./listeCategorie.php"><i class="icon-th-large"></i> Gestion des catégories</a></li>
-                                <li><a href="./listeForum.php"><i class="icon-th-list"></i> Gestion des forums</a></li>
-                            </ul>  
-                        </ul> 
-                        ';
-                }
-                elseif($_SESSION['idTypeUtil']==3)
-                {
-                    echo '
-                        <ul class="nav pull-right">
-                        <div class="btn-group">
-                            <a class="btn btn-inverse">Panel Admin</a>
-                            <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./listeMembre.php"><i class="icon-user"></i> Gestion des utilisateurs</a></li>
-                                <li><a href="./listeCategorie.php"><i class="icon-th-large"></i> Gestion des catégories</a></li>
-                                <li><a href="./listeForum.php"><i class="icon-th-list"></i> Gestion des forums</a></li>
-                            </ul>  
-                        </ul>    
-                        ';
-                }
-            }
-            echo '
-                <div class="nav-collapse">
-                    <ul class="nav">             
-                        <div class="tabbable">
+                echo '
+                    <div class="nav-collapse">
+                        <ul class="nav">             
+                            <div class="tabbable">
                                 <ul class="nav nav-pills">
                                     <li class="dropdown">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
                                         ';
-            
+
                                                 $req_connexion=query("select idCat,nomCat from categorie");
                                                 while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
                                                 {
                                                 echo "<li><a href=./categorie.php?id=".$row[0].">".$row[1]."</a></li>";
                                                 }
-
-            echo'
+                 echo'
                                         </ul>
                                     </li>
                                 </ul>
-                        </div>
-                    </ul>
-                </div>
-                ';
-            
-            echo "
-                <ul class='nav pull-right'>
-                        <a class='btn btn-inverse' href='./messagerie.php'> <span class='add-on'><i class='icon-envelope icon-white'></i>&nbsp;</span>Messages&nbsp;&nbsp;</a>";
-            echo "
-                    <ul class='nav pull-right'>
-                        <div class='btn-group'>
-                        <a class='btn dropdown-toggle' data-toggle='dropdown' href='#'>
-                        <i class='icon-user'></i> ";
-            echo $_SESSION['pseudo']; 
-            echo    '
-                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./profil.php"><i class="icon-user"></i> Profil</a></li>
-                            <li class="divider"></li>
-                            <li><a href="./connect.php?action=logout"><i class="icon-off"></i> Se déconnecter</a></li>
-                        </ul>  
-                    </div>
-                    </ul>
+                            </div>
+                        </ul>
                     </div>
                     ';
-
+                if ($_SESSION['idTypeUtil']==1)
+                    {
+                    }
+                    elseif($_SESSION['idTypeUtil']==2)
+                    {
+                        echo '
+                                <ul class="nav pull-right">             
+                                    <div class="btn-group">
+                                        <ul class="nav nav-pills">
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="./listeCategorie.php"><i class="icon-th-large"></i> Gestion des catégories</a></li>
+                                                    <li><a href="./listeForum.php"><i class="icon-th-list"></i> Gestion des forums</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ul>                            
+                            ';
+                    }
+                    elseif($_SESSION['idTypeUtil']==3)
+                    {
+                        echo '                            
+                                <ul class="nav pull-right">             
+                                    <div class="btn-group">
+                                        <ul class="nav nav-pills">
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Panel Admin<b class="caret"></b></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="./listeMembre.php"><i class="icon-user"></i> Gestion des utilisateurs</a></li>
+                                                    <li><a href="./listeCategorie.php"><i class="icon-th-large"></i> Gestion des catégories</a></li>
+                                                    <li><a href="./listeForum.php"><i class="icon-th-list"></i> Gestion des forums</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ul>                              
+                            ';                       
+                    }
+            }
+            echo '
+                    <div class="nav-collapse">
+                        <ul class="nav pull-right">             
+                            <div class="btn-group">
+                                <ul class="nav nav-pills">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user icon-white"></i> ';
+                                        echo $_SESSION['pseudo']; 
+                                        echo    '<b class="caret"></b></a>                                                                                  
+                                        <ul class="dropdown-menu">    
+                                            <li><a href="./profil.php"><i class="icon-user"></i> Profil</a></li>
+                                            <li><a href="./messagerie.php"><i class="icon-envelope"></i>&nbsp;Messages&nbsp;&nbsp;</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="./connect.php?action=logout"><i class="icon-off"></i> Se déconnecter</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                    </div>
+                   ';
         }
     else
         {
