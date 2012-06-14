@@ -14,36 +14,45 @@
             <div class="tab-content">
                 <!---- INFORMATION ----->
                 <div class="tab-pane active" id="tab1">
-                    <form class="well form-horizontal">
+                    <form class="well form-horizontal" method="post" action="updateProfil.php">
                         <fieldset>
+                            <?php
+                                echo"<input type='hidden' id='session' name='session' value='".$_SESSION['idUtil']."'>";
+                            ?>
                             <div class="control-group">
                                 <label class="control-label" for="input01"><b>Pseudo</b></label>
                                 <div class="controls">
-                                    <input type="text" class="input-medium" id="input01" value="Tom"disabled>  
+                                    <?php
+                                        $util_connexion=query("SELECT * FROM utilisateur WHERE idUtil='".$_SESSION['idUtil']."'");
+                                        $util=mysql_fetch_array($util_connexion);
+                                        echo"<input type='text' class='input-medium' id='pseudo' name='pseudo' value='".$util[1]."'disabled>";  
+                                    ?>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="input02"><b>E-mail</b></label>
                                 <div class="controls">
-                                    <input type="email" class="input-medium" id="input01" value="Tom@Hundred.Miles">  
+                                    <?php
+                                        echo"<input type='email' class='input-medium' id='mail' name='mail' value='".$util[3]."'>";  
+                                    ?>
                                 </div>
                             </div> 
                             <div class="control-group">
                                 <label class="control-label"><b>Mot&nbsp;de&nbsp;passe&nbsp;actuel&nbsp;:*</b></label>   
                                 <div class="controls">
-                                    <input type="password" class="input-xlarge" id="inputtactuel" value="">
+                                    <input type="password" class="input-xlarge" id="mdpactuel" name="mdpactuel" value="">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label"><b>Nouveau&nbsp;mot&nbsp;passe&nbsp;:*</b></label>
                                 <div class="controls">
-                                    <input type="password" class="input-xlarge" id="inputtnouveau1" value="">
+                                    <input type="password" class="input-xlarge" id="mdp1" name="mdp1" value="">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label"><b>Confirmation&nbsp;:*</b></label>
                                 <div class="controls">
-                                    <input type="password" class="input-xlarge" id="inputtnouveau2" value="">
+                                    <input type="password" class="input-xlarge" id="mdp2" name="mdp2" value="">
                                 </div>
                             </div>
                             <div class="form-actions">
@@ -51,9 +60,8 @@
                             </div>
                         </fieldset>
                     </form>
-                    
                 </div>
-
+                
                 <!---- AVATAR ----->
                 <div class="tab-pane" id="tab2">
                     <form class="well form-horizontal">
