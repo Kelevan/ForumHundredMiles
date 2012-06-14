@@ -42,7 +42,7 @@
                     while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
                     {
                         echo " <tr class='row'> 
-                        <td><a href='./forum.php?id=".$row[0]."'>".$row[1]."</a></td>
+                        <td><a href='./topic.php?id=".$row[0]."'>".$row[1]."</a></td>
                         <td></td>                                
                         <td></td>
                         <td></td>  
@@ -73,7 +73,7 @@
                     while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
                     {
                         echo " <tr class='row'> 
-                        <td><a href='./topic.php?id=".$row[0]."'>".$row[1]."</a></td>
+                        <td><a href='./message.php?id=".$row[0]."'>".$row[1]."</a></td>
                         <td></td>                                
                         <td></td>
                         <td></td>
