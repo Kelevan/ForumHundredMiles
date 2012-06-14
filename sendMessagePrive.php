@@ -12,6 +12,6 @@
         }
         else
         {
-            echo"NO ok </br>"; echo"".$_POST['titre']."</br>";echo"".$_POST['envoie']."</br>";echo"".$_POST['destinataire']."</br>";echo"".$_POST['session']."</br>";
+            echo"NO ok </br>"; echo"".$_POST['titre']."</br>";echo"".$_POST['envoie']."</br>";echo"".$idDest_result."</br>";echo"".$_POST['session']."</br>";
         }
 ?>
