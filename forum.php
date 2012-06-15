@@ -73,8 +73,12 @@
                     while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
                     {
                         echo " <tr class='row'> 
-                        <td><a href='./message.php?id=".$row[0]."'>".$row[1]."</a></td>
-                        <td></td>                                
+                        <td><a href='./message.php?id=".$row[0]."'>".$row[1]."</a></td>";
+                    $util_connexion=query("SELECT pseudo FROM utilisateur WHERE idUtil='".$row[4]."'");
+                    $util_find=mysql_fetch_array($util_connexion);
+                    $util=$util_find[0];
+                    
+                        echo "<td>".$util."</td>                                
                         <td></td>
                         <td></td>
                         <td></td>

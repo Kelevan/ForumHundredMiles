@@ -45,20 +45,7 @@
                             <td>Salut !</td>
                         </tr>                        
                     </tbody>
-                </table>
-                <table class="table table-bordered table-condensed">
-                    <thead>
-                        <tr>
-                            <th colspan="2"><h6>Mercredi7 Juin 2012 <a class="btn btn-small pull-right" href="./editmessage.php"><i class="icon-edit"></i></a></h6></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Thom <br/> image </td>
-                            <td>HEUREUSEMENT QUE THOMAS EST PLUS BRINGGGGGGGGGGGGGGGGGGGGGGG MEEEEEEEEEEEEEEEEEEEEEEEEEEE QUE PINKIE BILLY SINON ON SERAIT PAS DANS LE CACA</td>
-                        </tr>
-                    </tbody>
-                </table>  
+                </table>>  
             </form>
 
             <div class="pagination">
