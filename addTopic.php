@@ -6,6 +6,10 @@
 
 <div class="container">     
     <form class="well form-horizontal" method="post" action="./transfert_addTopic.php">
+        <?php
+               echo"<input type='hidden' id='session' name='session' value='".$_SESSION['idUtil']."'>";
+               echo"<input type='hidden' id='idforum' name='idforum' value='".$_GET['id']."'>";
+        ?>
         <div class="control-group">
             <label class="control-label" for="input01"><b>Titre du topic</b></label>
             <div class="controls">
