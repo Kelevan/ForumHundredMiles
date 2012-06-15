@@ -25,34 +25,44 @@
     </ul>
      
 <!------------------ SOUS-FORUMS ------------------>
-     <div class="well">
-         <legend>Sous-Forum</legend>
-         <table class="table table-bordered table-condensed">            
-            <thead>               
-                <tr class="row">
-                    <th><center>Forums </center></th>
-                    <th>Sujets</th>
-                    <th>Messages</th>
-                    <th>Dernier Messages</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                    $req_connexion=query("select * from forum where idForumPere='".$_GET['id']."'");
-                    while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
-                    {
-                        echo " <tr class='row'> 
-                        <td><a href='./topic.php?id=".$row[0]."'>".$row[1]."</a></td>
-                        <td></td>                                
-                        <td></td>
-                        <td></td>  
-                        </tr>
-                        ";
-                        }
-                ?>
-            </tbody>
-        </table>
-     </div>     
+<?php
+    $forum_connexion=query("SELECT idForumPere FROM forum WHERE idForum='".$_GET['id']."'");
+    $forum_find=mysql_fetch_array($forum_connexion);
+    $forum=$forum_find[0];
+    
+    if($forum!=0)
+    {
+        
+    }else
+    {
+        echo"<div class='well'>
+            <legend>Sous-Forum</legend>
+            <table class='table table-bordered table-condensed'>            
+                <thead>               
+                    <tr class='row'>
+                        <th><center>Forums </center></th>
+                        <th>Sujets</th>
+                        <th>Messages</th>
+                        <th>Dernier Messages</th>
+                    </tr>
+                </thead>
+                <tbody>";
+                        $req_connexion=query("select * from forum where idForumPere='".$_GET['id']."'");
+                        while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
+                        {
+                            echo " <tr class='row'> 
+                            <td><a href='./forum.php?id=".$row[0]."'>".$row[1]."</a></td>
+                            <td></td>                                
+                            <td></td>
+                            <td></td>  
+                            </tr>
+                            ";
+                            }
+                echo"</tbody>
+            </table>
+        </div>";
+    }
+?>
      
 <!------------------ TOPICS ------------------>
     <div class="well"> 
@@ -73,7 +83,7 @@
                     while ($row = mysql_fetch_array($req_connexion, MYSQL_NUM)) 
                     {
                         echo " <tr class='row'> 
-                        <td><a href='./message.php?id=".$row[0]."'>".$row[1]."</a></td>";
+                        <td><a href='./topic.php?id=".$row[0]."'>".$row[1]."</a></td>";
                     $util_connexion=query("SELECT pseudo FROM utilisateur WHERE idUtil='".$row[4]."'");
                     $util_find=mysql_fetch_array($util_connexion);
                     $util=$util_find[0];
@@ -82,13 +92,15 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        </tr>
-                        ";
+                        </tr>";
                         }
-                ?>
-            </tbody>
-        </table>
-    </div>      
+        echo"</tbody>
+        </table>     
+        <div class='btn-group form-actions'>
+            <a href='./newTopic.php' class='btn btn-success'>Nouveau</a>
+        </div>";
+        ?>
+</div>      
         
 <?php
     pied();

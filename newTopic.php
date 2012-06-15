@@ -13,14 +13,9 @@
             </div>
         </div>
         <div class="control-group">
+            <label class="control-label" for="input01"><b>Contenue</b></label>
             <div class="controls">                
             <textarea name="content" style="width:50%" id="input02"></textarea> 
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="Upluader un Fichier">Uploader&nbsp;un&nbsp;Fichier</label>
-            <div class="controls">
-                <input class="input-file" id="fileInput" type="file">
             </div>
         </div>
         <div class="form-actions">
