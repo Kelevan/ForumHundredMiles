@@ -47,7 +47,7 @@
         
         <div class="span9">   
             <form class="well">
-                <legend><a href="./message.php">>&nbsp;You&nbsp;see</a></legend>
+                <legend><a href="./topic.php">>&nbsp;You&nbsp;see</a></legend>
                 <table class="table table-bordered table-condensed">
                     <thead>
                         <tr>

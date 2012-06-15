@@ -97,7 +97,7 @@
         echo"</tbody>
         </table>     
         <div class='btn-group form-actions'>
-            <a href='./newTopic.php' class='btn btn-success'>Nouveau</a>
+            <a href='./addTopic.php' class='btn btn-success'>Nouveau</a>
         </div>";
         ?>
 </div>      
