@@ -53,22 +53,23 @@
                     $topic=$topic_find[0];
                     echo"<legend>".$topic."</legend>";
                 ?>
-                <table class="table table-bordered table-condensed">
+                <table class="table table-bordered table-condensed ">
                     <?php
                     echo"<thead>
                         <tr>";
                         $message_connexion=query("SELECT * FROM message WHERE id_Topic='".$_GET['id']."'");
                         while($message=mysql_fetch_array($message_connexion, MYSQL_NUM)){
-                            echo"<th colspan='2'><h6>".$message[2]."<a class='btn btn-small pull-right' href='./editmessage.php'><i class='icon-edit'></i></a></h6></th>
+                            echo"<th><h6>".$message[2]."</h6></th>
+                                <th><a class='btn btn-small pull-right' href='./editmessage.php'><i class='icon-edit'></i></a></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class='row'>
                         <tr>";
                             $util_connexion=query("SELECT pseudo FROM utilisateur WHERE idUtil='".$message['4']."'");
                             $util_find=mysql_fetch_array($util_connexion);
                             $util=$util_find[0];
-                            echo"<td>".$util."<br/> image </td>
-                            <td>".$message[1]."</td>
+                            echo"<td class='span2'>".$util."<br/> image </td>
+                            <td class='span10'>".$message[1]."</td>
                         </tr>";
                                     }
                             ?>

@@ -19,7 +19,7 @@
         <div class="control-group">
             <label class="control-label" for="input01"><b>Contenu</b></label>
             <div class="controls">                
-            <textarea name="content" style="width:50%" id="contenu" name="contenu"></textarea> 
+                <textarea class='input-xlarge' id="contenu" name="contenu"></textarea> 
             </div>
         </div>
         <div class="form-actions">
