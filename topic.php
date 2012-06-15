@@ -47,18 +47,31 @@
         
         <div class="span9">   
             <form class="well">
-                <legend><a href="./topic.php">>&nbsp;You&nbsp;see</a></legend>
+                <?php
+                    $topic_connexion=query("SELECT nomTopic FROM topic WHERE idTopic='".$_GET['id']."'");
+                    $topic_find=mysql_fetch_array($topic_connexion);
+                    $topic=$topic_find[0];
+                    echo"<legend>".$topic."</legend>";
+                ?>
                 <table class="table table-bordered table-condensed">
-                    <thead>
-                        <tr>
-                            <th colspan="2"><h6>Mercredi 6 Juin 2012 <a class="btn btn-small pull-right" href="./editmessage.php"><i class="icon-edit"></i></a></h6></th>
+                    <?php
+                    echo"<thead>
+                        <tr>";
+                        $message_connexion=query("SELECT * FROM message WHERE id_Topic='".$_GET['id']."'");
+                        while($message=mysql_fetch_array($message_connexion, MYSQL_NUM)){
+                            echo"<th colspan='2'><h6>".$message[2]."<a class='btn btn-small pull-right' href='./editmessage.php'><i class='icon-edit'></i></a></h6></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Valou <br/> image </td>
-                            <td>Salut !</td>
-                        </tr>                        
+                        <tr>";
+                            $util_connexion=query("SELECT pseudo FROM utilisateur WHERE idUtil='".$message['4']."'");
+                            $util_find=mysql_fetch_array($util_connexion);
+                            $util=$util_find[0];
+                            echo"<td>".$util."<br/> image </td>
+                            <td>".$message[1]."</td>
+                        </tr>";
+                                    }
+                            ?>
                     </tbody>
                 </table>>  
             </form>
