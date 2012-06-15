@@ -21,7 +21,7 @@
                     $topic_find=mysql_fetch_array($topic_connexion);
                     $topic=$topic_find[0];
                     
-                    query("INSERT INTO message(contenuMsg,dateMsg,id_Topic,id_Util)VALUES('".($_POST['contenu'])."', '".$_SERVER['REQUEST_TIME']."','".$topic."','".$_POST['session']."')");
+                    query("INSERT INTO message(contenuMsg,dateMsg,id_Topic,id_Util)VALUES('".($_POST['contenu'])."', '".date('l\t\h\e jS')."','".$topic."','".$_POST['session']."')");
                     
                     $topic_connexion2=query("SELECT MAX( idTopic ) AS idTopic FROM topic");
                     $topic_find2=mysql_fetch_array($topic_connexion2);
