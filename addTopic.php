@@ -5,22 +5,22 @@
 ?> 
 
 <div class="container">     
-    <form method="post"class="well form-horizontal">
+    <form class="well form-horizontal" method="post" action="./transfert_addTopic.php">
         <div class="control-group">
             <label class="control-label" for="input01"><b>Titre du topic</b></label>
             <div class="controls">
-                <input type="text" class="input-medium" id="input01">
+                <input type="text" class="input-medium" id="titre" name="titre">
             </div>
         </div>
         <div class="control-group">
-            <label class="control-label" for="input01"><b>Contenue</b></label>
+            <label class="control-label" for="input01"><b>Contenu</b></label>
             <div class="controls">                
-            <textarea name="content" style="width:50%" id="input02"></textarea> 
+            <textarea name="content" style="width:50%" id="contenu" name="contenu"></textarea> 
             </div>
         </div>
         <div class="form-actions">
             <button type="submit" class="btn btn-success">Envoyer</button>
-            <button class="btn btn-warning">Annuler</button>                   
+            <button type="reset" class="btn btn-warning">Annuler</button>                   
         </div>
     </form>        
     
